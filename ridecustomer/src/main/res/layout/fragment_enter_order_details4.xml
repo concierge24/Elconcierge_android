@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        app:background="@{color.headerColor}"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_back_arrow_black"
+            app:tint="@{color.black_color}" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ivBack"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:gravity="center_vertical"
+            android:text="@string/bookATaxi"
+            android:textSize="16sp"
+            app:textcolor="@{color.black_color}" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.orderdetails.supplies.EnterOrderDetailsFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="6dp"
+            app:contentPaddingBottom="0dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true">
+
+                    <EditText
+                        android:id="@+id/etWeight"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_border"
+                        android:ems="10"
+                        android:fontFamily="@font/mont_bold"
+                        android:hint="@string/enter_approx_weight_in_lb_s"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:maxLines="2"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textColor="@color/text_dark"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etTypeOfMaterial" />
+
+                    <EditText
+                        android:id="@+id/etAdditionalInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_border"
+                        android:fontFamily="@font/mont_bold"
+                        android:hint="@string/enter_additional_information"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:maxLines="2"
+                        android:paddingStart="16dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingEnd="16dp"
+                        android:singleLine="false"
+                        android:textColor="@color/text_dark"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etWeight" />
+
+
+                    <EditText
+                        android:id="@+id/etDeliverpersonName"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_border"
+                        android:fontFamily="@font/mont_bold"
+                        android:hint="@string/enter_name_of_person_to_deliver"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:singleLine="false"
+                        android:textColor="@color/text_dark"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etAdditionalInfo" />
+
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_border"
+                        android:fontFamily="@font/mont_bold"
+                        android:hint="@string/enter_phone_number"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/text_dark"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etDeliverpersonName" />
+
+
+                    <EditText
+                        android:id="@+id/etInvoice"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_border"
+                        android:fontFamily="@font/mont_bold"
+                        android:hint="Enter Invoice Number"
+                        android:inputType="textCapSentences"
+                        android:maxLines="2"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:singleLine="false"
+                        android:visibility="gone"
+                        android:textColor="@color/text_dark"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+
+                    <EditText
+                        android:id="@+id/etDeliverPerson"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_border"
+                        android:fontFamily="@font/mont_bold"
+                        android:hint="Name of the delivery person"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:singleLine="false"
+                        android:textColor="@color/text_dark"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etInvoice" />
+
+
+                    <CheckBox
+                        android:id="@+id/fragile_checkbox"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="10dp"
+                        app:checkColor="@{color.primary_color}"
+                        android:text="@string/frgaile_package"
+                        app:textcolor="@{color.primary_color}"
+                        android:fontFamily="@font/mont_bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etDeliverPerson" />
+
+
+                    <TextView
+                        android:id="@+id/tvSubModels"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:text="@string/select_sub_model"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                    <Spinner
+                        android:id="@+id/spinnerSubModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@null"
+                        android:drawableEnd="@drawable/ic_dd_s_blue_copy"
+                        android:fontFamily="@font/mont_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintBottom_toTopOf="@+id/view5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/divider"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubModels" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mont_bold"
+                        android:padding="20dp"
+                        android:text="@string/enter_details_of_order"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:textcolor="@{color.black_color}" />
+
+                    <TextView
+                        android:id="@+id/tvSelectBrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:text="@string/select_brand"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvBrands"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:clipToPadding="false"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="16dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSelectBrand" />
+
+                    <TextView
+                        android:id="@+id/tvVehicleType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:text="@string/select_vehicle_type"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvBrands" />
+
+                    <Spinner
+                        android:id="@+id/spinnerVehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@null"
+                        android:fontFamily="@font/mont_bold"
+                        android:gravity="center_vertical"
+                        android:text="5 Gallons"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintBottom_toTopOf="@+id/view4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvBrands" />
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/divider"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvVehicleType" />
+
+                    <TextView
+                        android:id="@+id/tvNext"
+                        style="@style/Base.Widget.AppCompat.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:gravity="center"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/book_now"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/barrier2"
+                        app:textcolor="@{color.white_color}" />
+
+
+                    <TextView
+                        style="@style/Base.Widget.AppCompat.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/shape_next_btn"
+                        android:fontFamily="@font/mont_bold"
+                        android:gravity="center"
+                        android:text="@string/schedule"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tvNext"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/barrier2" />
+
+                    <EditText
+                        android:id="@+id/etTypeOfMaterial"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_border"
+                        android:ems="10"
+                        android:fontFamily="@font/mont_bold"
+                        android:hint="@string/enter_type_of_material"
+                        android:inputType="textCapSentences"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/upload_images"
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fragile_checkbox"
+                        app:textcolor="@{color.black_color}" />
+
+
+                    <TextView
+                        android:id="@+id/tv_add_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/add_more_details"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                        app:layout_constraintTop_toBottomOf="@+id/fragile_checkbox"
+                        app:textcolor="@{color.primary_color}" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCompanies"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/barrier2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3"
+                        tools:targetApi="lollipop" />
+
+                    <androidx.constraintlayout.widget.Barrier
+                        android:id="@+id/barrier2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:barrierDirection="bottom"
+                        app:constraint_referenced_ids="rvCompanies"
+                        tools:layout_editor_absoluteY="331dp" />
+
+                    <androidx.constraintlayout.widget.Group
+                        android:id="@+id/group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:constraint_referenced_ids="etDeliverPerson,etPhone,etDeliverpersonName,fragile_checkbox"
+                        tools:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_dd_s_blue_copy"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_add_more"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_add_more"
+                        app:tint="@{color.secondary_color}" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

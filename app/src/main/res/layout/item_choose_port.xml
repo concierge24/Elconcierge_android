@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="color"
+            type="com.codebrew.clikat.utils.configurations.ColorConfig" />
+
+
+        <variable
+            name="portData"
+            type="com.codebrew.clikat.data.model.api.PortData" />
+
+        <variable
+            name="sociallistener"
+            type="com.codebrew.clikat.module.social_post.bottom_sheet.adapter.BottomAdapter.SPListener" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_04"
+        android:onClick="@{(view) -> sociallistener.onPortClick(portData)}"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/port_name"
+            android:text="@{portData.name,default=Sent_At}"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_dark"
+            app:textcolor="@{color.textHead}"
+            android:fontFamily="@font/proximanovasemibold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/dp_04"
+            android:textSize="@dimen/text_medium"
+            tools:text="Today · 8:20 pm" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/port_location"
+            android:text="@{portData.address ,default=`Port Location`}"
+            android:textAlignment="textStart"
+            app:textcolor="@{color.textSubhead}"
+            android:paddingStart="@dimen/dp_04"
+            android:paddingEnd="@dimen/dp_04"
+            android:fontFamily="@font/proximanovaregular"
+            android:textSize="@dimen/text_small"
+            android:padding="@dimen/value_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/port_name"
+            tools:text="Today · 8:20 pm" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

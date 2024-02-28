@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="24dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/add_location"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:text="@string/pleaseselectoption"
+            android:textColor="@color/black_8c"
+            android:textSize="14sp" />
+
+        <include
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/rlRecentLocation"
+            layout="@layout/item_recent_locations"
+            android:layout_below="@+id/tvMsg"/>
+
+        <TextView
+            android:id="@+id/tvPickupAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlRecentLocation"
+            android:padding="16dp"
+            android:text="@string/by_search_address"
+            style="@style/SubmitButtons"
+            android:textSize="14sp"
+            android:background="@color/light_purple"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+           />
+
+        <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPickupAddress"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:text="@string/or"
+            android:textColor="@color/black_8c"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tvDropoffAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOr"
+            android:padding="16dp"
+            android:text="@string/select_from_map"
+            style="@style/SubmitButtons"
+            android:textSize="14sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

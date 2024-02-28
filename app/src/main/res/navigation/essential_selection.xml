@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/essential_selection.xml"
+    app:startDestination="@id/serviceListFragment">
+
+    <fragment
+        android:id="@+id/serviceListFragment"
+        android:name="com.codebrew.clikat.module.essentialHome.ServiceListFragment"
+        android:label="fragment_service_list"
+        tools:layout="@layout/fragment_service_list" >
+        <action
+            android:id="@+id/action_serviceListFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_serviceListFragment_to_wishListMainFragment"
+            app:destination="@id/wishListMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.codebrew.clikat.module.setting.SettingFragment"
+        android:label="SettingFragment" />
+    <fragment
+        android:id="@+id/wishListMainFragment"
+        android:name="com.codebrew.clikat.module.wishlist_prod.WishListMainFragment"
+        android:label="WishListMainFragment" />
+</navigation>

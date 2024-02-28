@@ -1,0 +1,1431 @@
+<resources>
+
+   <!-- <string name="phone_tag">Enter the %1$s sent to %2$s</string>
+    <string name="in_kitchen">In the Kitchen</string>-->
+<!--
+    <string name="instruction">instruction</string>
+    <string name="explanation_multiple_request">We are requesting the permission as it is necessary for the app to perform it\'s functionality. Please select Grant Permission to try again and Cancel  to exit.</string>
+    <string name="when_would_you_like_your_service">When would you like your service?</string>
+
+    <string name="disc_yes_text">Yes\nShow %s on discount</string>
+    <string name="disc_no_text">No\nDon’t show %s on discount</string>
+
+    <string name="avail_yes_text">Yes\nShow %s that are available in stock</string>
+    <string name="avail_no_text">No\nDon’t show %s that are not available in stock</string>
+
+    <string name="price_low_to_high">Price: Low to High</string>
+    <string name="price_high_to_low">Price: High to Low</string>
+    <string name="popularity">Popularity</string>
+    <string name="price_range">Price Range</string>
+    <string name="availability">Availability</string>
+    <string name="remove_cart">Remove</string>
+    <string name="add_cart_tag">Add</string>
+    <string name="login_using_facebook">Login using Facebook</string>-->
+    <string name="packages">แพ็คเกจ</string>
+    <string name="welcome">ต้อนรับ</string>
+    <!--General app strings-->
+    <string name="recommended">แนะนำ</string>
+    <string name="offers">ข้อเสนอ</string>
+    <string name="home">หน้าหลัก</string>
+    <string name="live_support">การสนับสนุนสด</string>
+    <string name="cart">รถเข็น</string>
+    <string name="promotions">โปรโมชั่น</string>
+    <string name="notifications">การแจ้งเตือน</string>
+    <string name="my_account">บัญชีของฉัน</string>
+    <string name="my_favorites">รายการโปรดของฉัน</string>
+    <string name="done">เสร็จแล้ว</string>
+    <string name="choose_from_gallery">คลังภาพ</string>
+    <string name="choose_image_selection">เลือกตัวเลือกรูปภาพ</string>
+    <string name="choose_from_camera">กล้อง</string>
+    <string name="choose_from_pdf">Pdf</string>
+    <string name="order_history">ประวัติ %s</string>
+    <string name="track_my_order">ติดตาม %s ของฉัน</string>
+    <string name="rate_my_order">ให้คะแนน %s ของฉัน</string>
+    <string name="upcoming_order">%s ปัจจุบัน</string>
+    <string name="loyality_points">คะแนนสะสม</string>
+    <string name="settings">การตั้งค่า</string>
+    <!--App Strings-->
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="forgot_password">ลืมรหัสผ่าน?</string>
+    <string name="_continue">ดำเนินการต่อ</string>
+    <string name="sign_up">ลงทะเบียน</string>
+    <string name="signup_otp_msg">
+เราจะส่ง %s ให้คุณทางเบอร์โทรศัพท์มือถือของคุณ แตะปุ่มด้านล่างหลังจากพิมพ์เบอร์โทรศัพท์ของคุณถูกต้องแล้ว
+</string>
+    <string name="send_otp">ส่ง %s</string>
+    <string name="recieve_otp">ยังไม่ได้รับรหัสของคุณ?</string>
+    <string name="resend_otp">ส่ง %s ซ้ำ</string>
+    <string name="submit">ส่ง</string>
+    <string name="tap_to_add_profile_pic">แตะเพื่อเพิ่มรูปโปรไฟล์</string>
+    <string name="finish">เสร็จสิ้น</string>
+    <string name="oreder_scheduler">ตัวจัดการกำหนดการ %s</string>
+    <string name="order_details">รายละเอียด %s</string>
+    <string name="schedule_your_order">กำหนดเวลา %s ของคุณ</string>
+    <string name="delivered">ส่งแล้ว</string>
+    <string name="reorder">สั่งใหม่</string>
+    <string name="cancel_order">ยกเลิก %s</string>
+    <string name="track">ติตดาม</string>
+    <string name="hint_email">อีเมล</string>
+    <string name="hint_password">รหัสผ่าน</string>
+    <string name="hint_digit_phone_number">เบอร์โทรศัพท์</string>
+    <string name="enter_otp">ใส่ %s</string>
+    <string name="hint_full_name">ชื่อเต็ม</string>
+    <string name="action_okay">โอเค</string>
+    <!--Validation String-->
+    <string name="empty_email">กรุณากรอกรหัสอีเมล</string>
+    <string name="empty_email_phone">กรุณากรอกอีเมลหรือเบอร์โทรศัพท์</string>
+    <string name="invalid_email">กรุณากรอกรหัสอีเมลที่ถูกต้อง</string>
+    <string name="empty_pwd">กรุณากรอกรหัสผ่าน</string>
+    <string name="empty_phone_number">กรุณากรอกเบอร์โทรศัพท์</string>
+    <string name="empty_otp">กรุณากรอก %s</string>
+    <string name="empty_fn">กรุณากรอกชื่อเต็ม</string>
+    <string name="payment_method">วิธีการชำระเงิน</string>
+    <string name="set_schedule">ตั้งค่ากำหนดการ</string>
+    <string name="select_category">เลือกหมวดหมู่</string>
+    <string name="select_dates">เลือกวันที่</string>
+    <string name="internet_connection">กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ</string>
+    <string name="login_expired">
+ขออภัย บัญชีของคุณถูกล็อกในอุปกรณ์อื่น! กรุณาเข้าสู่ระบบอีกครั้งเพื่อดำเนินการต่อ
+</string>
+    <string name="ok">โอเค</string>
+    <string name="guest">แขก</string>
+    <string name="edit">แก้ไข</string>
+    <string name="qunatity">จำนวน</string>
+    <string name="net_total">รวมสุทธิ</string>
+    <string name="delivery">%s ถึง</string>
+    <string name="delivery_speed">ความเร็วในการจัดส่ง</string>
+    <string name="delivery_charges">ค่าจัดส่ง</string>
+    <string name="handling_charges">การจัดการค่าใช้จ่าย</string>
+    <string name="empty">ช่องต้องไม่ปล่อยว่าง</string>
+    <string name="txtOrderDone">%s เสร็จแล้ว</string>
+    <string name="txtPaymentOptions">ตัวเลือกการชำระเงิน</string>
+    <string name="txtInbusiness">เปิดมาตั้งแต่</string>
+    <string name="reviews">รีวิว</string>
+    <string name="go">ไป</string>
+    <string name="multi_serach">การค้นหาหลายรายการ</string>
+    <string name="what_are_you_looking_for">คุณกำลังมองหาอะไร?</string>
+    <string name="max_limit_reached">ถึงขีดจำกัดสูงสุดแล้ว</string>
+    <string name="multisercah">การค้นหาหลายรายการ</string>
+    <string name="NoCart">ไม่พบรายการ</string>
+    <string name="favorites">รายการโปรด</string>
+    <string name="share_sub">แอปมือถือของผู้ใช้ %s</string>
+    <string name="share_body">https://play.google.com/store/apps/details?id=%s</string>
+    <string name="save">บันทึก</string>
+    <string name="cashOnDeli">เก็บเงินปลายทาง</string>
+    <string name="debitCreditCard">บัตรเดบิต/เครดิต</string>
+    <string name="choosePaymentOption">เลือกตัวเลือกการชำระเงิน</string>
+    <string name="selectAdress">กรุณาเพิ่มที่อยู่</string>
+    <string name="order_summary">สรุป %s</string>
+    <string name="pickkup">ไปรับ</string>
+    <string name="items">รายการ</string>
+    <string name="net_payable">เจ้าหนี้สุทธิ</string>
+    <string name="additional_remarks">หมายเหตุเพิ่มเติม </string>
+    <string name="place_order">สั่งซื้อ %s</string>
+    <string name="successFavourite">เพิ่มในรายการโปรดเรียบร้อยแล้ว</string>
+    <string name="successUnFavourite">ลบออกจากรายการโปรดเรียบร้อยแล้ว</string>
+    <string name="success_wishlist">เพิ่ม %s ใน %s เรียบร้อยแล้ว</string>
+    <string name="update">อัปเดต!</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="pointsEarnedSoFar">คะแนนที่ได้รับจนถึงตอนนี้</string>
+    <string name="change_password">เปลี่ยนรหัสผ่าน</string>
+    <string name="notification_lang">ภาษาการแจ้งเตือน</string>
+    <string name="enterReview">เขียนรีวิวของคุณ</string>
+    <string name="open">เปิดตอนนี้</string>
+    <string name="filter">ตัวกรอง</string>
+    <string name="old_password">รหัสผ่านเก่า</string>
+    <string name="new_password">รหัสผ่านใหม่</string>
+    <string name="confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="password_match_error">รหัสผ่านไม่ถูกต้อง</string>
+    <string name="clearCart">
+การเพิ่มสินค้าจาก %1$s อื่นจะล้างรถเข็นของคุณ แน่ใจหรือไม่ว่าต้องการ %2$s?
+</string>
+    <string name="Ok">โอเค</string>
+    <string name="apply">ใช้</string>
+    <string name="clear">ล้าง</string>
+    <string name="close">ปิดแล้ว</string>
+    <string name="cash">เงินสด</string>
+    <string name="busy">ยุ่ง</string>
+    <string name="logout">ออกจากระบบ</string>
+    <string name="please_login">กรุณาเข้าสู่ระบบ</string>
+    <string name="order_no">หมายเลข %s</string>
+    <string name="placed_on">สั่งซื้อเมื่อ</string>
+    <string name="delivered_on">จัดส่งเมื่อ</string>
+    <string name="expected_delivered_on">คาดว่า %s จะถึงเมื่อ</string>
+    <string name="points">คะแนน</string>
+    <string name="passwrd_lenght">
+ความยาวรหัสผ่านต้องมีความยาวอย่างน้อย 6 ตัวอักษร
+</string>
+    <string name="no_internet_connection_found">ไม่พบการเชื่อมต่ออินเทอร์เน็ต</string>
+    <string name="retry">ลองอีกครั้ง</string>
+    <string name="pending">รอดำเนินการ</string>
+    <string name="confirmed">ยืนยันแล้ว</string>
+    <string name="reject">ปฏิเสธ</string>
+    <string name="reached">ถึงแล้ว</string>
+    <string name="doYouCancel">คุณต้องการยกเลิก %s นี้จริงๆหรือไม่?</string>
+    <string name="date_time_msg">โปรดเลือกวันและเวลารับ</string>
+    <string name="rate_">ให้คะแนน</string>
+    <string name="add_to_cart">เพิ่มในรถเข็น</string>
+    <string name="nothing_found">ไม่พบสิ่งใด!</string>
+    <string name="results_for">ผลลัพธ์สำหรับ </string>
+    <string name="skip">ข้าม</string>
+    <string name="success">สำเร็จ</string>
+    <string name="succesfully_scheduled">กำหนดเวลาสั่งซื้อของคุณสำเร็จแล้ว</string>
+    <string name="succesfully_order">สั่งซื้อ %s ของคุณเรียบร้อยแล้ว</string>
+    <string name="no_order_found">ไม่พบ %s!</string>
+    <string name="no_fav_found">ไม่พบรายการโปรด!</string>
+    <string name="success_logout">คุณออกจากระบบเรียบร้อยแล้ว</string>
+    <string name="status">สถานะ</string>
+    <string name="payment">การชำระเงิน</string>
+    <string name="total_amount">จำนวนทั้งหมด</string>
+    <string name="placed">สั่งซื้อแล้ว</string>
+    <string name="near_you">ใกล้คุณ</string>
+    <string name="minimum_order">ขั้นต่ำ %s</string>
+    <string name="delivery_time">เวลาจัดส่ง</string>
+    <string name="payment_options">ตัวเลือกการชำระเงิน</string>
+    <string name="desc">เกีี่ยวกับ %s</string>
+    <!--new-->
+    <string name="review">รีวิว</string>
+    <string name="about">ความไม่เหมือนใคร</string>
+    <string name="total">ทั้งหมด</string>
+    <string name="sub_total">ผลรวมไม่ทั้งหมด</string>
+    <string name="type_here">พิมพ์ที่นี่</string>
+    <string name="new_tag">ใหม่</string>
+    <!--<new Messages>-->
+    <string name="action_send">ส่ง</string>
+    <string name="others">อื่นๆ</string>
+    <string name="just_now">ตอนนี้</string>
+    <!---->
+    <string name="a_min_ago">นาทีที่แล้ว</string>
+    <string name="min_ago">นาทีที่แล้ว</string>
+    <string name="a_hour_ago">ชั่วโมงที่แล้ว</string>
+    <string name="hour_ago">ชั่วโมงที่แล้ว</string>
+    <string name="yest">เมื่อวานนี้</string>
+    <string name="days_afo">วันที่แล้ว</string>
+    <string name="days">วัน</string>
+    <string name="forgot_password1">ลืมรหัสผ่าน</string>
+    <string name="log_out_msg">คุณแน่ใจหรือไม่ว่าคุณต้องการที่จะออกจากระบบ?</string>
+    <string name="view_all">ดูทั้งหมด</string>
+    <string name="select_country">เลือกประเทศ</string>
+    <string name="pick_uptime">เลือกวันที่และเวลา</string>
+    <string name="supplier_name">%s:</string>
+    <string name="isMonthlyErrorMsg">โปรดเลือกกำหนดวันที่รายเดือน</string>
+    <string name="min_order_time">เวลาจัดส่งขั้นต่ำ</string>
+    <string name="hour">ชั่วโมง</string>
+    <string name="hours">ชั่วโมง</string>
+    <string name="min">นาที</string>
+    <string name="day">วัน</string>
+    <string name="compareProduct">เปรียบเทียบ %s</string>
+    <string name="results">ผลลัพธ์</string>
+    <string name="supplierClosed">
+ปิดอยู่ในขณะนี้ คำสั่งซื้อของคุณจะได้รับการยืนยันในช่วงเวลาทำการของซัพพลายเออร์ถัดไป/วัน</string>
+    <string name="supplierBusy1">
+คำสั่งซื้อไม่ว่างสำหรับวันนี้ คำสั่งซื้อของคุณอาจจะล่าช้า
+</string>
+    <string name="wrong_date_selection">กรุณาเลื่อนออกไปเป็นวันและเวลาในอนาคต</string>
+    <string name="per_hour">ต่อชั่วโมง</string>
+    <string name="Alert">การแจ้งเตือน!</string>
+    <!--need translate-->
+    <string name="clearCart_lang">
+รถเข็นของคุณจะถูกล้างหากคุณเลือกภาษาอื่น แน่ใจหรือไม่ว่าต้องการดำเนินการต่อ?
+</string>
+    <string name="sort_by">เรียงตาม</string>
+    <string name="clear_cart_back">
+รถเข็นของคุณจะถูกล้าง หากย้อนกลับจากหน้านี้
+</string>
+    <string name="add">เพิ่ม</string>
+    <string name="alert">การแจ้งเตือน !</string>
+    <string name="scheduled_order">กำหนดเวลา %s แล้ว</string>
+    <string name="expected_delivery_on">คาดว่าจะจัดส่งในวันที่</string>
+    <string name="yes">ใช่</string>
+    <string name="text_single">เดี่ยว</string>
+    <string name="text_multiple">หลายๆ</string>
+    <string name="loyality_products">สะสม %s</string>
+    <string name="loyality_orders">สะสม %s</string>
+    <string name="track_noti">
+คุณสามารถติดตามคำสั่งซื้อของคุณได้หลังจากเวลาจัดส่งที่คาดไว้เท่านั้น
+</string>
+    <string name="no_notification">ไม่พบการแจ้งเตือน</string>
+    <string name="share_supplier">
+ฉันอยากจะแนะนำให้ใช้ ankiy ผ่านทาง cbd
+</string>
+    <string name="sup">แชร์ %s!</string>
+    <string name="basket_message">
+อย่าลืมทำให้คำสั่งซื้อของคุณสำเร็จ รถเข็นพร้อมแล้ว!
+</string>
+    <string name="order_pending">%s ปัจจุบัน</string>
+    <string name="no_date_selected">ไม่ได้เลือกวันที่</string>
+    <string name="ankiy">ankiy</string>
+    <string name="cancel_msg">ยกเลิก %s ของคุณเรียบร้อยแล้ว</string>
+    <string name="search">ค้นหา %s</string>
+    <string name="discount">ส่วนลด</string>
+    <!--pending-->
+    <string name="reddem">แลก</string>
+    <string name="location">ตำแหน่งที่ตั้ง</string>
+    <string name="banner">แบนเนอร์</string>
+    <string name="reviews_text"> รีวิว %.1f</string>
+    <string name="reviews_text_"> รีวิว %.1f</string>
+    <string name="hour_tag">%d ชม.</string>
+    <string name="day_tag">%d วัน</string>
+    <string name="minute_tag">%d นาที</string>
+    <string name="currency_tag">%1$s %2$s</string>
+    <string name="currency">%1$s</string>
+    <string name="min_max_time">ขั้นต่ำ %1$d - %2$d</string>
+    <string name="min_max_time_">ขั้นต่ำ %1$d - ขั้นต่ำ %2$d</string>
+    <string name="min_max_delivery_time">เวลาจัดส่ง:\t</string>
+    <string name="discountprice_tag">%1$s %2$s</string>
+    <string name="deliver_time_min">%s นาที</string>
+    <string name="percentage_tag">ลดสูงสุด %s%%</string>
+    <string name="supplier_tag">โดย %s</string>
+    <string name="weight_tag">น้ำหนัก: %d กรัม</string>
+    <string name="discountprice_search_multiple">%1$s %2$s/%3$s</string>
+    <string name="filter_price_tag">%1$s %2$d - %1$s %3$d</string>
+    <string name="result_tag">ผลลัพธ์ %d</string>
+    <string name="resturant_count_tag">%1$d %2$s</string>
+    <string name="net_total_exchange">%1$s%2$s (XR: %3$s1 = %1$s%4$s)</string>
+    <string name="clearCart_multiprod_quant">
+รถเข็นของคุณจะถูกล้างหากคุณเลือกจำนวนสินค้าหลายรายการ แน่ใจหรือไม่ว่าต้องการ %s?
+</string>
+    <string name="clearCart_product">
+รถเข็นของคุณจะถูกล้างหากคุณเลือกสินค้าอื่น แน่ใจหรือไม่ว่าต้องการ %s?
+</string>
+    <string name="title_activity_filter_screen">กิจกรรมหน้าจอกรอง</string>
+    <string name="search_hint">คุณกำลังมองหาอะไร?</string>
+    <string name="no">ไม่</string>
+    <string name="valid_email">กรุณากรอกอีเมล</string>
+    <string name="cart_added">เพิ่มเข้าไปในรถเข็น</string>
+    <string name="title_for_your_review">ชื่อสำหรับรีวิวของคุณ</string>
+    <string name="write_review_here">เขียนรีวิวที่นี่…</string>
+    <string name="rating_review">คะแนนและรีวิว</string>
+    <string name="rate_product">ให้คะแนน %s</string>
+    <string name="rate_supplier">ให้คะแนน %s</string>
+    <string name="product_description">คำอธิบาย %s</string>
+    <string name="select_agent">เลือก %s</string>
+    <string name="choose_supplier">เลือก %s</string>
+    <string name="select_supplier">เลือก %s</string>
+    <string name="book_an_appointment">ทำการนัดหมาย</string>
+    <string name="agent_available">%s ว่าง</string>
+    <string name="agent_not_available">%s ไม่ว่าง</string>
+    <string name="experience_tag">ประสบการณ์ %d ปี</string>
+    <string name="agent_detail">รายละเอียด %s</string>
+    <string name="view_menu">ดูเมนู</string>
+    <string name="change">เปลี่ยน</string>
+    <string name="schedule_delivery">กำหนดการจัดส่ง</string>
+    <string name="qty">จำนวน</string>
+    <string name="view_products_as">ดู %s เป็น</string>
+    <string name="total_item_tag">%s รายการ</string>
+    <string name="restaurant_order_type">
+เลือก %2$s จาก %1$s เพื่อใช้บริการที่บ้านของคุณ
+</string>
+    <string name="supplier_lookup_tag">กำลังมองหา %s?</string>
+    <string name="order_tag">%1$s #%2$d</string>
+    <string name="long_desc">
+คำอธิบายแบบยาวเป็นวิธีการระบุข้อความทางเลือกที่ยาวสำหรับองค์ประกอบที่ไม่ใช่ข้อความอย่างรูปภาพ โดยทั่วไปข้อความแสดงทางเลือกที่มีความยาวเกิน 250 ตัวอักษรซึ่งไม่สามารถทำให้กระชับมากขึ้นโดยไม่ทำให้บรรยายหรือมีความหมายน้อยลงควรมีคำอธิบายที่ยาว ตัวอย่างการใช้คำอธิบายแบบยาวที่เหมาะสม ได้แก่ แผนภูมิ, กราฟ, แผนที่, อินโฟกราฟิกและรูปภาพที่ซับซ้อนอื่นๆ เช่นเดียวกับข้อความแสดงแทนคำอธิบายแบบยาวควรมีความหมาย นอกจากนี้ควรรวมข้อความทั้งหมดที่รวมอยู่ในรูปภาพด้วย คำอธิบายแบบยาวควรให้ข้อมูลแก่ผู้ใช้ที่มีความบกพร่องทางสายตามากที่สุดเท่าที่ผู้ใช้ที่มองเห็นจะเข้าใจได้จากรูปภาพ
+</string>
+    <string name="book_slot">ยืนยัน</string>
+    <string name="phone_tag">กรอก %1$s ที่ส่งถึง %2$s</string>
+    <string name="in_kitchen">ในห้องครัว</string>
+    <string name="instruction">คำแนะนำ</string>
+    <string name="explanation_multiple_request">
+เรากำลังขอการอนุญาตตามที่จำเป็นเพื่อให้แอปทำงานได้ กรุณาเลือกให้สิทธิ์เพื่อลองอีกครั้งและยกเลิกเพื่อออก
+</string>
+    <string name="when_would_you_like_your_service">คุณต้องการรับบริการเมื่อใด?</string>
+    <string name="disc_yes_text">ใช่ \n แสดงส่วนลด %s</string>
+    <string name="disc_no_text">ไม่ \n ไม่แสดงส่วนลด %s</string>
+    <string name="avail_yes_text">ใช่ \n แสดง %s ที่มีอยู่ในสต็อก</string>
+    <string name="avail_no_text">ไม่ \n ไม่แสดง %s ที่ไม่มีในสต็อก</string>
+    <string name="price_low_to_high">ราคา: ต่ำไปสูง</string>
+    <string name="price_high_to_low">ราคา: สูงไปต่ำ</string>
+    <string name="popularity">ความนิยม</string>
+    <string name="price_range">ช่วงราคา</string>
+    <string name="availability">ความพร้อมใช้งาน</string>
+    <string name="remove_cart">ลบ</string>
+    <string name="add_cart_tag">เพิ่ม</string>
+    <string name="login_using_facebook">เข้าสู่ระบบโดยใช้ Facebook</string>
+    <string name="login_signup_text">ไม่มีบัญชี? ลงทะเบียน</string>
+    <string name="proceed">ดำเนินการต่อ</string>
+    <string name="reset">รีเซ็ต</string>
+    <string name="brands">แบรนด์</string>
+    <string name="next">ต่อไป</string>
+    <string name="view_more">ดูเพิ่มเติม</string>
+    <string name="view_detail">ดูรายละเอียด</string>
+    <string name="get_started">เริ่มต้น</string>
+    <string name="track_order">ติตดาม %s</string>
+    <string name="shop_by_type">เลือกซื้อตามประเภท</string>
+    <string name="special_offers">ข้อเสนอพิเศษ</string>
+    <!--
+        <string name="special_offers">โปรโมชั่น</string>
+    -->
+    <string name="awesome_deals">ปลดล็อคข้อเสนอสุดพิเศษทุกวัน</string>
+    <string name="awesome_product">ผลิตภัณฑ์ที่ยอดเยี่ยม</string>
+    <string name="recent_orders">คำสั่งซื้อล่าสุด</string>
+    <string name="we_hand_picked_some_great_services_for_you">เราคัดสรร %s ดีๆมาให้คุณ</string>
+    <string name="categories">หมวดหมู่</string>
+    <string name="product_price">ราคาสินค้า:</string>
+    <string name="view_slot">ดูช่วงเวลา</string>
+    <string name="book_now">จองตอนนี้</string>
+    <string name="occupation_here">อาชีพที่นี่</string>
+    <string name="order_recieved">ได้รับ %s แล้ว</string>
+    <string name="otp_verification">รหัส OTP</string>
+    <string name="enter_mobile">กรอกเบอร์โทรศัพท์</string>
+    <string name="signup">ลงทะเบียน</string>
+    <string name="signup_using_facebook">ลงทะเบียนโดยใช้ Facebook</string>
+    <string name="don_t_have_an_account_login">มีบัญชีอยู่แล้ว? เข้าสู่ระบบ</string>
+    <string name="menu">เมนู</string>
+    <string name="buy_now">ซื้อตอนนี้</string>
+    <string name="delivery_location">ตำแหน่งที่อยู่</string>
+    <string name="rating_amp_reviews">คะแนนและรีวิว</string>
+    <string name="no_rating_found">ไม่พบการให้คะแนน</string>
+    <string name="no_promocode_cart">ไม่พบรหัสโปรโมชั่นที่เกี่ยวกับรถเข็น</string>
+    <string name="enter_valid_number">กรอกเบอร์โทรศัพท์ที่ถูกต้อง</string>
+    <string name="artist_not_available">ไม่มี %s สำหรับวันที่และเวลาที่เฉพาะเจาะจง</string>
+    <string name="selected_time_alert">
+เวลาที่เลือกต้องไม่น้อยกว่าวันที่ - เวลาปัจจุบัน
+</string>
+    <string name="select_maximum_price_alert">กรุณาเลือกราคาสูงสุด</string>
+    <string name="select_category_alert">กรุณาเลือกหมวดหมู่</string>
+    <string name="title_activity_home">กิจกรรมหน้าหลัก</string>
+    <string name="title_home">หน้าหลัก</string>
+    <string name="complete_address">ที่อยู่เต็ม</string>
+    <string name="your_location">ตำแหน่งที่ตั้งของคุณ</string>
+    <string name="add_address">เพิ่มที่อยู่</string>
+    <string name="delete">ลบ</string>
+    <string name="pending_orders">%s รอดำเนินการ</string>
+    <string name="completed_orders">%s เสร็จสิ้นแล้ว</string>
+    <string name="customer_code">รหัสลูกค้า</string>
+    <string name="enter_customer_code">กรอกรหัสลูกค้า</string>
+    <string name="login_sinup_text">เข้าสู่ระบบหรือลงทะเบียน</string>
+    <string name="addon_tag">ตัวเลือกของ %s</string>
+    <string name="addon_selction">กรุณาเลือกตัวเลือก %s</string>
+    <string name="addon_name_tag">เพิ่มเติม : %s</string>
+    <string name="orders_">คำสั่งซื้อ</string>
+    <string name="orders">คำสั่งซื้อ</string>
+    <string name="view_category">ดูหมวดหมู่</string>
+    <string name="tax">ภาษี</string>
+    <string name="pickup_from">ไปรับจาก</string>
+    <string name="delivery_to">ส่งไปที่</string>
+    <string name="approved">อนุมัติแล้ว</string>
+    <string name="on_the_way">อยู่ระหว่างทาง</string>
+    <string name="started">เริ่มต้นแล้ว</string>
+    <string name="ended">จบลงแล้ว</string>
+    <string name="rating_given">ให้คะแนนแล้ว</string>
+    <string name="customer_cancelled">ลูกค้ายกเลิกแล้ว</string>
+    <string name="shipped">จัดส่งแล้ว</string>
+    <string name="packed">บรรจุแล้ว</string>
+    <string name="returned_from_app_settings_to_activity">"สิทธิ์ต่อไปนี้: กล้อง: %s"</string>
+    <string name="ready_to_pick">พร้อมให้ไปรับ</string>
+    <string name="ready_to_serve">พร้อมให้บริการ</string>
+    <string name="share_app">แชร์แอป</string>
+    <string name="about_us">เกี่ยวกับเรา</string>
+    <string name="change_language">เปลี่ยนภาษา</string>
+    <string name="terms">ข้อตกลงและเงื่อนไข</string>
+    <string name="my_wishlist">สิ่งที่ฉันอยากได้</string>
+    <string name="popular_tag">%s ยอดนิยม</string>
+    <string name="top_Selling_dishes">อาหารขายดี</string>
+    <!--<string name="self_pickup">ไปรับด้วยตนเอง</string>-->
+    <string name="self_pickup">ไปรับริมทาง</string>
+    <string name="delivery_txt">จัดส่ง</string>
+    <string name="current_adrs">ที่อยู่ปัจจุบัน</string>
+    <string name="maximum_limit_cart">ถึงขีดจำกัดสูงสุดแล้ว</string>
+    <string name="search_food_hint">ค้นหา…</string>
+    <string name="special_offer">ข้อเสนอพิเศษ</string>
+    <!--
+        <string name="special_offer">โปรโมชั่น</string>
+    -->
+    <string name="discount_product">ส่วนลด %s</string>
+    <string name="popular_brand">แบรนด์ยิดนิยม</string>
+    <string name="royo_recommend">แนะนำผู้ใช้ %s</string>
+    <string name="order_now">สั่งซื้อตอนนี้</string>
+    <string name="picked_up">ไปรับมาแล้ว</string>
+    <string name="both_delivery_msg_option">
+%s นี้มีทั้งการไปรับสินค้าและการจัดส่ง คุณต้องการแบบใด?
+</string>
+    <string name="status_on">%s เมื่อ</string>
+    <string name="out_delivery">กำลังออกไปจัดส่ง</string>
+    <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="place_booking">ทำการจอง</string>
+    <string name="razor_pay">Razor Pay</string>
+    <string name="conekta">ConeKta</string>
+    <string name="zelle">Zelle</string>
+    <string name="cashapp">แอปเงินสด</string>
+    <string name="cash_on">เก็บเงินปลายทาง</string>
+    <string name="make_payment">ชำระเงิน</string>
+    <string name="name_on_card">ชื่อบนบัตร</string>
+    <string name="total_payable_amount">จำนวนเงินที่ต้องชำระทั้งหมด %1$s %2$s</string>
+    <string name="no_chat_found">ไม่พบแชท</string>
+    <string name="write_a_message">เขียนข้อความ</string>
+    <string name="no_quetion_found">ไม่พบคำถาม</string>
+    <string name="select_answer">เลือกอย่างน้อยหนึ่งคำตอบจากรายการ</string>
+    <string name="back">กลับไป</string>
+    <string name="set_your_location_manually">ตั้งค่าตำแหน่งของคุณด้วยตนเอง</string>
+    <string name="btn_add_address">เพิ่มที่อยู่</string>
+    <string name="add_a_tip_to_rider">"เพิ่มทิปให้คนขับ "</string>
+    <!--
+     <string name="add_a_tip_to_rider">"เพิ่มทิปให้ "</string>
+    -->
+    <string name="tip_charges">ค่าทิป</string>
+    <string name="eta">เวลาที่จะมาถึงโดยประมาณ</string>
+    <string-array name="main_settings_array">
+        <item>บัญชี</item>
+        <item>ขอความช่วยเหลือ</item>
+        <item>ภาษา</item>
+        <item>เกี่ยวกับแอป</item>
+    </string-array>
+    <string-array name="account">
+        <item>ข้อมูลบัญชี</item>
+        <item>เปลี่ยนรหัสผ่าน</item>
+    </string-array>
+    <string-array name="about_app">
+        <item>คำถามที่พบบ่อย</item>
+        <item>ติดต่อเรา</item>
+        <item>คำติชมของแอป</item>
+        <item>นโยบายความเป็นส่วนตัว</item>
+        <item>ข้อตกลงในการใช้งาน</item>
+    </string-array>
+    <string-array name="my_profile">
+        <item>การแจ้งเตือน</item>
+        <item>รถเข็นของฉัน</item>
+        <item>คำสั่งซื้อของฉัน</item>
+        <item>ข้อเสนอของฉัน</item>
+        <item>รายการโปรดของฉัน</item>
+        <item>ประจำของฉัน</item>
+    </string-array>
+    <string-array name="get_help">
+        <item>ส่งอีเมลถึงเรา</item>
+        <item>โทรหาเรา</item>
+    </string-array>
+    <string-array name="more_array">
+        <item>แชร์แอป</item>
+        <item>ข้อตกลงและเงื่อนไข</item>
+        <item>เกี่ยวกับเรา</item>
+        <item>นโยบายความเป็นส่วนตัว</item>
+    </string-array>
+    <string-array name="app_language">
+        <item>ภาษาอังกฤษ</item>
+        >
+        <item>ภาษาสเปน</item>
+        >
+        <item>ภาษาอาหรับ</item>
+        >
+    </string-array>
+    <string-array name="food_instruct_header">
+        <item>ค้นหา</item>
+        <item>คำสั่งซื้อออนไลน์</item>
+        <item>การจัดส่ง</item>
+    </string-array>
+    <string-array name="skip_food_instruct_header">
+        <item>ค้นหา</item>
+        <item>คำสั่งซื้อออนไลน์</item>
+        <item>การไปรับ</item>
+    </string-array>
+    <!--
+        <string-array name="food_instruct_header">
+                <item>ค้นหา</item>
+                <item>คำสั่งซื้อออนไลน์</item>
+                <item>การจัดส่ง</item>
+                <item>แผนที่</item>
+            </string-array>
+    -->
+    <string-array name="food_instruct_title">
+        <item>สำรวจร้านอาหารและอาหารชั้นนำของโลก</item>
+        <item>เลือกตัวเลือกที่ต้องการสำหรับการชำระเงิน</item>
+        <item>ซื้ออาหารคุณภาพสูงในราคาที่ดีที่สุด</item>
+    </string-array>
+    <!--
+        <string-array name="food_instruct_title">
+                <item>สำรวจร้านอาหารชั้นนำของโลก &amp; อาหาร</item>
+                <item>เลือกตัวเลือกที่ต้องการสำหรับการชำระเงิน</item>
+                <item>ซื้ออาหารคุณภาพสูงในราคาที่ดีที่สุด</item>
+                <item>Map</item>
+            </string-array>
+    -->
+    <string-array name="ecom_instruct_header">
+        <item>ค้นหา</item>
+        <item>ค้นหา</item>
+        <item>เพลิดเพลิน</item>
+    </string-array>
+    <string-array name="ecom_instruct_header_v2">
+        <item>ค้นหา</item>
+        <item>ชำระเงิน </item>
+        <item>สนุกไปกับการช้อปปิ้งของคุณ</item>
+    </string-array>
+    <string-array name="ecom_instruct_header_v3">
+        <item>ขอให้ปลอดภัย</item>
+        <item>รับประทานอาหารนอกบ้าน</item>
+        <item>ขอให้สนุก</item>
+    </string-array>
+    <string-array name="ecom_instruct_title">
+        <item>สำรวจบริการชั้นนำของโลก</item>
+        <item>เลือกตัวเลือกที่ต้องการสำหรับบริการ</item>
+        <item>รับบริการคุณภาพสูงในราคาที่ดีที่สุด</item>
+    </string-array>
+    <string-array name="ecom_instruct_title_v2">
+        <item>สำรวจ \n แบรนด์ชั้นนำของโลกและบูติก</item>
+        <item>เลือก \n ตัวเลือกที่ต้องการสำหรับการชำระเงิน</item>
+        <item>รับ \n ผลิตภัณฑ์คุณภาพสูงในราคาที่ดีที่สุด</item>
+    </string-array>
+    <string-array name="ecom_instruct_title_v3">
+        <item>ปลอดภัยด้วยการทดสอบและติดตาม</item>
+        <item>ค้นหาสถานที่จำหน่ายอาหารและเครื่องดื่มในท้องถิ่น</item>
+        <item>เพลิดเพลินกับข้อเสนอสุดพิเศษสำหรับอาหารและเครื่องดื่ม</item>
+    </string-array>
+    <string-array name="ecom_description_v3">
+<item>
+Found สนับสนุนโปรแกรมทดสอบและติดตาม NHS รายละเอียดของคุณอาจถูกแบ่งปันกับรัฐบาล สิ่งเหล่านี้จะรวมถึงสถานที่ตั้ง, ชื่อ, เบอร์ติดต่อ, วันที่และเวลาที่รับประทานอาหารเท่านั้น
+</item>
+        <item>
+สั่งซื้อล่วงหน้าและชำระเงินในแอปสำหรับการไปรับด้วยตนเองหรือบริการโต๊ะในบาร์, ร้านอาหาร, คลับ, รถขายอาหาร, คาเฟ่และผับทั่วลอนดอนและเร็วๆนี้ทั่วสหราชอาณาจักร
+</item>
+        <item>
+ด้วย Found คุณสามารถข้ามคิวได้โดยใช้เทคโนโลยีง่ายๆที่ทุกคนจะเพลิดเพลิน เราแบ่งปันโปรโมชั่นและข้อเสนอจากพันธมิตรของเราส่งตรงถึงคุณในแอป
+</item>
+    </string-array>
+    <string-array name="ecom_description_short_v3">
+<item>
+คุณสามารถเลือกไม่ใช้คุณลักษณะนี้ผ่านเมนูโปรไฟล์ > การตั้งค่า
+</item>
+        <item>
+เราหวังว่าคุณจะสนุกกับการใช้ Found เหมือนกับที่เราเป็น!
+</item>
+        <item>ไปสนุกกับการกินข้าวนอกบ้านกันอีกครั้ง!</item>
+    </string-array>
+    <string-array name="app_search">
+        <item>สินค้า</item>
+        <item>ร้านอาหาร</item>
+    </string-array>
+    <string-array name="filter_array">
+        <item>หมวดหมู่</item>
+        <item>จัดเรียง</item>
+        <item>ช่วงราคา</item>
+        <item>ส่วนลด</item>
+        <item>ความพร้อมใช้งาน</item>
+    </string-array>
+    <string name="select_language">เลือกภาษา</string>
+    <string name="share_referral">
+ใช้รหัส %1$s เพื่อรับ %2$s เป็นโบนัสแนะนำที่นี่: %3$s
+</string>
+    <string name="referral_text_tag">
+แนะนำเพื่อนและรับ %1$s และเพื่อนของคุณจะได้รับ %2$s หลังจากที่สั่งซื้อครั้งแรกเรียบร้อยแล้ว
+</string>
+    <string name="invite_friend">
+ใช้รหัส %1$s เพื่อรับ %2$s เป็นโบนัสแนะนำที่นี่: %3$s
+</string>
+    <string name="referral">การแนะนำ</string>
+    <string name="refer_a_friend">แนะนำเพื่อน</string>
+    <string name="my_referal">การแนะนำของฉัน</string>
+    <string name="invite_your_friend_and_earn_money">เชิญเพื่อนของคุณและรับเงิน</string>
+    <string name="hint_referral_code">รหัสแนะนำ</string>
+    <string name="referral_code">จำนวนที่แนะนำ</string>
+    <string name="pay_using">จ่ายโดย</string>
+    <string name="choose_payment">เลือกการชำระเงิน</string>
+    <string name="add_customization">+ เพิ่ม %s</string>
+    <string name="morning">เช้า</string>
+    <string name="aftenoon">กลางวัน</string>
+    <string name="evening">เย็น</string>
+    <string name="night">กลางคืน</string>
+    <string name="out_of_stock">สินค้าหมด</string>
+    <string name="customizable">ปรับแต่งได้</string>
+    <string name="remove">ลบ</string>
+    <string name="promo_remove">ลบโปรโมชั่นออกเรียบร้อยแล้ว</string>
+    <string name="service_at">บริการที่</string>
+    <string name="cod">เก็บเงินปลายทาง</string>
+    <string name="please_select_slot">โปรดเลือกช่องเวลาการจอง</string>
+    <string name="please_select_table">โปรดเลือกช่องเวลา</string>
+    <string name="sorry_cart_value">ขออภัย! มูลค่ารถเข็นขั้นต่ำควรเป็น %s</string>
+    <string name="referral_amt_tag">คะแนนแนะนำที่มีอยู่ %s</string>
+    <string name="price_detail">รายละเอียดราคา</string>
+    <string name="promo_applied">ใช้โปรโมชั่นแล้ว</string>
+    <string name="service_date">วันที่ให้บริการ :-</string>
+    <string name="service_time">เวลาให้บริการ :-</string>
+    <string name="drop_off_service_date">วันที่ส่ง:-</string>
+    <string name="drop_date_time">เวลาที่ส่ง</string>
+    <string name="drop_service_time">เวลาที่ส่ง :-</string>
+    <string name="agent_to_be_book">ตัวแทนที่จะจอง:-</string>
+    <string name="change_date_amp_time">เปลี่ยนวันที่และเวลา</string>
+    <string name="choose_booking_time_slot">เลือกช่วงเวลาการจอง</string>
+    <string name="choose_booking_pickup_time_slot">เลือกช่องเวลาไปรับ</string>
+    <string name="wait">รอก่อน!</string>
+    <string name="pickup">ไปรับด้วยตนเอง</string>
+    <string name="delivery_tag">การจัดส่ง</string>
+    <string name="select_location">เลือกตำแหน่งที่ตั้ง</string>
+    <string name="search_for_your_location">ค้นหาตำแหน่งของคุณ…</string>
+    <string name="edit_address">แก้ไขที่อยู่</string>
+    <string name="update_address">อัปเดตที่อยู่</string>
+    <string name="please_complete_address">กรุณาใส่ที่อยู่เต็มรูปแบบ</string>
+    <string name="house_building_tag">บ้านเลขที่ / แฟลตเลขที่ / ชั้น / ตึก</string>
+    <string name="enter_complete_address">ใส่ที่อยู่เต็มรูปแบบ</string>
+    <string name="search_for_resturant">ค้นหาร้านอาหาร ลูกพี่ลูกน้อง….</string>
+    <string name="start_time">เวลาเริ่ม</string>
+    <string name="pick_up">ไปรับได้ตั้งแต่</string>
+    <string name="address_detail">รายละเอียดที่อยู่</string>
+    <string name="pickup_on">ไปรับเมื่อ</string>
+    <string name="provide_prod_rating">กรุณาให้คะแนนผลิตภัณฑ์</string>
+    <string name="provide_rate_title">กรุณาระบุชื่อการให้คะแนน</string>
+    <string name="provide_rate_comment">กรุณาแสดงความคิดเห็นเกี่ยวกับการให้คะแนน</string>
+    <string name="enter_name">กรุณากรอกชื่อ</string>
+    <string name="enter_valid_card">กรุณากรอกบัตรที่ถูกต้อง</string>
+    <string name="enter_valid_cvc">กรุณากรอก Cvc ที่ถูกต้อง</string>
+    <string name="enter_valid_expiry_month">กรุณากรอกเดือนที่หมดอายุที่ถูกต้อง</string>
+    <string name="enter_valid_date">กรุณากรอกวันหมดอายุที่ถูกต้อง</string>
+    <string name="no_detail_found">ไม่พบรายละเอียด</string>
+    <string name="product_detail">รายละเอียด %s</string>
+    <string name="duration">ช่วงเวลา</string>
+    <string name="pick_up_tag">ไปรับ</string>
+    <string name="dine_in_tag">รับประทานอาหารใน</string>
+    <string name="picked_up_tag">ไปรับแล้ว</string>
+    <string name="offline_supplier_tag">%s ไม่ยอมรับคำสั่งซื้อออนไลน์</string>
+    <string name="enter_email">กรอกอีเมล</string>
+    <string name="enter_supplier_code">กรอกรหัสซัพพลายเออร์</string>
+    <string name="payment_card">บัตร</string>
+    <string name="payment_cash">เก็บเงินปลายทาง</string>
+    <string name="payment_both">บัตร/เงินสดในการจัดส่ง</string>
+    <string name="today">วันนี้</string>
+    <string name="yesterday">เมื่อวานนี้</string>
+    <string name="live_tracking">การติดตามสด</string>
+    <string name="use_current_location">ใช้ตำแหน่งปัจจุบัน</string>
+    <string name="subtotal">ผลรวมไม่ทั้งหมด</string>
+    <string name="referral_amount">จำนวนที่แนะนำ</string>
+    <string name="promo_code">รหัสโปรโมชั่น</string>
+    <string name="tap_to_copy">แตะเพื่อคัดลอก</string>
+    <string name="refer_now">แนะนำตอนนี้</string>
+    <string name="sort_amp_filter">จัดเรียงและกรอง</string>
+    <string name="choose_payment_receipt_to_upload">เลือกใบเสร็จการชำระเงินที่จะอัปโหลด</string>
+    <string name="payment_details">รายละเอียดการชำระเงิน:</string>
+    <string name="email_tag">อีเมล: %s</string>
+    <string name="phoneno_tag">เบอร์โทรศัพท์: %s</string>
+    <string name="online_payment">บัตรเดบิต</string>
+    <string name="payment_receipt_uploaded">อัปโหลดใบเสร็จรับเงินแล้ว</string>
+    <string name="enter_instruction">กรอกคำแนะนำที่นี่</string>
+    <string name="enter_instruction_error">กรุณากรอกคำแนะนำในการจอดรถ</string>
+    <string name="select_preciption">เลือกใบสั่งยาที่จะอัปโหลด</string>
+    <string name="uploaded_pescription">อัปโหลดเอกสารใบสั่งยาแล้ว</string>
+    <string name="please_select_precription">กรุณาเลือกภาพใบสั่งยา</string>
+    <string name="english">ภาษาอังกฤษ</string>
+    <string name="supplier_service_charge">ค่าบริการ %s</string>
+    <string name="support_email">อีเมลสนับสนุน</string>
+    <string name="support_email_text">มีการค้นหาด้วยรหัสคำสั่งซื้อ: %s</string>
+    <string name="service">บริการ</string>
+    <string name="selected_question">คำถามที่เลือก</string>
+    <string name="addon_charges">ค่าใช้จ่ายเพิ่มเติม</string>
+    <string name="featured">แนะนำ %s</string>
+    <string name="top_deals">ข้อเสนอยอดนิยมใน %s</string>
+    <string name="feature_provider">ผู้ให้บริการแนะนำ</string>
+    <string name="create_your_account">สร้างบัญชีของคุณ</string>
+    <string name="create_new_account">สร้างบัญชีใหม่</string>
+    <string name="continue_with_google">ดำเนินการต่อด้วย Google</string>
+    <string name="provacy_policy_text">
+การดำเนินการต่อแสดงว่าคุณยอมรับข้อกำหนดและเงื่อนไขของ CARE และยืนยันว่าคุณได้อ่านนโยบายความเป็นส่วนตัวของ CARE แล้ว
+</string>
+    <string name="already_have_an_account_login">มีบัญชีอยู่แล้ว? เข้าสู่ระบบ</string>
+    <string name="sign_up_new">ลงทะเบียน</string>
+    <string name="hint_first_name">ชื่อจริง *</string>
+    <string name="hint_last_name">นามสกุล *</string>
+    <string name="hint_phone_no">เบอร์โทรศัพท์ *</string>
+    <string name="hint_email_new">อีเมล *</string>
+    <string name="hint_password_new">รหัสผ่าน *</string>
+    <string name="hint_confirm_password">ยืนยันรหัสผ่าน *</string>
+    <string name="signup_screen_text">ไม่มีบัญชี? ลงทะเบียน</string>
+    <string name="otp_msg_text">
+กรอก %s ที่ส่งไปยังอีเมลและเบอร์โทรศัพท์ที่ลงทะเบียนของคุณ
+</string>
+    <string name="hint_enter_otp">กรอก %s</string>
+    <string name="verify">ตรวจสอบ</string>
+    <string name="plese_accept_terms_and_conditions">
+กรุณายอมรับข้อกำหนดและเงื่อนไขและนโยบายความเป็นส่วนตัว
+</string>
+    <string name="continue_with_facebook">ดำเนินการต่อด้วย facebook</string>
+    <string name="recommed_supplier">%s ที่แนะนำ</string>
+    <string name="restaurant_recommended">%s ที่แนะนำ</string>
+    <string name="more">เพิ่มเติม</string>
+    <string name="recommed_suppliers">ซัพพลายเออร์ที่แนะนำ</string>
+    <string name="restaurant_best_sellers">%s ที่ขายดี</string>
+    <string name="restaurant_trending_sellers">%s ที่กำลังมาแรง</string>
+    <string name="restaurant_fastest_delivery">%s ที่จัดส่งที่เร็วที่สุด</string>
+    <string name="save_card">บันทึกบัตร</string>
+    <string name="saved_cards">บัตรที่บันทึกแล้ว</string>
+    <string name="card_no_xxxxxxxxxxxx">หมายเลขบัตร :XXXXXXXXXXXX</string>
+    <string name="expiry_month">เดือนที่หมดอายุ</string>
+    <string name="expiry_year">ปีที่หมดอายุ</string>
+    <string name="add_card_d">เพิ่มบัตร</string>
+    <string name="no_card_found">ไม่พบบัตร</string>
+    <string name="un_service_able">ใช้ไม่ได้</string>
+    <string name="card_tag">XXXXXXXXXXXX%s</string>
+    <string name="card_add_login_error">กรุณาเข้าสู่ระบบเพื่อเพิ่มบัตร</string>
+    <string name="square_pay">Square Pay</string>
+    <string name="select_time_slot">เลือกช่วงเวลา</string>
+    <string name="area_to_focus_on">พื้นที่ที่จะมุ่งเน้น</string>
+    <string name="areas_to_focus">พื้นที่ที่จะมุ่งเน้น</string>
+    <string name="have_pets">มีสัตว์เลี้ยง</string>
+    <string name="parking_instructions">คำแนะนำการจอดรถ</string>
+    <string name="enter_parking_instruction">ใส่คำแนะนำในการจอดรถ</string>
+    <string name="will_someone_be_there_to_let_the_cleaner_in">จะมีใครให้คนทำความสะอาดเข้ามาไหม?</string>
+    <string name="shimmer_categories">หมวดหมู่</string>
+    <string name="things_to_remember">ส่งที่ต้องจำ</string>
+    <string name="faq">คำถาม่ี่พบบ่อย</string>
+    <string name="become_care_giver">มาเป็นผู้ป่วยหรือผู้ดูแล</string>
+    <string name="enter_instructionc">ใส่คำแนะนำที่นี่</string>
+    <string name="rating">การให้คะแนน</string>
+    <string name="delivery_in">จัดส่งใน</string>
+    <string name="for_delivery">สำหรับการจัดส่ง</string>
+    <string name="open_">เปิด</string>
+    <string name="mins">นาที</string>
+    <string name="delivery_mins">จัดส่งภายใน %s นาที</string>
+    <string name="nationality">สัญชาติ:</string>
+    <string name="brand">แบรนด์:</string>
+    <string name="speciality">พิเศษ</string>
+    <string name="search_">ค้นหา</string>
+    <string name="shipping_status">สถานะการจัดส่ง</string>
+    <string name="receipe">เมนูอาหารe</string>
+    <string name="return_product">การคืนสินค้า</string>
+    <string name="awaiting_payment">กำลังรอการจัดส่ง</string>
+    <string name="cancelled">ยกเลิกแล้ว</string>
+    <string name="onhold">ระงับ</string>
+    <string name="reason_to_return">เหตุผลในการคืน</string>
+    <string name="enter_reason_to_return_product">กรุณาระบุเหตุผลในการคืนสินค้า</string>
+    <string name="return_requested">ขอคืนแล้ว</string>
+    <string name="returned">คืนแล้ว</string>
+    <string name="product_picked_up">ไปรับสินค้าแล้ว</string>
+    <string name="agent_is_on_the_way">ตัวแทนอยู่ระหว่างทาง</string>
+    <string name="write_reason_here">เขียนเหตุผลที่นี่…</string>
+    <string name="login_first">กรุณาเข้าสู่ระบบก่อน</string>
+    <string name="requests">คำขอ %s</string>
+    <string name="supplierName">ชื่อซัพพลายเออร์</string>
+    <string name="upload_presc">อัปโหลดใบสั่งยา</string>
+    <string name="are_you_sure_cancel_request">แน่ใจหรือไม่ว่าต้องการยกเลิกคำขอนี้?</string>
+    <string name="net_total_greater_than">ผลรวมย่อยต้องมากกว่า %1$s %2$s</string>
+    <string name="request_id">รหัสคำขอ:</string>
+    <string name="requested_on">ขอไปเมื่อ:</string>
+    <string name="pay_now">จ่าย %1$s %2$s ตอนนี้</string>
+    <string name="remaining_amount">จำนวนเงินที่เหลือ</string>
+    <string name="maximum_limit_addon">ถึงขีดจำกัดเพิ่มเติมสูงสุดที่ %d</string>
+    <string name="refund_amount">จำนวนเงินคืน</string>
+    <string name="token_expire">
+ขออภัย บัญชีของคุณถูกล็อกในอุปกรณ์อื่น! กรุณาเข้าสู่ระบบอีกครั้งเพื่อดำเนินการต่อ
+</string>
+    <string name="service_detail">รายละเอียดบริการ</string>
+    <string name="paypal">Paypal</string>
+    <string name="donate_to_someone">บริจาคให้ใครบางคน</string>
+    <string name="adrs_donate_subtext">
+กรุณาระบุที่อยู่ด้านล่างที่คุณต้องการบริจาค
+</string>
+    <string name="delivery_address">ที่อยู่ในการจัดส่ง</string>
+    <string name="return_request_msg">สร้างคำขอคืนสินค้าของคุณเรียบร้อยแล้ว</string>
+    <string name="product_removed_wishlist">สินค้าถูกลบออกจากสิ่งที่อยากได้</string>
+    <string name="removed_wishlist">%s ลบออกจาก %s แล้ว</string>
+    <string name="more_details">รายละเอียดเพิ่มเติม</string>
+    <string name="rate_food_item">ให้คะแนน %s</string>
+    <string name="rate_product_msg">ให้คะแนน %s เรียบร้อยแล้ว</string>
+    <string name="rate_user_tag">ให้คะแนน %s</string>
+    <string name="paystack">PayStack</string>
+    <string name="online_pay_tag">ออนไลน์(%s)</string>
+    <string name="saded">Sadded</string>
+    <string name="myFatoora">บัตรเครดิต/เดบิต (My Fatoorah)</string>
+    <string name="suppliers">ซัพพลายเออร์</string>
+    <string name="products">สินค้า</string>
+    <string name="wishlist">รายการที่อยากได้</string>
+    <string name="supplier">ซัพพลายเออร์</string>
+    <string name="product">สินค้า</string>
+    <string name="payment_unsuccessful">ชำระเงินไม่สำเร็จ</string>
+    <string name="payment_done_successful">ชำระเงินเรียบร้อยแล้ว</string>
+    <string name="payment_failed">ไม่สามารถชำระเงินได้</string>
+    <string name="mumybene">Mumybene</string>
+    <string name="enter_your_mmy_bean_phone">กรอกเบอร์โทรศัพท์ %s ของคุณ</string>
+    <string name="phone_number">เบอร์โทรศัพท์</string>
+    <string name="enter_phone">กรอกเบอร์โทรศัพท์</string>
+    <string name="sort_by_new">ใหม่</string>
+    <string name="sort_by_distance">ระยะทาง</string>
+    <string name="sort_by_rating">การให้คะแนน</string>
+    <string name="windcave">ชำระเงินออนไลน์ด้วย Windcave</string>
+    <string name="stripe_pay">Stripe Pay</string>
+    <string name="max">สูงสุด</string>
+    <string name="minm">ต่ำสุด</string>
+    <string name="pls_select_atleast">โปรดเลือกอย่างน้อย</string>
+    <string name="items_in">รายการใน</string>
+    <string name="description">คำอธิบาย</string>
+    <string name="customer_support">การสนับสนุนลูกค้า</string>
+    <string name="expected_delivered_time">เวลาจัดส่งที่คาดไว้</string>
+    <string name="min_tag">ขั้นต่ำ</string>
+    <string name="view_branches">ดูสาขา</string>
+    <string name="tap">แตะ</string>
+    <string name="elavon">Elavon</string>
+    <string name="food_item_detail">รายละเอียดรายการอาหาร</string>
+    <string name="brand_name">ชื่อแบรนด์:\t</string>
+    <string name="mpaisa">mPaisa</string>
+    <string name="schedule_order">กำหนดเวลาสั่งซื้อ</string>
+    <string name="edit_schedule_order">แก้ไขกำหนดเวลาสั่งซื้อ</string>
+    <string name="confirm">ยืนยัน</string>
+    <string name="choose_date_time">เลือกวันที่และเวลา</string>
+    <string name="pay_pal">Pay Pal</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="linkein">Linkedin</string>
+    <string name="google_plus">Google+</string>
+    <string name="hint_email_phone">อีเมล / เบอร์โทรศัพท์</string>
+    <string name="restaurant">ร้านอาหาร</string>
+    <string name="restaurants">ร้านอาหาร</string>
+    <string name="payhere">Payhere</string>
+    <string name="type_building_suite">ประเภทอาคาร / ห้องชุดเลขที่</string>
+    <string name="please_add">กรุณาเพิ่ม</string>
+    <string name="previous_cart_items_removed">
+รถเข็นของคุณจะถูกล้างหากคุณเลือกประเภทการจัดส่งอื่น คุณแน่ใจหรือไม่ว่าต้องการ %s?
+</string>
+    <string name="request_cancelled">คำขอถูกยกเลิก</string>
+    <string name="wallet">กระเป๋าสตางค์</string>
+    <string name="current_balance">ยอดเงินปัจจุบัน</string>
+    <string name="add_amount">เพิ่มจำนวน</string>
+    <string name="send_money_to_someone">ส่งเงินให้ใครบางคน</string>
+    <string name="histroy">ประวัติ</string>
+    <string name="send_money">ส่งเงิน</string>
+    <string name="entre_amount_you_want_send">กรอกจำนวนเงินที่คุณต้องการส่ง</string>
+    <string name="entre_amount_you_want_add">กรอกจำนวนเงินที่คุณต้องการเพิ่ม</string>
+    <string name="send_by">ส่งโดย</string>
+    <string name="email_address">อีเมล</string>
+    <string name="enter_phone_number">กรอกเบอร์โทรศัพท์ที่นี่</string>
+    <string name="add_payment">เพิ่มการชำระเงิน</string>
+    <string name="continue_to_add_amount">เพิ่มจำนวนเงินต่อไป</string>
+    <string name="enter_amount">กรอกจำนวน</string>
+    <string name="money_sent_success">ส่งเงินเรียบร้อยแล้ว</string>
+    <string name="amount_added">จำนวนเพิ่มแล้วที่ %s</string>
+    <string name="amount_deducted">จำนวนเงินหักแล้วที่ %s</string>
+    <string name="amount_added_success">"เพิ่มจำนวนเรียบร้อยแล้ว "</string>
+    <string name="amount_received">จำนวนเงินที่ได้รับจาก %s</string>
+    <string name="amount_sent">จำนวนเงินที่ส่งไปยัง %s</string>
+    <string name="refund_added">เพิ่มการคืนเงินเมื่อ %s</string>
+    <string name="order_placed">สั่งซื้อได้ที่ %s</string>
+    <string name="pay_by_wallet">ชำระด้วยกระเป๋าสตางค์และคุณจะได้รับส่วนลด %s\%%!</string>
+    <string name="wallet_with_amt">กระเป๋าสตาง ( %1$s %2$s )</string>
+    <string name="insufficient_balance">ยอดคงเหลือไม่เพียงพอ</string>
+    <string name="add_money">เพิ่มเงิน</string>
+    <string name="wallet_discount">ส่วนลดกระเป๋าสตางค์</string>
+    <string name="initial_payment_source">แหล่งชำระเงินเริ่มต้น</string>
+    <string name="enter_amount_you_want_to_add">กรอกจำนวนเงินที่คุณต้องการเพิ่ม</string>
+    <string name="select_payment_method">เลือกวิธีการชำระเงิน</string>
+    <string name="choose_where_you_want_refund">เลือกที่ที่คุณต้องการเงินคืน</string>
+    <string name="comment">ความคิดเห็น</string>
+    <string name="enter_comment">กรอกความคิดเห็น</string>
+    <string name="edit_order">แก้ไขคำสั่งซื้อ</string>
+    <string name="add_items">เพิ่มรายการ</string>
+    <string name="select_atleast_one">เลือกผลิตภัณฑ์อย่างน้อยหนึ่งรายการ</string>
+    <string name="order_edited_success">"แก้ไขคำสั่งซื้อเรียบร้อยแล้ว "</string>
+    <string name="save_items">เสร็จแล้ว</string>
+    <string name="new_added_items">เพิ่ม %s รายการใหม่</string>
+    <string name="please_choose_atlease_one_service">กรุณาเลือกอย่างน้อยหนึ่งบริการ</string>
+    <string name="pay_tabs">"Paytabs "</string>
+    <string name="billing_address">ที่อยู่เรียกเก็บเงิน</string>
+    <string name="city">เมือง/จังหวัด</string>
+    <string name="state">รัฐ</string>
+    <string name="country">ประเทศ</string>
+    <string name="pincode">รหัสพิน</string>
+    <string name="shipping_address">ที่อยู่ในการจัดส่ง</string>
+    <string name="same_as_billing">ที่อยู่เดียวกับที่ส่งบิล</string>
+    <string name="enter_address">กรอกที่อยู่</string>
+    <string name="enter_city">กรอกเมือง/จังหวัด</string>
+    <string name="enter_state">กรอกรัฐ</string>
+    <string name="enter_country">กรอกประเทศ</string>
+    <string name="enter_pincode">กรอกรหัสพิน</string>
+    <string name="enter_shipping_address">กรอกที่อยู่สำหรับจัดส่ง</string>
+    <string name="enter_shipping_city">กรอกเมืองที่จัดส่ง</string>
+    <string name="enter_shipping_country">กรอกประเทศที่จัดส่ง</string>
+    <string name="enter_shipping_state">กรอกรัฐที่จัดส่ง</string>
+    <string name="enter_shipping_pincode">กรอกรหัสการจัดส่ง</string>
+    <string name="country_code">รหัสประเทศ</string>
+    <string name="defaultPaymentMethod">วิธีการชำระเงินเริ่มต้น</string>
+    <string name="email">อีเมล</string>
+    <string name="full_name">ชื่อเต็ม</string>
+    <string name="card_number">หม่ยเลขบัตร*</string>
+    <string name="personaldetails">ข้อมูลส่วนตัว</string>
+    <string name="expires">หมดอายุ</string>
+    <string name="addDebCreCard">เพิ่มบัตรเครดิต/เดบิต</string>
+    <string name="youWillText">คุณจะไม่ถูกเรียกเก็บเงินจนกว่าคุณจะซื้อ</string>
+    <string name="add_new_card">เพิ่มบัตรใหม่</string>
+    <string name="error_enter_cardNumber">กรุณากรอกหมายเลขบัตรของคุณ</string>
+    <string name="error_invalid_card">กรุณากรอกหมายเลขบัตรที่ถูกต้อง</string>
+    <string name="error_empty_cardExpires">กรุณากรอกวันหมดอายุของบัตรที่ถูกต้อง</string>
+    <string name="error_empty_cvv">กรุณากรอก cvv ของคุณ</string>
+    <string name="error_empty_firstName">กรุณากรอกชื่อบนบัตรของคุณ</string>
+    <string name="error_validYear">กรุณากรอกปีที่ถูกต้อง</string>
+    <string name="error_validMonth">กรุณากรอกเดือนที่ถูกต้อง</string>
+    <string name="error_empty_name">กรุณากรอกชื่อ</string>
+    <string name="cvv">CVV*</string>
+    <string name="card_cvv_incorrect">cvv บัตรของคุณไม่ถูกต้อง</string>
+    <string name="error_valid_cvv">กรุณากรอก cvv ที่ถูกต้อง</string>
+    <string name="specialCharactersnot_first">ชื่อจริงต้องไม่มีอักษรพิเศษ</string>
+    <string name="specialCharactersnot_last">นามสกุลต้องไม่มีอักษรพิเศษ</string>
+    <string name="edit_order_detail">แก้ไข %s</string>
+    <string name="edit_booking">แก้ไขการจอง</string>
+    <string name="peach">พีช</string>
+    <string name="expected_delivery_time">เวลาจัดส่งที่คาดไว้</string>
+    <string name="end_time">เวลาสิ้นสุด</string>
+    <string name="payment_pending">รอการชำระเงิน</string>
+    <string name="text_braintree">BrainTree</string>
+    <string name="category">หมวดหมู่</string>
+    <string name="ecom_my_cart">รถเข็นของคุณ</string>
+    <string name="braintree_token_error">ไม่ได้รับโทเค็น</string>
+    <string name="admin_block_msg">
+ขออภัยคุณถูกบล็อกโดยผู้ดูแลระบบ กรุณาติดต่อผู้ดูแลระบบเพื่อปลดบล็อก
+</string>
+    <string name="valid_to">ใช้ได้ถึง</string>
+    <string name="valid_from">ใช้ได้ตั้งแต่</string>
+    <string name="renew_subscription">ต่ออายุการสมัครสมาชิก</string>
+    <string name="cancel_subscription">ยกเลิกการสมัครสมาชิก</string>
+    <string name="subscriptions">การสมัครสมาชิก</string>
+    <string name="subcription_plan_tag">เข้าถึง %s</string>
+    <string name="yearly">รายปี</string>
+    <string name="monthly">รายเดือน</string>
+    <string name="weekly">รายสัปดาห์</string>
+    <string name="year">ปี</string>
+    <string name="month">เดือน</string>
+    <string name="week">สัปดาห์</string>
+    <string name="show_branch">แสดงสาขา</string>
+    <string name="buy_subcrip">ซื้อการสมัครสมาชิก</string>
+    <string name="my_subscrip_plan_text">ตรวจสอบแผนการสมัครสมาชิกปัจจุบันของคุณ</string>
+    <string name="my_subscriptions">การสมัครสมาชิกของฉัน</string>
+    <string name="upload_documents">อัปโหลดหลักฐานแสดงตัวตน</string>
+    <string name="please_upload_id_proof">กรุณาอัปโหลดหลักฐานแสดงตัวตน</string>
+    <string name="table_booking">จองโต๊ะ</string>
+    <string name="schedule_booking_charges">กำหนดเวลาเรียกเก็บเงินสั่งซื้อ</string>
+    <string name="no_slots_available">ไม่พบช่วงเวลา</string>
+    <string name="schedule_start_date">กำหนดวันที่เริ่มต้น</string>
+    <string name="schedule_end_date">กำหนดวันที่สิ้นสุด</string>
+    <string name="scheduling_charges">การตั้งเวลาค่าใช้จ่าย</string>
+    <string name="referral_applied">ใช้รหัสแนะนำ</string>
+    <string name="login_with_google">เข้าสู่ระบบโดยใช้ Google</string>
+    <string name="add_instructions">เพิ่มคำแนะนำในการจอดรถ</string>
+    <string name="write_instructions_here">เพิ่มคำแนะนำที่นี่..</string>
+    <string name="write_parking_instructions_here">เพิ่มคำแนะนำในการจอดรถที่นี่ ..</string>
+    <string name="status_changed_successfully">"เปลี่ยนสถานะเรียบร้อยแล้ว "</string>
+    <string name="prepration_time">เวลาเตรียมการ</string>
+    <string name="hrs">"%s ชม. "</string>
+    <string name="arrived">มาถึงแล้ว</string>
+    <string name="chat_with_admin">แชทกับผู้ดูแลระบบ</string>
+    <string name="image_picker_dialog_camera">กล้อง</string>
+    <string name="image_picker_dialog_gallery">คลังภาพ</string>
+    <string name="image_picker_dialog_select_your_choice">เลือกตัวเลือกของคุณ</string>
+    <string name="admin">ผู้ดูแลระบบ</string>
+    <string name="write_to_us">เขียนถึงเรา</string>
+    <string name="select_suggestions">เลือกคำแนะนำ</string>
+    <string name="write_suggestions">เขียนคำแนะนำ</string>
+    <string name="title">หัวข้อ</string>
+    <string name="name">ชื่อ</string>
+    <string name="feedback">ข้อเสนอแนะ</string>
+    <string name="optional">
+ไม่บังคับ: กรุณาระบุรายละเอียดในช่องด้านล่าง
+</string>
+    <string name="aamar_pay">Aamarpay</string>
+    <string name="feedback_added_successfully">"เพิ่มข้อเสนอแนะเรียบร้อยแล้ว "</string>
+    <string name="enter_title">ใส่ชื่อเรื่อง</string>
+    <string name="enter_description">ใส่คำอธิบาย</string>
+    <string name="quantity_shoul_be_multiple">จำนวนควรเป็นหลาย 0.15</string>
+    <string name="invite">เชิญ</string>
+    <string name="total_loyality_amount">จำนวนเงินทั้งหมดที่ได้รับ</string>
+    <string name="total_loyality_points">คะแนนทั้งหมดที่ได้รับ</string>
+    <string name="invite_friends">เชิญเพื่อน</string>
+    <string name="total_loyality_points_des">
+เมื่อเพื่อนของคุณใช้รหัสของคุณ คุณจะได้รับ 100 เหรียญ
+</string>
+    <string name="recent_activity">กิจกรรมล่าสุด</string>
+    <string name="loyalty_points">คะแนนสะสม</string>
+    <string name="you_earn_points">คุณได้รับ %s คะแนน</string>
+    <string name="loyalty_point">ส่วนลดสะสม: %s</string>
+    <string name="earned_amount">จำนวนเงินที่ได้รับ: %1$s %2$s</string>
+    <string name="order_id">รหัสคำสั่งซื้อ: %s</string>
+    <string name="loyality_discount">ส่วนลดสะสม</string>
+    <string name="your_loyality_points">คะแนนสะสมของคุณ: %1$s %2$s</string>
+    <string name="sort_by_atz">ตามลำดับตัวอักษร</string>
+    <string name="sort_by_zta">A ถึง Z</string>
+    <string name="custom_tip">ทิปที่กำหนดเอง</string>
+    <string name="used_loyalty_point">ส่วนลดที่ใช้ไป: %1$s %2$s</string>
+    <string name="you_spent_loyalty_discount">คุณใช้ส่วนลดสะสม</string>
+    <string name="login_signup">เข้าสู่ระบบ/สมัครสมาชิก</string>
+    <string name="enter_full_name">ใส่ชื่อ</string>
+    <string name="search_for_food_item_rest">ค้นหา %s หรือ %s</string>
+    <string name="datatrans">การถ่ายโอนข้อมูล</string>
+    <string name="payment_cancelled">การชำระเงินถูกยกเลิก</string>
+    <string name="request_for_coin_change">ขอแลกเหรียญ?</string>
+    <string name="request_exchange_money">ขอแลกเงิน</string>
+    <string name="click_at_no">คลิกที่/รวบรวมไม่ (ไม่บังคับ)</string>
+    <string name="mumybene_msg_text">
+Waiting for prompt: กรุณาตรวจสอบโทรศัพท์ของคุณเพื่อรับข้อความแจ้งเพื่ออนุมัติการชำระเงิน
+</string>
+    <string name="text_book_dining">จองร้านอาหาร</string>
+    <string name="select_table">เลือกโต๊ะ</string>
+    <string name="seating_capacity">ความจุของที่นั่ง: %s</string>
+    <string name="table_selection_error_message">โปรดเลือกอย่างน้อยหนึ่งตารางเพื่อดำเนินการต่อ</string>
+    <string name="branch_name">ชื่อสาขา: %s</string>
+    <string name="table_name">ชื่อโต๊ะ: %s</string>
+    <string name="table_number">หมายเลขโต๊ะ: %s</string>
+    <string name="table_user">ผู้ใช้: %s</string>
+    <string name="table_email">อีเมล: %s</string>
+    <string name="table_date">วันที่: %s</string>
+    <string name="table_book_message_title">จองโต๊ะแล้ว!</string>
+    <string name="table_book_message">จองโต๊ะของคุณเรียบร้อยแล้ว</string>
+    <string name="book_table">เลือกช่วงเวลา</string>
+    <string name="table_status_complete">เรียบร้อยแล้ว</string>
+    <string name="track_Dhl">ติดตามสถานะ dhl</string>
+    <string name="dhl_status">ติดตามสถานะ Dhl</string>
+    <string name="shipment_info">ข้อมูลการจัดส่ง</string>
+    <string name="reference_id">รหัสอ้างอิง: %s</string>
+    <string name="service_area">พื้นที่ให้บริการ: %s</string>
+    <string name="service_event">งานบริการ: %s</string>
+    <string name="hint_abn_no">หมายเลข Abn</string>
+    <string name="hint_business_name">ชื่อธุรกิจ</string>
+    <string name="social_post">โพสต์โซเชี่ยล</string>
+    <string name="posts">โพสต์</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">สวัสดีมีส่วนที่ว่างเปล่า</string>
+    <string name="invalid_qr_message">รหัส QR ไม่ถูกต้อง</string>
+    <string name="post_desc">โพสต์คำอธิบาย</string>
+    <string name="enter_your_comment">กรอกความคิดเห็นของคุณ</string>
+    <string name="abn_number">หมายเลข Abn</string>
+    <string name="profile_edited_success">"แก้ไขโปรไฟล์เรียบร้อยแล้ว "</string>
+    <string name="enter_table">กรอกตาราง</string>
+    <string name="table_add_items">เพิ่มรายการ</string>
+    <string name="table_on_my_way">กำลังไป</string>
+    <string name="table_invite">เชิญ</string>
+    <string name="enter_head">กรอกหัวข้อ</string>
+    <string name="select_images">เลือกรูปภาพ</string>
+    <string name="enter_qurstion">กรอกคำถาม</string>
+    <string name="report_post">รายงานโพสต์</string>
+    <string name="block_user">บล็อกผู้ใช้</string>
+    <string name="delete_post">ลบโพสต์</string>
+    <string name="edit_post">แก้ไขโพสต์</string>
+    <string name="food_instruction_first">สำรวจ %s และอาหารชั้นนำของโลก</string>
+    <string name="creds_movil">เครดิต Movil</string>
+    <string name="upload_doc">อัปโหลดเอกสาร</string>
+    <string name="authorise_net">Authorize.net</string>
+    <string name="sort_by_close">ปิดแล้ว</string>
+    <string name="sort_by_open">เปิด</string>
+    <string name="sos">SOS</string>
+    <string name="request_submitted">ส่งคำขอไปยังผู้ดูแลระบบเรียบร้อยแล้ว</string>
+    <string name="agent_otp">"ตัวแทน Otp "</string>
+    <string name="subscription_text">ลองส่งฟรีไม่จำกัดกับ \n%s</string>
+    <string name="thawani">Thawani</string>
+    <string name="plan_description">คำอธิบายแผน</string>
+    <string name="payments">การชำระเงิน</string>
+    <string name="user_detail">รายละเอียดผู้ใช้</string>
+    <string name="view_map">สด</string>
+    <string name="profile">โปรไฟล์</string>
+    <string name="your_bookings">การจองของคุณ</string>
+    <string name="your_orders">คำสั่งซื้อของคุณ</string>
+    <string name="search_text">ค้นหา</string>
+    <string name="credit_text">บัตรเครดิต</string>
+    <string name="per_time">/ %s</string>
+    <string name="enter_feature">ใส่ฟีเจอร์</string>
+    <string name="feedback_suggestions">ข้อเสนอแนะคำแนะนำ</string>
+    <string name="feedback_suggestions_vote">
+โหวตให้ฟีเจอร์ที่แนะนำโดยผู้ใช้อื่นๆที่คุณต้องการเห็นใน \nfresh farmz
+</string>
+    <string name="request_feature">ขอฟีเจอร์</string>
+    <string name="vote">โหวต</string>
+    <string name="request_for_feature_text">
+หากคุณไม่เห็นฟีเจอร์ในรายการคุณสามารถแนะนำของคุณเองได้
+</string>
+    <string name="feature">ฟีเจอร์</string>
+    <string name="enter_here">ใส่ที่นี่..</string>
+    <string name="description_optional">คำอธิบาย (ไม่บังคับ)</string>
+    <string name="enter_below">ใส่ด้านล่าง</string>
+    <string name="feedback_suggestion_text">
+ฉันพอใจกับทีมงานของ fresh farmz ที่ติดต่อฉันเพื่อขอคำชี้แจงเพิ่มเติมเกี่ยวกับคำแนะนำฟีเจอร์
+</string>
+    <string name="feature_request_submitted">ส่งคำขอคุณสมบัติของคุณแล้ว \n</string>
+    <string name="thank_you">ขอบคุณ!</string>
+    <string name="suggestion_submitted_success">ส่งคำแนะนำเรียบร้อยแล้ว</string>
+    <string name="pagofacil">Pago Facil</string>
+    <string name="user_name">ชื่อ: %s</string>
+    <string name="reference_address">ที่อยู่อ้างอิง: %s</string>
+    <string name="contact_number">เบอร์ติดต่อ: %s</string>
+    <string name="contact_number_with_code">เบอร์ติดต่อ: %s %s</string>
+    <string name="promo_codes">รหัสโปรโมชั่น</string>
+    <string name="view_all_promo_codes">ดูรหัสโปรโมชั่นทั้งหมด</string>
+    <string name="social_all_posts">โพสต์ทั้งหมด</string>
+    <string name="social_all_trending">โพสต์ที่กำลังมาแรง</string>
+    <string name="search_here">ค้นหาที่นี่…</string>
+    <string name="register_service_provider">ลงทะเบียนในฐานะ %s</string>
+    <string name="sort_by_popup">จัดเรียงตาม %s</string>
+    <string name="app_link_share">นี่คือลิงก์แอป: %s</string>
+    <string name="served">เสิร์ฟแล้ว</string>
+    <string name="version_tag">เวอร์ชั่น : %s</string>
+    <string name="live_chat">แชทสด</string>
+    <string name="choose_delivery_booking_time_slot">เลือกช่วงเวลาส่ง</string>
+    <string name="please_select_delivery_slot">กรุณาเลือกช่วงเวลาส่ง</string>
+    <string name="drop_off_date_time_greater">
+วันที่ส่งต้องเป็น %s วันหลังจากวันที่รับ
+</string>
+    <string name="country_origin">ประเทศต้นทาง:</string>
+    <string name="size_chart">แผนภูมิไซส์</string>
+    <string name="compare">เปรียบเทียบ</string>
+    <string name="compare_prices">เปรียบเทียบราคา</string>
+    <string name="product_name">ชื่อสินค้า</string>
+    <string name="brand_">แบรนด์</string>
+    <string name="sold_by">ขายแล้วโดย</string>
+    <string name="specifications">ข้อมูลจำเพาะ</string>
+    <string name="price">ราคา</string>
+    <string name="select_products_to_compare">เลือกสินค้าเพื่อเปรียบเทียบ</string>
+    <string name="product_size_less_than">
+ควรเปรียบเทียบผลิตภัณฑ์สูงสุดสองรายการกับผลิตภัณฑ์
+</string>
+    <string name="receipt">ใบเสร็จ</string>
+    <string name="pickup_date">วันเวลาที่ไปรับ :-</string>
+    <string name="service_date_time">วันเวลาที่ให้บริการ :-</string>
+    <string name="teller">Teller</string>
+    <string name="code_">รหัส : %s</string>
+    <string name="valid_till">ใช้ได้ถึง : %s</string>
+    <string name="ship_rocket_shipping_status">"สถานะการจัดส่งเรือจรวด "</string>
+    <string name="safe_healthy">ฉันปลอดภัยและมีสุขภาพดี</string>
+    <string name="declaration_string">
+คำประกาศเกี่ยวกับสุขภาพตนเองของโควิด-19: การตอบสนองอย่างซื่อสัตย์ของคุณจะทำให้คุณมั่นใจในความปลอดภัยเช่นเดียวกับผู้เชี่ยวชาญของเรา
+</string>
+    <string name="click_here_to_agree">คลิกที่นี่เพื่อยอมรับ</string>
+    <string name="i_agree">ฉันยอมรับ</string>
+    <string name="covid_declaration">
+\u2022 ฉันไม่ได้รับความทุกข์ทรมานจากอาการคล้ายไข้หวัดใหญ่: มีไข้, ไอ, หายใจไม่ออก, เจ็บคอ เป็นต้น\n\n\u2022 ฉันไม่ได้เดินทางไปในประเทศหรือต่างประเทศในช่วง 14 วันที่ผ่านมา\n\n\u2022 ฉันไม่ได้สัมผัสกับผู้ติดเชื้อโควิด-19 ในช่วง 14 วันที่ผ่านมา\n\n\u2022 ฉันเข้าใจดีว่าในขณะที่ %s ใช้มาตรการป้องกันด้านความปลอดภัยและสุขอนามัยที่จำเป็นทั้งหมด แต่ก็ไม่สามารถรับผิดชอบในเหตุการณ์ที่ลูกค้าหรือผู้เชี่ยวชาญได้รับการวินิจฉัยว่าเป็นโควิด-19
+</string>
+    <string name="please_accept_terms">กรุณายอมรับข้อกำหนดและเงื่อนไข</string>
+    <string name="updated_admin_amt">ผู้ดูแลระบบอัปเดตจำนวนเงินแล้ว</string>
+    <string name="plus_amount">+ %1$s %2$s</string>
+    <string name="minus_amount">- %1$s %2$s</string>
+    <string name="agent_reviews_tag">[ % ของรีวิว ]</string>
+    <string name="pls_enter_abn_number">กรุณากรอกหมายเลข abn</string>
+    <string name="pls_enter_business_name">กรุณากรอกหมายเลขธุรกิจ</string>
+    <string name="canceled">ยกเลิกแล้ว</string>
+    <string name="saved_address">ที่อยู่ที่บันทึกไว้</string>
+    <string name="menu_categories">หมวดหมู่เมนู</string>
+    <string name="update_">อัปเดต</string>
+    <string name="install_">ติดตั้ง</string>
+    <string name="later">ภายหลัง</string>
+    <string name="install">ติดตั้ง</string>
+    <string name="app_update_available">มีการอัปเดตแอป</string>
+    <string name="app_update_downloaded">ดาวน์โหลดการอัปเดตแอปแล้ว</string>
+    <string name="app_update_available_message">
+เราได้แก้ไขปัญหาบางอย่างและเพิ่มฟีเจอร์บางอย่างในการอัปเดตนี้
+</string>
+    <string name="downloading">กำลังดาวน์โหลด…</string>
+    <string name="installing_update">การติดตั้งการอัปเดต</string>
+    <string name="in_app_update">อัปเดตในแอป</string>
+    <string name="hyper_pay">Hyperpay</string>
+    <string name="action_restart">เริ่มต้นใหม่</string>
+    <string name="update_title">ดาวน์โหลดแล้ว!</string>
+    <string name="update_message">แอปใหม่ที่อัปเดตถูกดาวน์โหลดแล้ว</string>
+    <string name="force_update_message">
+มีการอัปเดตแอปใหม่ กรุณาดาวน์โหลดแอปจาก playstore
+</string>
+    <string name="tags">แท็ก: </string>
+    <string name="dishes_restaurant_cuisines">อาหาร, ร้านอาหารและอาหาร</string>
+    <string name="filters_you_search">กรองการค้นหาของคุณ</string>
+    <string name="account">บัญชี</string>
+    <string name="zoom_call">เริ่มวิดีโอคอล</string>
+    <string name="register">ลงทะเบียน</string>
+    <string name="add_to_bag">เพิ่มเข้าไปในกระเป๋า</string>
+    <string name="sign_in">เข้าสู่ระบบ</string>
+    <string name="burgers">เบอร์เกอร์</string>
+    <string name="choose_fav_branch">เลือกสาขาที่คุณชื่นชอบ</string>
+    <string name="time_left">เวลาที่เหลือ :</string>
+    <string name="i_accept_terms_and_conditions">
+ By clicking "Sign Up", you agree to %s Terms of Use and Privacy Policy. You consent to receive SMS messages from %s to verify your phone number. You may opt-out by texting "STOP" to 86753. Message and data rates may apply.
+</string>
+    <string name="order_sucess_msg">"ขอบคุณสำหรับ %s"</string>
+    <string name="phone_verfication_msg">
+กรุณากรอกรหัสยืนยันที่ส่งไปยังเบอร์โทรศัพท์ของคุณ
+</string>
+    <string name="custom_succesfully_order">ขอบคุณที่รอ เรากำลังดำเนินการตามคำสั่งซื้อของคุณ</string>
+    <string name="near_you_suppliers">ใกล้เคียง %s</string>
+    <string name="highest_rating_suppliers">คะแนนสูงสุด %s</string>
+    <string name="new_suppliers">ใหม่ %s</string>
+    <string name="category_wise_suppliers">หมวดหมู่ที่ชาญฉลาด %s</string>
+    <string name="terms_conditions">ข้อกำหนดและเงื่อนไข</string>
+    <string name="km">%.2f กม.</string>
+    <string name="miles_away">ห่างออกไป %.1f ไมล์</string>
+    <string name="about_the_app">เกี่ยวกับแอป</string>
+    <string name="terms_of_use">ข้อตกลงในการใช้งาน</string>
+    <string name="about_feedback">คำติชมของแอป</string>
+    <string name="about_app">เกี่ยวกับแอป</string>
+    <string name="contact_us">เกี่ยวกับเรา</string>
+    <string name="get_help">ขอความช่วยเหลือ</string>
+    <string name="email_us">ส่งอีเมลถึงเรา</string>
+    <string name="call_us">โทรหาเรา</string>
+    <string name="account_info">ข้อมูลบัญชี</string>
+    <string name="my_profile">โปรไฟล์ของฉัน</string>
+    <string name="discover_fav_restaurant">ค้นพบ \n ร้านอาหารโปรดของคุณ</string>
+    <string name="languages">ภาษา</string>
+    <string name="notification">การแจ้งเตือน</string>
+    <string name="my_offers">ข้อเสนอของคุณ</string>
+    <string name="my_orders">คำสั่งซื้อของคุณ</string>
+    <string name="current_order">คำสั่งซื้อในปัจจุบัน</string>
+    <string name="id">รหัส: %s</string>
+    <string name="previous_orders">คำสั่งซื้อก่อนหน้า</string>
+    <string name="prev">ก่อนหน้า</string>
+    <string name="express_delivery">จัดส่งด่วน</string>
+    <string name="normal_delivery">จัดส่งธรรมดา</string>
+    <string name="delivery_in_time">จัดส่งใน %d นาที</string>
+    <string name="sponsored">สปอนเซอร์</string>
+    <string name="delivery_type">ประเภทการจัดส่ง</string>
+    <string name="password_changed_success">รหัสผ่านของคุณ \n ถูกเปลี่ยนเรียบร้อยแล้ว!</string>
+    <string name="search_your_fav_res">ค้นหาร้านอาหารโปรดของคุณ</string>
+    <string name="see_all">ดูทั้งหมด</string>
+    <string name="nothing_found_try_again">ไม่พบ ลองอีกครั้ง</string>
+    <string name="oops">อุ๊บส์!!</string>
+    <string name="view_all_categories">ดูหมวดหมู่ทั้งหมด</string>
+    <string name="choose_your_fav_category">เลือก \n หมวดหมู่ที่คุณชื่นชอบ</string>
+    <string name="enter_vehicle_name">กรอกเลขทะเบียนรถ</string>
+    <string name="vehicle_number">เลขทะเบียนรถ</string>
+    <string name="select_a_pier">เลือกท่าเรือ</string>
+    <string name="completed_on">เสร็จสมบูรณ์เมื่อ</string>
+    <string name="agent_code">กรุณาให้รหัสกับ %s</string>
+    <string name="sadad">Sadad</string>
+    <string name="address_reference">ที่อยู่อ้างอิง</string>
+    <string name="subcription_required">ต้องสมัครสมาชิก</string>
+    <string name="cutlery">ช้อนส้อม</string>
+    <string name="cutlery_description">
+ช่วยเราลดขยะพลาสติก - ขอช้อนส้อมเมื่อคุณต้องการเท่านั้น
+</string>
+    <string name="cutlery_required">จำเป็นต้องมีช้อนส้อม</string>
+    <string name="product_details">รายละเอียดสินค้า</string>
+    <string name="enter_the_details_below_to_add_this_product">กรอกรายละเอียดด้านล่างเพื่อเพิ่มสินค้านี้</string>
+    <string name="add_product">เพิ่มสินค้า</string>
+    <string name="your_name">ชื่อของคุณ</string>
+    <string name="reference_id_title">รหัสอ้างอิง</string>
+    <string name="dimensions">ขนาด</string>
+    <string name="upload_receipt">อัปโหลดใบเสร็จ</string>
+    <string name="enter_reference_id">กรอกรหัสอ้างอิง</string>
+    <string name="enter_dimensions">กรอกขนาด</string>
+    <string name="owner_name">ชื่อเจ้าของ: %s</string>
+    <string name="reference_id_show">รหัสอ้างอิง: %s</string>
+    <string name="dimensions_show">ขนาด: %s</string>
+    <string name="view_listen_bio">ฟัง/ดูประวัติตัวแทน</string>
+    <string name="trans_bank">โอนเงินธนาคาร</string>
+    <string name="view_Receipt">ดูใบเสร็จ</string>
+    <string name="max_products_allowed_with_out">
+อนุญาตให้มีสินค้าสูงสุด 4 รายการในรถเข็นโดยไม่มีสินค้าในเครือข่าย
+</string>
+    <string name="otp_receiveing_issue">หากคุณมีปัญหาใดๆในขณะรับ OTP</string>
+    <string name="message_sent_to_admin">ส่งอีเมลถึงผู้ดูแลระบบแล้ว</string>
+    <string name="add_quantity">กรุณาเลือกจำนวน</string>
+    <string name="total_price">ราคาทั้งหมด: %1$s %2$s</string>
+    <string name="dob">วันเกิด</string>
+    <string name="dob_text">%1$s / %2$s / %3$s</string>
+    <string name="pay_maya">"Paymaya "</string>
+    <string name="all_restaurants">ร้านอาหารทั้งหมด</string>
+    <string name="enter_car_number">กรอกหมายเลขทะเบียนรถ</string>
+    <string name="please_enter_car_number">กรุณาใส่หมายเลขทะเบียนรถ</string>
+    <string name="service_charge">ค่าบริการ %s</string>
+    <string name="hint_company_id">รหัสบริษัท (รหัสเฉพาะ)</string>
+    <string name="hint_assigned_vehicle">ยานพาหนะที่ได้รับมอบหมาย</string>
+    <string name="empty_firstName">กรุณากรอกชื่อ</string>
+    <string name="empty_last_name">กรุณากรอกนามสกุล</string>
+    <string name="empty_company_id">กรุณากรอกรหัสบริษัท</string>
+    <string name="empty_assigned_veh">กรุณากรอกรถที่ได้รับมอบหมาย</string>
+    <string name="user_license_agree">ข้อตกลงใบอนุญาตผู้ใช้</string>
+    <string name="promotion_going_on">โปรโมชั่นเกิดขึ้น</string>
+    <string name="review_ratings">รีวิวการให้คะแนน</string>
+    <string name="allergies">อาการแพ้</string>
+    <string name="rate_order">ให้คะแนนคำสั่งซื้อ</string>
+    <string name="select_table_capacity">เลือกปริมาณคนของโต๊ะ</string>
+    <string name="table_booking_fee">ค่าธรรมเนียมการจองโต๊ะ</string>
+    <string name="select_items_to_continue">คุณต้องการเพิ่มรายการอีกไหม?</string>
+    <string name="appointment_multiple_service_message">
+คุณไม่สามารถเพิ่มบริการหลายรายการขณะทำการนัดหมาย
+</string>
+    <string name="appointment_at">นัดรับที่</string>
+    <string name="off">%s %% ปิด</string>
+    <string name="schedule_pickup">กำหนดเวลารับสินค้า</string>
+    <string name="juma_title">ซักแห้ง \n และซักรีด \n เสร็จสิ้น</string>
+    <string name="juma_subtitle">
+Cleanfox รับทำความสะอาดและส่งมอบ ตอนนี้คุณมีเวลาที่สำคัญจริงๆ
+</string>
+    <string name="title_activity_acc">กิจกรรมในบัญชี</string>
+    <string name="navigation_drawer_open">เปิดแถบเมนูเลื่อนด้านข้าง</string>
+    <string name="navigation_drawer_close">ปิดแถบเมนูเลื่อนด้านข้าง</string>
+    <string name="nav_header_title">สตูดิโอ Android</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">แถบเมนูเลื่อนด้านข้าง</string>
+    <string name="action_settings">การตั้งค่า</string>
+    <string name="menu_home">หน้าหลัก</string>
+    <string name="menu_gallery">คลังภาพ</string>
+    <string name="menu_slideshow">สไลด์โชว์</string>
+    <string name="schedule">กำหนดการ</string>
+    <string name="veg_only">ผักเท่านั้น</string>
+    <string name="agent_name_with_id">%s (รหัส : %s)</string>
+    <string name="min_loyaty_points">"คะแนนสะสมควรมากกว่า %s"</string>
+    <string name="ur_way">Urway</string>
+    <string name="referral_code_copied">คัดลอกรหัสแนะนำแล้ว</string>
+    <string name="rejection_reason">Rejection Reason:</string>
+    <string name="more_coming_soon">More coming soon</string>
+    <string name="license_number">License number</string>
+    <string name="license_images">License Images</string>
+    <string name="empty_license_number">Please enter license number</string>
+    <string name="please_upload_license_id">Please upload license id</string>
+    <string name="is_there_something_i_can_help_you_with">is there something I can help you with ?</string>
+    <string name="scheduled_time">Scheduled Time</string>
+    <string name="sharing_location">**Sharing location ...</string>
+    <string name="continue_to_donate">Continue to Donate</string>
+    <string name="if_you_skip_the_donation_address_then_the_order_will_automatically_deliver_to_random_person_who_need_of_this">If you skip the donation address then the order will automatically deliver to random person who need of this.</string>
+    <string name="report_heading">Report Heading</string>
+    <string name="report_description">Report Description</string>
+    <string name="add_a_comment">Add a comment...</string>
+    <string name="grand_total">Grand Total :</string>
+    <string name="pickup_detail">PickUp Detail</string>
+    <string name="enjoy_all_the_features_of_royo_service_manage_your_business">Enjoy all the features of Royo Service. Manage your business.</string>
+    <string name="daily_deals">Daily Deals</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="table_detail">Table Detail</string>
+    <string name="date">Date:</string>
+    <string name="sign_up_below_to_create_your_account">sign up below to create your account</string>
+    <string name="enter_table_number">Enter table number</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="select_date_time_after_duration">Please select date and time after %s min</string>
+    <string name="start_end_date">Start Date%sEnd Date</string>
+    <string name="end_date">End Date</string>
+    <string name="start_date">Start Date</string>
+    <string name="select_start_date">Select Start Date</string>
+    <string name="select_end_date">Select End Date</string>
+    <string name="days_ago">days ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="seconds_ago">seconds ago</string>
+    <string name="some_of_our_best_food_categories_for_you">Some of our best %s categories for you</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="your_favourite">Your Favourites</string>
+    <string name="port_start_point">Port Start Point</string>
+    <string name="port_name_hint">Name: %s</string>
+    <string name="port_name_location">Location: %s</string>
+    <string name="port_end_point">Port End Point</string>
+    <string name="choose_start_port_point">Select Start Port Point</string>
+    <string name="choose_end_port_point">Choose End Port Point</string>
+    <string name="boat_rental">Boat Rental</string>
+    <string name="end_month">End Month</string>
+    <string name="start_month">Start Month</string>
+    <string name="start_end_month">Start Month%sEnd Month</string>
+    <string name="choose_date">Choose date</string>
+    <string name="choose_slot">Choose Slot</string>
+    <string name="select_daily_slot">Select Daily Slot</string>
+    <string name="select_weekly_slot">Select Weekly Slot</string>
+    <string name="select_monthly_slot">Select Monthly Slot</string>
+    <string name="pls_add_multiple_date">Please add multiple dates</string>
+    <string name="total_duration">Total %s :</string>
+    <string name="sub_total_">SubTotal :</string>
+    <string name="total_tax">Total Tax :</string>
+    <string name="hours_tag">Hours</string>
+    <string name="week_tag">Weeks</string>
+    <string name="days_tag">Days</string>
+    <string name="months_tag">Months</string>
+    <string name="similar_product">Similar  %s</string>
+    <string name="forgot_password_text">Forgot Password</string>
+    <string name="forgot_password_description">We will send your password to your mail</string>
+    <string name="forgot_pswr_format">New password has been sent to your email</string>
+    <string name="daily_weekly">Daily/Weekly</string>
+    <string name="pls_select_less_than_30">Please select date less than 30</string>
+    <string name="change_start_date">Change Start Date %s</string>
+    <string name="choose_start_date">Choose Start Date</string>
+    <string name="cart_clear_popup">Are you sure?\nGoing back will clear your cart</string>
+    <string name="no_slot_found">No Slots Found</string>
+    <string name="choose_your_drop_off_location">Choose your Drop-off location</string>
+    <string name="choose_pick_time">Pick-up Time</string>
+    <string name="choose_drop_time">DROP-OFF tIME</string>
+    <string name="choose_your_pick_up_location">Choose your Pick-up location</string>
+    <string name="choose_prod_slot">Choose Product Slot</string>
+    <string name="pick_up_time">Pick-up Time</string>
+    <string name="drop_off_time">dROP-OFF tIME</string>
+    <string name="supplier_detail">%s Detail</string>
+    <string name="location_permission_declaration">This app collects location data to enable tracking and share location with other users even when the app is closed or not in use.</string>
+</resources>
+

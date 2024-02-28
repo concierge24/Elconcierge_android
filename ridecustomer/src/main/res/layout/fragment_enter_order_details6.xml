@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            app:background="@{color.headerColor}">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:src="@drawable/ic_back_arrow_black"
+                app:tint="@{color.header_txt_colour}" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivBack"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:gravity="center_vertical"
+                android:text="@string/bookATaxi"
+                android:textSize="16sp"
+                app:textcolor="@{color.header_txt_colour}" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_transparent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/rl_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/order_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/mont_bold"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:padding="10dp"
+                            android:text="@string/order" />
+
+                        <TextView
+                            android:id="@+id/check_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/mont_bold"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:padding="10dp"
+                            android:text="@string/checklist" />
+                    </LinearLayout>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/nested_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="120dp"
+                        android:background="@color/white"
+                        android:visibility="visible">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/order_const"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/heading_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_divider_bottom"
+                                android:fontFamily="@font/mont_bold"
+                                android:gravity="center_vertical"
+                                android:padding="16dp"
+                                android:text="@string/enter_details_of_order"
+                                android:textColor="@color/text_dark"
+                                android:textSize="16sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvProductList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_divider_bottom"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tvAdd" />
+
+                            <TextView
+                                android:id="@+id/tvAdd"
+                                android:layout_width="50dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/shape_border"
+                                android:gravity="center"
+                                android:text="@string/add"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="@id/heading_tv"
+                                app:layout_constraintTop_toBottomOf="@id/heading_tv" />
+
+                            <TextView
+                                android:id="@+id/tvProductName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/product_name"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="@id/etProductName"
+                                app:layout_constraintStart_toStartOf="@id/etProductName"
+                                app:layout_constraintTop_toBottomOf="@id/rvProductList" />
+
+                            <EditText
+                                android:id="@+id/etProductName"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape_border"
+                                android:fontFamily="@font/sf_pro_text_regular"
+                                android:hint="@string/product_name"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="16dp"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvProductName" />
+
+                            <TextView
+                                android:id="@+id/tvReceiver"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/receiver"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="@id/etProductName"
+                                app:layout_constraintStart_toStartOf="@id/etProductName"
+                                app:layout_constraintTop_toBottomOf="@id/etProductName" />
+
+                            <EditText
+                                android:id="@+id/etReceiver"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape_border"
+                                android:fontFamily="@font/sf_pro_text_regular"
+                                android:hint="@string/receiver"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="16dp"
+                                android:singleLine="false"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvReceiver" />
+
+                            <TextView
+                                android:id="@+id/tvPhoneNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/phone_number"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="@id/etProductName"
+                                app:layout_constraintStart_toStartOf="@id/etProductName"
+                                app:layout_constraintTop_toBottomOf="@id/etReceiver" />
+
+                            <EditText
+                                android:id="@+id/etPhoneNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/shape_border"
+                                android:fontFamily="@font/sf_pro_text_regular"
+                                android:hint="@string/phone_number"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="16dp"
+                                android:singleLine="false"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/mont_regular"
+                                android:text="@string/upload_images"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber"
+                                app:textcolor="@{color.black_color}" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvCompanies"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:clipToPadding="false"
+                                android:nestedScrollingEnabled="false"
+                                android:overScrollMode="never"
+                                android:paddingStart="6dp"
+                                android:paddingEnd="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                                tools:targetApi="lollipop" />
+
+                            <TextView
+                                android:id="@+id/tvRequestNow"
+                                style="@style/SubmitButtons"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                app:layout_constraintTop_toBottomOf="@id/rvCompanies"
+                                android:text="@string/request_pickup"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:textSize="14sp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.core.widget.NestedScrollView>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/rl_checklist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_tab"
+                        android:layout_marginTop="120dp"
+                        android:background="@color/white"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/ll_ch_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_divider_bottom"
+                                android:fontFamily="@font/mont_bold"
+                                android:padding="16dp"
+                                android:text="@string/enter_checklist_items"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/text_dark"
+                                android:textSize="16sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvChecklist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_divider_bottom" />
+
+                            <TextView
+                                android:id="@+id/tv_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginVertical="10dp"
+                                android:background="@drawable/shape_divider_bottom"
+                                android:fontFamily="@font/mont_bold"
+                                android:padding="10dp"
+                                android:text="Total : 0"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/text_dark"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:ignore="RtlCompat" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/check_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:id="@+id/tvProductCode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginRight="16dp"
+                                    android:text="@string/product_code"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/etProductCode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/shape_border"
+                                    android:fontFamily="@font/sf_pro_text_regular"
+                                    android:hint="@string/product_code"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:paddingStart="12dp"
+                                    android:paddingEnd="12dp"
+                                    android:textColor="@color/text_dark"
+                                    android:textSize="12sp"
+                                    app:layout_constraintEnd_toEndOf="@id/tvProductCode"
+                                    app:layout_constraintStart_toStartOf="@id/tvProductCode"
+                                    app:layout_constraintTop_toBottomOf="@id/tvProductCode" />
+
+                                <TextView
+                                    android:id="@+id/tvphnNumber"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginRight="16dp"
+                                    android:text="@string/phone_number"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/etProductCode" />
+
+                                <EditText
+                                    android:id="@+id/etphnNumber"
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_below="@+id/ed_product_name"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/shape_border"
+                                    android:fontFamily="@font/sf_pro_text_regular"
+                                    android:hint="@string/phone_number"
+                                    android:inputType="number"
+                                    android:maxLength="9"
+                                    android:maxLines="1"
+                                    android:paddingStart="12dp"
+                                    android:paddingEnd="12dp"
+                                    android:textColor="@color/text_dark"
+                                    android:textSize="12sp"
+                                    app:layout_constraintEnd_toEndOf="@id/tvphnNumber"
+                                    app:layout_constraintStart_toStartOf="@id/tvphnNumber"
+                                    app:layout_constraintTop_toBottomOf="@id/tvphnNumber" />
+
+                                <TextView
+                                    android:id="@+id/tvAddCheckList"
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_weight="1.2"
+                                    android:gravity="center"
+                                    android:text="Add"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    app:fontFamily="@font/sf_pro_text_semibold"
+                                   app:layout_constraintEnd_toEndOf="@id/etphnNumber"
+                                    app:layout_constraintTop_toBottomOf="@id/etphnNumber" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/tvRequestNow1"
+                                style="@style/SubmitButtons"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/request_receive"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvContinuee"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:ems="10"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="2dp"
+                android:text="@string/continuee"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:background="@{color.primary_color}"
+                app:fontFamily="@font/sf_pro_text_semibold"
+                app:layout_goneMarginTop="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

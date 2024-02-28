@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_back"
+                app:tint="@{color.black_color}"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_to_moby_institution"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                app:textcolor="@{color.black_color}"
+                app:fontFamily="@font/sf_pro_display_bold" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlPhoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_divider_bottom"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/cvCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/countryCodePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black_1c"
+                        app:ccpDialog_allowSearch="true"
+                        app:ccpDialog_fastScroller_bubbleColor="@color/colorGreen"
+                        app:ccpDialog_fastScroller_handleColor="@color/colorGreen"
+                        app:ccpDialog_searchEditTextTint="@color/black_8c"
+                        app:ccpDialog_showCloseIcon="true"
+                        app:ccp_autoDetectLanguage="true"
+                        app:ccp_autoFormatNumber="false"
+                        app:ccp_clickable="true"
+                        app:ccp_contentColor="@color/black_1c"
+                        app:ccp_rememberLastSelection="true"
+                        app:ccp_selectionMemoryTag="signupCCP"
+                        app:ccp_showArrow="true"
+                        app:ccp_showFlag="false"
+                        app:ccp_showNameCode="true"
+                        app:ccp_textSize="16dp"
+                        app:fontFamily="@font/sf_pro_text_bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_coutry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_arrow_down" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/cvCountry"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    app:textcolor="@{color.black_color}"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/sf_pro_text_bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rlEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <EditText
+                    android:id="@+id/email_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="@string/username_or_email"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/shape_divider_bottom"/>
+
+                <EditText
+                    android:id="@+id/pass_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/password"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:inputType="textPassword"
+                    android:background="@drawable/shape_divider_bottom"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_remember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:checkColor="@{color.primary_color}"
+                    app:uncheckColor="@{color.primary_color}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="7dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:text="@string/remember_me"
+                    android:layout_toRightOf="@+id/checkbox_remember"
+                    app:textcolor="@{color.black_color}"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/sf_pro_text_regular" />
+
+                <TextView
+                    android:id="@+id/forgot_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/forgot_password"
+                    app:textcolor="@{color.black_color}"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/sf_pro_text_regular" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/tvProceed_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_chevron_right_white" />
+
+
+    </RelativeLayout>
+
+
+
+</layout>

@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rr_invoice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thin_light_purple"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_back_arrow_black"
+        android:tint="@color/white"
+        android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cvToolbar"
+        android:layout_below="@+id/ivBack"
+        android:layout_marginBottom="32dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/amountTobePaid"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9sdp"
+            app:fontFamily="@font/sf_pro_text_regular" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAmountLabel"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="$ 148.72"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            app:fontFamily="@font/sf_pro_text_regular" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAmount"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/totalInc"
+            android:textColor="@color/white_op55"
+            android:textSize="12sp"
+            app:fontFamily="@font/sf_pro_text_regular" />
+
+        <ImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDesc"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_info"
+            android:visibility="gone">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_divider_bottom"
+                    android:fontFamily="@font/mont_bold"
+                    android:padding="16dp"
+                    android:text="@string/invoice"
+                    android:textColor="@color/text_dark"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvServiceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/mont_bold"
+                    android:text="Aquafina"
+                    android:textColor="@color/text_dark"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_bold"
+                    android:gravity="end"
+                    android:text="5 Gallons × 2"
+                    android:textColor="@color/text_dark"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/base_fair"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvServiceName" />
+
+                <TextView
+                    android:id="@+id/tvTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/waiting_time"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                <TextView
+                    android:id="@+id/tvDistanceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/distance"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTimeLabel" />
+
+                <TextView
+                    android:id="@+id/tvNormalFareLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/normal_fair"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDistanceLabel" />
+
+                <TextView
+                    android:id="@+id/tvLoadLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Load Charges"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNormalFareLabel" />
+
+
+                <TextView
+                    android:id="@+id/tvWaitingChargesLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/waiting_charges"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLoadLabel" />
+
+                <TextView
+                    android:id="@+id/tvLabelPreviousCharges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/previousCharge"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWaitingChargesLabel" />
+
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/bookingFee"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelPreviousCharges" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/minmum_charge"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                <TextView
+                    android:id="@+id/surcharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/surcharge"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                <TextView
+                    android:id="@+id/Schedulecharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/schedule_charge"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/surcharge" />
+
+                <TextView
+                    android:id="@+id/Insurancecharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Insurance service"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/Schedulecharge" />
+
+                <TextView
+                    android:id="@+id/levelCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Pickup/Dropoff Level Charge"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/Insurancecharge" />
+
+                <TextView
+                    android:id="@+id/promocharge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/applied_promo"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="@+id/tvPromoCharge"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/levelCharge" />
+
+                <TextView
+                    android:id="@+id/Zonecharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/zone_charge"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/promocharge" />
+
+                <TextView
+                    android:id="@+id/tollcharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/toll_parking_charges"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/Zonecharge" />
+
+                <TextView
+                    android:id="@+id/airportcharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/airport_charges"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tollcharge" />
+
+                <TextView
+                    android:id="@+id/surchecklist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableEnd="@drawable/ic_info"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/check_list_charge"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/airportcharge" />
+
+                <TextView
+                    android:id="@+id/tvisrtaxLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/isr_tax"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/surchecklist" />
+
+                <TextView
+                    android:id="@+id/tvisrHelperLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/helper_charges"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvisrtaxLabel" />
+
+                <TextView
+                    android:id="@+id/tvSubtotalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="@string/sub_total"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvisrHelperLabel" />
+
+
+                <TextView
+                    android:id="@+id/tvKmBonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text=""
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/tvSubtotalPrice"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSubtotalLabel" />
+
+                <TextView
+                    android:id="@+id/tpsCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Pickup/Dropoff Level Charge"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvKmBonus" />
+
+                <TextView
+                    android:id="@+id/tvqCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Pickup/Dropoff Level Charge"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                    app:layout_constraintTop_toBottomOf="@+id/tpsCharge" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/mont_bold"
+                    android:text="@string/total"
+                    android:textColor="@color/text_dark"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvqCharge" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="300 INR"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
+
+                <TextView
+                    android:id="@+id/tvTimePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="10 INR"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+                <TextView
+                    android:id="@+id/tvDistancePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="10 INR"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTimePrice" />
+
+                <TextView
+                    android:id="@+id/tvNormalFarePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="50 INR"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDistancePrice" />
+
+                <TextView
+                    android:id="@+id/tvNLoadFarePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="50 LKR"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNormalFarePrice" />
+
+                <TextView
+                    android:id="@+id/tvWaitingChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs.0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNLoadFarePrice" />
+
+                <TextView
+                    android:id="@+id/tvPreviousCharges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWaitingChargesPrice" />
+
+                <TextView
+                    android:id="@+id/tvBookingfeePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs.0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPreviousCharges" />
+
+                <TextView
+                    android:id="@+id/tvServiceChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBookingfeePrice" />
+
+                <TextView
+                    android:id="@+id/tvSurChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvServiceChargesPrice" />
+
+                <TextView
+                    android:id="@+id/tvScheduleChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSurChargesPrice" />
+
+                <TextView
+                    android:id="@+id/tvInsuranceChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvScheduleChargesPrice" />
+
+                <TextView
+                    android:id="@+id/tvLevelCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvInsuranceChargesPrice" />
+
+                <TextView
+                    android:id="@+id/tvPromoCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text=""
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLevelCharge" />
+
+
+                <TextView
+                    android:id="@+id/tvZoneChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/promocharge" />
+
+                <TextView
+                    android:id="@+id/tvtollChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvZoneChargesPrice" />
+
+                <TextView
+                    android:id="@+id/tvairportChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvtollChargesPrice" />
+
+                <TextView
+                    android:id="@+id/tvCheckChargesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvairportChargesPrice" />
+
+                <TextView
+                    android:id="@+id/tvisr_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCheckChargesPrice" />
+
+                <TextView
+                    android:id="@+id/helper_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvisr_tax" />
+
+                <TextView
+                    android:id="@+id/tvSubtotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/helper_charge" />
+
+                <TextView
+                    android:id="@+id/tvtps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvKmBonus" />
+
+                <TextView
+                    android:id="@+id/tvtpq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:text="Rs 0.00"
+                    android:textColor="@color/text_dark"
+                    app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvtps" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/mont_bold"
+                    android:text="@string/total"
+                    android:textColor="@color/text_dark"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvtpq" />
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/divider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_divider_bottom"
+                    android:fontFamily="@font/mont_bold"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="@string/add_tip_to_your_driver"
+                    android:textColor="@color/text_dark"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+                <LinearLayout
+                    android:id="@+id/ll_order_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_tip">
+
+                    <ImageView
+                        android:id="@+id/iv_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_placeholder"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_proof_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_placeholder"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_proof_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_placeholder"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvCompleteRide"
+                style="@style/Base.Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/shape_next_btn"
+                android:fontFamily="@font/mont_bold"
+                android:gravity="center"
+                android:text="@string/finish"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_lay" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvCompleteRide"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginTop="36dp"-->
+        <!--            android:layout_marginStart="24dp"-->
+        <!--            android:layout_marginEnd="24dp"-->
+        <!--            android:layout_marginBottom="24dp"-->
+        <!--            android:visibility="gone"-->
+        <!--            android:padding="16dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/completeRide"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:background="@drawable/shape_button_primary"-->
+        <!--            android:textSize="16sp"-->
+        <!--            app:fontFamily="@font/sf_pro_text_semibold" />-->
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

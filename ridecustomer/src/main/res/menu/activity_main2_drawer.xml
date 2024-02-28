@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_discounts"
+            android:title="@string/get_discounts" />
+
+        <item
+            android:id="@+id/becomedriver"
+            android:title="@string/become_driver" />
+
+        <item
+            android:id="@+id/nav_bookings"
+            android:title="@string/my_bookings" />
+        <item
+            android:id="@+id/nav_myearnings"
+            android:title="@string/my_earnings" />
+
+        <item
+            android:id="@+id/nav_watch_earn"
+            android:title="@string/watch_amp_earn" />
+
+        <item
+            android:id="@+id/nav_payment_type"
+            android:title="@string/payment_methods"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_wallet"
+            android:title="@string/wallet" />
+
+        <item
+            android:id="@+id/nav_refer"
+            android:title="@string/refer_earn" />
+
+        <item
+            android:id="@+id/nav_emergency_contact"
+            android:title="@string/emergency_contacts" />
+
+        <item
+            android:id="@+id/nav_noticeBoard"
+            android:title="@string/notification" />
+
+<!--        <item
+            android:id="@+id/nav_mygifts"
+            android:title="@string/my_gifts" />-->
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="@string/help" />
+
+        <item
+            android:id="@+id/nav_etokens"
+            android:title="@string/e_tokens"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/nav_deleiver"
+            android:title="@string/deliver_with_us" />
+
+        <item
+            android:id="@+id/nav_editProfile"
+            android:title="@string/edit_profile"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/nav_promotions"
+            android:title="@string/promotions"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_packages"
+            android:title="@string/travelPkg"
+            android:visible="false" />
+
+
+        <!-- <item
+           android:id="@+id/blank"
+           android:title="" />
+         <item
+             android:id="@+id/blank2"
+             android:title="" />-->
+    </group>
+
+
+</menu>

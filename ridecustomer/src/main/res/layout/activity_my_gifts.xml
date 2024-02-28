@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:elevation="4dp"
+                app:background="@{color.headerColor}">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:background="@{color.headerColor}">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_back_arrow_black"
+                        app:tint="@{color.white_color}" />
+
+                    <TextView
+                        android:id="@+id/header_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sf_pro_text_bold"
+                        android:text="@string/my_bookings"
+                        android:textSize="18sp"
+                        app:textcolor="@{color.header_txt_colour}" />
+
+
+                    <ImageView
+                        android:id="@+id/cal_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="end"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_calender_schedule"
+                        android:visibility="gone"
+                        app:tint="@{color.header_txt_colour}" />
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    app:background="@{color.headerColor}"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/sentRl"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvSent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:textcolor="@{color.header_txt_colour}"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="@string/sent"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:id="@+id/sentIndicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_below="@+id/tvSent"
+                            android:background="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/receiveRl"
+                        android:layout_width="0dp"
+                        app:background="@{color.headerColor}"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvReceive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="@string/receive"
+                            android:textAlignment="center"
+                            app:textcolor="@{color.header_txt_colour}"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:id="@+id/receiveIndicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_below="@+id/tvReceive"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerBookings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+<!--            <ViewFlipper-->
+<!--                android:id="@+id/viewFlipperBooking"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvGifts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp" />
+
+                <!--                <ProgressBar-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center" />-->
+
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:id="@+id/rvBookings"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:clipToPadding="false"-->
+                <!--                    android:paddingTop="12dp"-->
+                <!--                    android:paddingBottom="12dp" />-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:orientation="vertical">-->
+
+                <!--                    <ImageView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:src="@drawable/ic_emptycart"-->
+                <!--                        android:id="@+id/ivEmptyImage"/>-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:fontFamily="@font/mont_regular"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:text="@string/no_bookings"-->
+                <!--                        android:textColor="@color/text_dark_1"-->
+                <!--                        android:textSize="16sp" />-->
+                <!--                </LinearLayout>-->
+<!--            </ViewFlipper>-->
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

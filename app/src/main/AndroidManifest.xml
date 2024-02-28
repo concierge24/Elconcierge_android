@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.codebrew.clikat">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.microphone"
+       />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:name=".modal.AppGlobal"
+        android:allowBackup="false"
+        android:fullBackupContent="@xml/backupschema"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="allowBackup"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="q">
+
+
+        <activity android:name=".dialog_flow.DialogChat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".module.new_signup.SigninActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="false" />
+        <meta-data
+            android:name="android.webkit.WebView.MetricsOptOut"
+            android:value="true" />
+
+        <activity
+            android:name=".module.service_selection.ServSelectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.location.LocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.bottom_navigation.MainScreenActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".module.restaurant_detail.VideoPlayer"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".module.instruction_page.InstructionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".module.home_screen.suppliers.SuppliersMapFragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.cart.promocode.PromoCodeListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".module.order_detail.rate_product.RateProductActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.tables.scanner.ScannerActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.payment_gateway.PaymentListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.splash.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+              <!--  <data
+                    android:host="betrnoms.page.link"
+                    android:scheme="https" />
+
+                <data
+                    android:host="royofoodmulti.page.link"
+                    android:scheme="https" />-->
+
+                <data
+                    android:host="delifood.page.link"
+                    android:scheme="https" />
+                <data
+                    android:host="rushdeliveryuser.page.link"
+                    android:scheme="https" />
+                <data
+                    android:host="homefreshmeals.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.ImageSHow"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.order_detail.OrderDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.NoInternetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.webview.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.payment_gateway.PaymentWebViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.user_tracking.UserTracking"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.dialog_adress.SelectlocActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".module.dialog_adress.v2.SelectlocActivityV2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".user_chat.UserChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".module.wallet.addMoney.WalletAddMoneyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".module.cart.schedule_order.ScheduleOrder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" /> <!-- Firebase Messaging Intialization -->
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.payment_gateway.addCard.AddNewCard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.signup.SignupActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".module.payment_gateway.savedcards.SaveCardsActivity" />
+        <activity
+            android:name=".module.essentialHome.EssentialHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+        <activity
+            android:name=".module.forgot_pswr.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="${applicationId}.braintree" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_mEVNmrYrvvAopF" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAQs3a7h5CmiGZSDA3aTHjCUUR_71CBCbs" />
+
+        <!-- Razor Pay -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="729707629d02cffdd545a343dcf5d52aef5a4dec" /> <!-- End of RazorPay -->
+        <!--
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_oesb7XY7nx8NqFGH7HY2LbmhDEjAC4Ua" />
+        -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+        <receiver android:name=".services.SchedulerReciever" />
+        <receiver
+            android:name=".services.IncomingSms"
+            tools:ignore="UnprotectedSMSBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- For braintree google pay -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+
+
+        <activity
+            android:name="com.trava.user.ui.home.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.trava.user.ui.menu.settings.editprofile.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.menu.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.trava.user.ui.menu.noticeBoard.NoticeBoardActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.ui.home.promocodes.PromoCodesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.home.road_pickup.RoadPickupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.menu.travelPackages.package_details.TravelPackageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.menu.travelPackages.TravelPackagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.home.confirm_pickup.ConfirmPickupActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.walkthrough.WalkthroughActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.trava.user.ui.menu.bookings.BookingDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.menu.bookings.BookingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.menu.emergencyContacts.EContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.menu.emergencyContacts.contacts.ContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.menu.ReferralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.menu.contactUs.ContactUsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.ui.home.HomeActivity"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.trava.user.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+<!--        <service android:name="com.trava.user.fcm.AppFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>-->
+
+
+        <activity
+            android:name="com.trava.user.ui.signup.SignupActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+
+        <provider
+            android:name="com.trava.user.MySliceProvider"
+            android:authorities="${applicationId}"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.app.slice.category.SLICE" />
+
+                <data
+                    android:host="apidev.royorides.io"
+                    android:pathPrefix="/"
+                    android:scheme="https" />
+            </intent-filter>
+        </provider>
+
+        <activity
+            android:name="com.trava.user.ui.home.stories.WatchStories"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.ui.home.chatModule.ChatUserListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.ui.home.chatModule.chatMessage.ChatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.ui.signup.moby.landing.LandingScreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.ui.signup.moby.resgister_screens.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.ui.home.wallet.UserWalletActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.trava.user.ui.home.comfirmbooking.payment.AddNewCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trava.user.ui.home.comfirmbooking.payment.SavedCards"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trava.user.ui.home.wallet.TransferWalletMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.trava.user.ui.home.payment.RazorPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.trava.user.ui.menu.earnings.MyEarningsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".module.feedback.FeedbackActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!--<meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+-->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

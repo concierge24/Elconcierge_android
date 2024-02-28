@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="24dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/panic"
+            android:textColor="@color/text_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPanicMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:text="@string/panicDesc"
+            android:textColor="@color/black_8c"
+            android:textSize="16sp" />
+
+        <com.trava.user.utils.swipeButton.View.LeftSwipeButtonView
+            android:id="@+id/tvAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPanicMsg"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            app:sb_swipe_animate_text="true"
+            app:sb_swipe_both_direction="false"
+            app:sb_swipe_text="@string/slide_right" />
+
+        <com.trava.user.utils.swipeButton.View.RightSwipeButtonView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAccept"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:paddingBottom="20dp"
+            app:sb_swipe_animate_text="true"
+            app:sb_swipe_both_direction="false"
+            app:sb_swipe_reverse="true"
+            app:sb_swipe_text="@string/slide_left" />
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

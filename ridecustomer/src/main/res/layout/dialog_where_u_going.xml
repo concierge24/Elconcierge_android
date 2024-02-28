@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/bookforFriend"
+        android:textColor="@color/black_1c"
+        android:textSize="16sp"
+        app:fontFamily="@font/sf_pro_text_bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDesc"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/bookForDesc"
+        android:textColor="@color/black_8c"
+        android:textSize="13sp"
+        app:fontFamily="@font/sf_pro_text_regular" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phoneNo"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black_1c"
+        android:textAllCaps="true"
+        android:textSize="11sp"
+        app:fontFamily="@font/sf_pro_text_bold"
+        tools:ignore="SmallSp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlPhoneLayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvCountry"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_brand_selected"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countryCodePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black_1c"
+                app:ccpDialog_allowSearch="true"
+                app:ccpDialog_fastScroller_bubbleColor="@color/black_8c"
+                app:ccpDialog_fastScroller_handleColor="@color/black_8c"
+                app:ccpDialog_searchEditTextTint="@color/black_8c"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_autoDetectLanguage="true"
+                app:ccp_autoFormatNumber="false"
+                app:ccp_contentColor="@color/black_1c"
+                app:ccp_rememberLastSelection="true"
+                app:ccp_selectionMemoryTag="signupCCP"
+                app:ccp_showArrow="false"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="14sp"
+                app:fontFamily="@font/sf_pro_text_medium" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/cvCountry"
+            android:background="@drawable/shape_brand_selected"
+            android:padding="16dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/friendMobileNo"
+            android:layout_marginStart="8dp"
+            android:inputType="phone"
+            android:textSize="14sp"
+            android:maxLength="16"
+            android:text=""
+            android:textColor="@color/black_1c"
+            android:textColorHint="@color/black_op55"
+            app:fontFamily="@font/sf_pro_text_medium" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:id="@+id/ivAddContacts"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_add_contact"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFullName"
+        android:text="@string/full_name"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black_1c"
+        android:textAllCaps="true"
+        android:textSize="11sp"
+        app:fontFamily="@font/sf_pro_text_bold"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_brand_selected"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:textSize="14sp"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/black_1c"
+        android:textColorHint="@color/black_op55"
+        app:fontFamily="@font/" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRelationStatus"
+        android:text="@string/relationship"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black_1c"
+        android:textAllCaps="true"
+        android:textSize="11sp"
+        app:fontFamily="@font/sf_pro_text_bold"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:id="@+id/etRelationStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_brand_selected"
+        android:ems="10"
+        android:hint="@string/relationship_hint"
+        android:textSize="14sp"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/black_1c"
+        android:textColorHint="@color/black_op55"
+        app:fontFamily="@font/" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/cancel"
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:fontFamily="@font/mont_semibold" />
+
+        <TextView
+            android:id="@+id/tvContinue"
+            android:text="@string/continuee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:fontFamily="@font/mont_semibold" />
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+
+
+
+</LinearLayout>

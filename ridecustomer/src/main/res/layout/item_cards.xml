@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMain"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:filterTouchesWhenObscured="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvCardHolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="Card Holder Name"
+            android:textColor="@color/black_1c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvCardNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCardHolderName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="**** **** **** 5678"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvValidUpto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCardNo"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="@string/validUpto"
+            android:textAllCaps="true"
+            android:textColor="@color/black_8c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvExpiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCardNo"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@+id/tvValidUpto"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="12/18"
+            android:textAllCaps="true"
+            android:textColor="@color/black_1c"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:tint="@color/black_1c"
+            android:src="@drawable/ic_cancel_ride_big" />
+
+        <ImageView
+            android:id="@+id/ivDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            android:layout_toStartOf="@+id/ivDelete"
+            android:src="@drawable/ic_verify" />
+
+        <ImageView
+            android:id="@+id/ivCardType"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/tvCardNo"
+            android:layout_alignEnd="@+id/tvExpiryDate"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_card_active" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

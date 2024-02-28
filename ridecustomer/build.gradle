@@ -1,0 +1,141 @@
+/*apply plugin: 'com.android.application'*/
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'newrelic'
+/*apply plugin: 'io.fabric'*/
+
+configurations {
+    all {
+        exclude group: 'commons-logging', module: 'commons-logging'
+        exclude module: 'httpclient'
+        exclude group: 'commons-codec', module: 'commons-codec'
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+}
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexEnabled true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+        }
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    compileOptions {
+        // Sets Java compatibility to Java 8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation project(':dtapl-3.5.3')
+    implementation project(':paytabs_sdk-v4.0.1')
+    
+//    implementation files('libs/paytabs_sdk-v4.0.1.aar')
+//    implementation files('libs/dtapl-3.5.3.aar')
+
+    implementation("com.github.hotchemi:permissionsdispatcher:3.0.1") {
+        exclude module: "support-v13"
+    }
+    implementation project(':utilities')
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.slice:slice-builders:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    kapt "com.github.hotchemi:permissionsdispatcher-processor:3.2.0"
+    kapt 'com.android.databinding:compiler:3.1.4'
+    /* Pager Indicator */
+    api 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+    api 'com.stripe:stripe-android:16.3.0'
+    /* SUPPORT LIBRARIES */
+    api 'androidx.appcompat:appcompat:1.3.1'
+    api 'androidx.core:core-ktx:1.7.0-alpha02'
+    api 'com.google.android.material:material:1.4.0'
+    api 'androidx.constraintlayout:constraintlayout:2.1.0'
+    api "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+
+    api 'com.android.support:multidex:1.0.3'
+    api 'com.squareup.picasso:picasso:2.71828'
+
+    /* QR Code Scanner */
+    api 'com.budiyev.android:code-scanner:2.1.0'
+
+    /* Show Messages on Top */
+    def msgVersion = '1.1.3'
+    api "org.aviran.cookiebar2:cookiebar2:$msgVersion"
+
+    /* Google LibPhoneNumber */
+    api 'com.googlecode.libphonenumber:libphonenumber:8.12.31'
+
+    /* Circle Image View */
+    api 'de.hdodenhof:circleimageview:3.1.0'
+
+    /* Marker image loading */
+    api 'com.koushikdutta.ion:ion:3.1.0'
+    api 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0'
+    implementation 'com.facebook.android:facebook-android-sdk:11.2.0'
+    api 'com.google.android.gms:play-services-auth:19.2.0'
+    api 'com.stripe:stripe-android:13.2.0'
+    api 'io.conekta:conektasdk:2.1'
+    api 'com.archit.calendar:awesome-calendar:2.0.0'
+    api 'com.razorpay:checkout:1.6.12'
+    api 'com.google.firebase:firebase-crashlytics:18.2.1'
+    api 'com.google.firebase:firebase-analytics:19.0.1'
+    api 'com.github.bolaware:momentz:v2.0'
+    api 'androidx.slice:slice-builders-ktx:1.0.0-alpha6'
+    api 'com.braintreepayments.api:drop-in:5.2.2'
+    api 'com.github.dbachelder:CreditCardEntry:1.4.9'
+    api 'com.intuit.sdp:sdp-android:1.0.6'
+    api 'com.intuit.ssp:ssp-android:1.0.6'
+    api 'com.google.android.exoplayer:exoplayer:2.15.0'
+    api 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    api 'com.newrelic.agent.android:android-agent:6.2.1'
+    api 'com.newrelic.agent.android:android-agent:6.2.1'
+    api 'org.greenrobot:eventbus:3.2.0'
+
+}
+repositories {
+    mavenCentral()
+}

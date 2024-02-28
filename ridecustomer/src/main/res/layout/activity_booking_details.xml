@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootView">
+
+    <LinearLayout
+        android:id="@+id/toolbarBookingDetails"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:tint="@color/black"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/ic_back_arrow_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivBack"
+            android:fontFamily="@font/mont_bold"
+            android:text="@string/invoice"
+            android:textColor="@color/text_dark_1"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTrack"
+            style="@style/Base.Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvCancel"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape_next_btn"
+            android:gravity="center"
+            android:text="@string/track"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/Base.Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/shape_next_btn"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llButtons"
+        android:layout_below="@+id/toolbarBookingDetails"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/rlBookingDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <ImageView
+                    android:id="@+id/ivMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="168dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tvDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivMap"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toStartOf="@+id/tvPaymentTypeAmount"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:textColor="@color/black_1c"
+                    android:textSize="12sp"
+                    tools:text="July 28 · 01:52 PM" />
+
+                <TextView
+                    android:id="@+id/tvPaymentTypeAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivMap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:textColor="@color/black_1c"
+                    android:textSize="12sp"
+                    tools:text="Cash · 340 OMR" />
+
+                <TextView
+                    android:id="@+id/tvBookingId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDateTime"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_toStartOf="@+id/tvBookingStatus"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:textColor="@color/black_8c"
+                    android:textDirection="locale"
+                    android:textSize="12sp"
+                    tools:text="Id:252572457" />
+
+                <TextView
+                    android:id="@+id/tvBookingStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDateTime"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:textColor="@color/thin_light_purple"
+                    android:textSize="12sp"
+                    tools:text="Completed" />
+
+
+                <TextView
+                    android:id="@+id/tvDropOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCompletedAt"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/mont_bold"
+                    android:text="@string/drop_off_location"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvDropOffLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDropOff"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    tools:text="552 Chanelle Turnpike Suite 523" />
+
+                <TextView
+                    android:id="@+id/tvStartedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvBookingId"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:text="@string/started_at"
+                    android:textColor="@color/black_1c"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvStartedAt"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/tvStartedAt"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:gravity="end"
+                    android:textColor="@color/black_05"
+                    android:textDirection="locale"
+                    android:textSize="12sp"
+                    tools:text="July 28 · 01:52 PM" />
+
+                <TextView
+                    android:id="@+id/tvCompletedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvStartedAt"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:text="@string/completed_at"
+                    android:textColor="@color/black_1c"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvCompletedTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvCompletedAt"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/tvCompletedAt"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:gravity="end"
+                    android:textColor="@color/black_05"
+                    android:textDirection="locale"
+                    android:textSize="12sp"
+                    tools:text="July 28 · 01:52 PM" />
+
+                <RelativeLayout
+                    android:id="@+id/rlLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCompletedAt"
+                    android:layout_marginTop="8dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/llIcons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="0dp">
+
+                        <ImageView
+                            android:id="@+id/iv_first_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_pick_location" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_two_dotted_line" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line" />
+
+                        <ImageView
+                            android:id="@+id/ivFirstStop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/dots_gray"
+                            android:src="@drawable/ic_pick_location"
+                            android:tint="@color/dots_gray"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivFirstStopDot1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivFirstStopDot2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivSecondStop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_pick_location"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivSecondStopDot1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivSecondStopDot2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivThirdStop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_pick_location"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivThirdStopDot1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivThirdStopDot2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivFourthStop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_pick_location"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivFourthStopDot1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivFourthStopDot2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_two_dotted_line"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_drplocation" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/acPickupAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@+id/llIcons"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:ems="10"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:gravity="center_vertical"
+                        android:hint="@string/where_from"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_1c"
+                        android:textColorHint="@color/hint_location"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvFirstStop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/acPickupAddress"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@+id/llIcons"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:ems="10"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:gravity="center_vertical"
+                        android:hint="@string/addStop"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_1c"
+                        android:textColorHint="@color/hint_location"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivRemoveFirstStop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/acPickupAddress"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:src="@drawable/ic_action_cross"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSecondStop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvFirstStop"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@+id/llIcons"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:ems="10"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:gravity="center_vertical"
+                        android:hint="@string/addStop"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_1c"
+                        android:textColorHint="@color/hint_location"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivRemoveSecondStop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvFirstStop"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:src="@drawable/ic_action_cross"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/tvThirdStop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvSecondStop"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@+id/llIcons"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:ems="10"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:gravity="center_vertical"
+                        android:hint="@string/addStop"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_1c"
+                        android:textColorHint="@color/hint_location"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivRemoveThirdStop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvSecondStop"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:src="@drawable/ic_action_cross"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/tvFourthStop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvThirdStop"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@+id/llIcons"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:ems="10"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:gravity="center_vertical"
+                        android:hint="@string/addStop"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_1c"
+                        android:textColorHint="@color/hint_location"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivRemoveFourthStop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvThirdStop"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:src="@drawable/ic_action_cross"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/acDropOffAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvFourthStop"
+                        android:layout_marginStart="16dp"
+                        android:layout_toStartOf="@+id/side_view"
+                        android:layout_toEndOf="@+id/llIcons"
+                        android:ems="10"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:gravity="center_vertical"
+                        android:hint="@string/where_to"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_1c"
+                        android:textColorHint="@color/hint_location"
+                        android:textSize="14sp" />
+
+
+                    <View
+                        android:id="@+id/side_view"
+                        android:visibility="gone"
+                        android:layout_width="1dp"
+                        android:layout_height="24dp"
+                        android:layout_below="@+id/tvFourthStop"
+                        android:layout_marginTop="10dp"
+                        android:layout_toStartOf="@+id/ivAddLocation"
+                        android:background="@color/divider_color" />
+
+                    <ImageView
+                        android:id="@+id/ivAddLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvFourthStop"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:src="@drawable/add_location"
+                        android:tint="@color/pink"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlLocation"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivDriverPic"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="@string/nav_header_desc"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_placeholder" />
+
+                    <TextView
+                        android:id="@+id/tvRatingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_toEndOf="@+id/ivDriverPic"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:textColor="@color/black_05"
+                        android:textDirection="locale"
+                        android:textSize="12sp"
+                        tools:text="You rated Jay" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtRateUser"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="90dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/shape_rate_user_bg"
+                        android:gravity="center"
+                        android:text="Rate Driver"
+                        android:visibility="gone"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipperExtraDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlBookingDesc"
+                android:background="@color/white"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rlProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/back_comment"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:contentDescription="@string/nav_header_desc"
+                            app:srcCompat="@drawable/ic_bg_menu" />
+
+                        <ImageView
+                            android:id="@+id/ivCall"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/nav_header_desc"
+                            android:tint="@color/colorPrimary"
+                            app:srcCompat="@drawable/ic_call_driver" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_toStartOf="@+id/ivCall"
+                            android:layout_toEndOf="@id/imageView"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/mont_bold"
+                            android:maxLines="1"
+                            android:paddingTop="@dimen/nav_header_vertical_spacing"
+                            android:text="@string/nav_header_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/text_dark"
+                            android:textDirection="locale"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/ivRating"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_below="@id/tvName"
+                            android:layout_marginStart="8dp"
+                            android:layout_toEndOf="@id/imageView"
+                            android:drawablePadding="8dp"
+                            android:fontFamily="@font/mont_regular"
+                            android:textColor="@color/text_dark" />
+
+                        <TextView
+                            android:id="@+id/tvComments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivRating"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_toEndOf="@id/imageView"
+                            android:fontFamily="@font/mont_regular"
+                            android:textColor="@color/text_dark"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:fontFamily="@font/mont_bold"
+                        android:padding="16dp"
+                        android:text="@string/invoice"
+                        android:textColor="@color/text_dark"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvServiceName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="22dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:text="Aquafina"
+                        android:textColor="@color/text_dark"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                    <TextView
+                        android:id="@+id/tvQuantity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:gravity="end"
+                        android:text="5 Gallons × 2"
+                        android:textColor="@color/text_dark"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/base_fair"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvServiceName" />
+
+                    <TextView
+                        android:id="@+id/tvTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/waiting_time"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                    <TextView
+                        android:id="@+id/tvDistanceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/distance"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTimeLabel" />
+
+                    <TextView
+                        android:id="@+id/tvNormalFareLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/normal_fair"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDistanceLabel" />
+
+                    <TextView
+                        android:id="@+id/tvLoadLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Load Charges"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNormalFareLabel" />
+
+
+                    <TextView
+                        android:id="@+id/tvWaitingChargesLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvLoadLabel" />
+
+                    <TextView
+                        android:id="@+id/tvLabelPreviousCharges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/previousCharge"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvWaitingChargesLabel" />
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/bookingFee"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvLabelPreviousCharges" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/minmum_charge"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                    <TextView
+                        android:id="@+id/surcharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/surcharge"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                    <TextView
+                        android:id="@+id/Schedulecharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/schedule_charge"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/surcharge" />
+
+                    <TextView
+                        android:id="@+id/Insurancecharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Insurance service"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/Schedulecharge" />
+
+                    <TextView
+                        android:id="@+id/levelCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Pickup/Dropoff Level Charge"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/Insurancecharge" />
+
+                    <TextView
+                        android:id="@+id/promocharge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/_60sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPromoCharge"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/applied_promo"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/levelCharge" />
+
+                    <TextView
+                        android:id="@+id/Zonecharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/zone_charge"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/promocharge" />
+
+                    <TextView
+                        android:id="@+id/tollcharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/toll_parking_charges"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/Zonecharge" />
+
+                    <TextView
+                        android:id="@+id/airportcharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/airport_charges"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tollcharge" />
+
+                    <TextView
+                        android:id="@+id/surchecklist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableEnd="@drawable/ic_info"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/check_list_charge"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/airportcharge" />
+
+                    <TextView
+                        android:id="@+id/tvisrtaxLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/isr_tax"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/surchecklist" />
+
+                    <TextView
+                        android:id="@+id/tvisrHelperLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/helper_charges"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvisrtaxLabel" />
+
+                    <TextView
+                        android:id="@+id/tvSubtotalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="@string/sub_total"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvisrHelperLabel" />
+                    <TextView
+                        android:id="@+id/tvKmBonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text=""
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@id/tvSubtotalPrice"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubtotalLabel" />
+
+                    <TextView
+                        android:id="@+id/tpsCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Pickup/Dropoff Level Charge"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvKmBonus" />
+
+                    <TextView
+                        android:id="@+id/tvqCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Pickup/Dropoff Level Charge"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintStart_toStartOf="@+id/tvServiceName"
+                        app:layout_constraintTop_toBottomOf="@+id/tpsCharge" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:text="@string/total"
+                        android:textColor="@color/text_dark"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvqCharge" />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="300 INR"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
+
+                    <TextView
+                        android:id="@+id/tvTimePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="10 INR"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+                    <TextView
+                        android:id="@+id/tvDistancePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="10 INR"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTimePrice" />
+
+                    <TextView
+                        android:id="@+id/tvNormalFarePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="50 INR"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDistancePrice" />
+
+                    <TextView
+                        android:id="@+id/tvNLoadFarePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="50 LKR"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNormalFarePrice" />
+
+
+                    <TextView
+                        android:id="@+id/tvWaitingChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs.0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNLoadFarePrice" />
+
+                    <TextView
+                        android:id="@+id/tvPreviousCharges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvWaitingChargesPrice" />
+
+
+                    <TextView
+                        android:id="@+id/tvBookingfeePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs.0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPreviousCharges" />
+
+                    <TextView
+                        android:id="@+id/tvServiceChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBookingfeePrice" />
+
+                    <TextView
+                        android:id="@+id/tvSurChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvServiceChargesPrice" />
+
+                    <TextView
+                        android:id="@+id/tvScheduleChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSurChargesPrice" />
+
+                    <TextView
+                        android:id="@+id/tvInsuranceChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvScheduleChargesPrice" />
+
+                    <TextView
+                        android:id="@+id/tvLevelCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInsuranceChargesPrice" />
+
+                    <TextView
+                        android:id="@+id/tvPromoCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text=""
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvLevelCharge" />
+
+
+                    <TextView
+                        android:id="@+id/tvZoneChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/promocharge" />
+
+                    <TextView
+                        android:id="@+id/tvtollChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvZoneChargesPrice" />
+
+                    <TextView
+                        android:id="@+id/tvairportChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvtollChargesPrice" />
+
+                    <TextView
+                        android:id="@+id/tvCheckChargesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvairportChargesPrice" />
+
+                    <TextView
+                        android:id="@+id/tvisr_tax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCheckChargesPrice" />
+
+                    <TextView
+                        android:id="@+id/helper_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+                        app:layout_constraintTop_toBottomOf="@+id/tvisr_tax" />
+
+                    <TextView
+                        android:id="@+id/tvSubtotalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/helper_charge" />
+                    <TextView
+                        android:id="@+id/tvtps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvKmBonus" />
+
+                    <TextView
+                        android:id="@+id/tvtpq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/mont_regular"
+                        android:text="Rs 0.00"
+                        android:textColor="@color/text_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvtps" />
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:text="@string/total"
+                        android:textColor="@color/text_dark"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvQuantity"
+                        app:layout_constraintTop_toBottomOf="@+id/tvtpq" />
+
+                    <View
+                        android:id="@+id/view11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/divider"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:fontFamily="@font/mont_bold"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="@string/add_tip_to_your_driver"
+                        android:textColor="@color/text_dark"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_order_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_tip">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:id="@+id/iv_signature"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/ic_placeholder"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:id="@+id/iv_proof_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/ic_placeholder"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:id="@+id/iv_proof_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_placeholder"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ViewFlipper>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/ic_back"
+                app:tint="@{color.black_color}"/>
+
+
+            <TextView
+                android:id="@+id/tvOtpSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEnterYourNumber"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/enter_otp_on"
+                android:textColor="@color/black_8c"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:fontFamily="@font/sf_pro_text_regular" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlPhoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_tab"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_divider_bottom"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/cvCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/countryCodePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black_1c"
+                        app:ccpDialog_allowSearch="true"
+                        app:ccpDialog_fastScroller_bubbleColor="@color/colorGreen"
+                        app:ccpDialog_fastScroller_handleColor="@color/colorGreen"
+                        app:ccpDialog_searchEditTextTint="@color/black_8c"
+                        app:ccpDialog_showCloseIcon="true"
+                        app:ccp_autoDetectLanguage="true"
+                        app:ccp_autoFormatNumber="false"
+                        app:ccp_clickable="true"
+                        app:ccp_contentColor="@color/black_1c"
+                        app:ccp_rememberLastSelection="true"
+                        app:ccp_selectionMemoryTag="signupCCP"
+                        app:ccp_showArrow="true"
+                        app:ccp_showFlag="false"
+                        app:ccp_showNameCode="true"
+                        app:ccp_textSize="16dp"
+                        app:fontFamily="@font/sf_pro_text_bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_coutry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_arrow_down" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/cvCountry"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    app:textcolor="@{color.black_color}"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/sf_pro_text_bold" />
+            </RelativeLayout>
+
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/tvProceed_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_chevron_right_white" />
+
+
+
+
+            <TextView
+                android:id="@+id/tvProceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/gradient_proceed_btn_no_radius"
+                android:gravity="center"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:text="@string/proceed"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:fontFamily="@font/sf_pro_text_semibold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</layout>

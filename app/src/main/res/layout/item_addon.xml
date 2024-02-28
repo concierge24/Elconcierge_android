@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="color"
+            type="com.codebrew.clikat.utils.configurations.ColorConfig" />
+
+        <variable
+            name="itemData"
+            type="com.codebrew.clikat.data.model.api.Value" />
+
+        <variable
+            name="currency"
+            type="String" />
+
+        <variable
+            name="isAddonQuant"
+            type="Boolean" />
+
+        <variable
+            name="clickListener"
+            type="com.codebrew.clikat.module.product_addon.adapter.ItemListener" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--android:onClick="@{() -> clickListener.onClick(itemData)}"-->
+
+        <CheckBox
+            android:id="@+id/tv_addon_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:checked="@{itemData.status || itemData.is_default().equals(`1`)?true:false}"
+            android:enabled="@{itemData.is_default().equals(`1`)?false:true}"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:onClick="@{() -> clickListener.onClick(itemData)}"
+            android:padding="@dimen/dp_04"
+            android:text="@{itemData.type_name, default=`Addon Name`}"
+            app:layout_constraintEnd_toStartOf="@+id/tv_total_proce_2"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:paddingStart="@dimen/dp_04"
+            tools:visibility="visible"
+            android:text="@{@string/currency_tag(currency,itemData.price.toString()), default=`USD 5`}"
+            android:visibility="@{itemData.price > 0.0 &amp; isAddonQuant ? View.VISIBLE : View.GONE }"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_addon_name" />
+
+
+
+            <ImageView
+                android:id="@+id/ivIncAddOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:onClick="@{() -> clickListener.onClickInc(itemData)}"
+                app:layout_constraintBottom_toBottomOf="@id/ivDecAddOn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvQuanAddOn"
+                app:layout_constraintTop_toTopOf="@id/ivDecAddOn"
+                app:srcCompat="@drawable/ic_plus"
+                app:tint="@{color.primaryColor}" />
+
+            <TextView
+                android:id="@+id/tvQuanAddOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:fontFamily="@font/proximanovasemibold"
+                android:gravity="center_vertical"
+                android:padding="@dimen/value_2"
+                android:text="@{itemData.selectedQuantity.toString()}"
+                app:layout_constraintBottom_toBottomOf="@id/ivDecAddOn"
+                app:layout_constraintEnd_toStartOf="@+id/ivIncAddOn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivDecAddOn"
+                app:layout_constraintTop_toTopOf="@id/ivDecAddOn" />
+
+            <ImageView
+                android:id="@+id/ivDecAddOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:onClick="@{() -> clickListener.onClickDec(itemData)}"
+                app:layout_constraintBottom_toBottomOf="@id/tv_addon_name"
+                app:layout_constraintEnd_toStartOf="@+id/tvQuanAddOn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_total_proce_2"
+                app:layout_constraintTop_toTopOf="@+id/tv_addon_name"
+                app:srcCompat="@drawable/ic_minus"
+                app:tint="@{color.primaryColor}" />
+
+            <TextView
+                android:id="@+id/tv_total_proce_2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/dp_04"
+                android:paddingEnd="@dimen/dp_04"
+                android:gravity="center"
+
+                app:layout_constraintBottom_toBottomOf="@+id/tv_addon_name"
+                app:layout_constraintEnd_toStartOf="@+id/ivDecAddOn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_addon_name"
+                app:layout_constraintTop_toTopOf="@+id/tv_addon_name" />
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupCounterAddOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:constraint_referenced_ids="ivIncAddOn,ivDecAddOn,tvQuanAddOn" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

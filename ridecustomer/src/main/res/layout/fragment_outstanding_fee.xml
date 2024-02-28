@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rootView"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.invoice.InvoiceFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlHeader">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivCross"
+                app:srcCompat="@drawable/ic_action_cross"
+                android:layout_marginTop="24dp"
+                android:padding="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOutstanding"
+                android:layout_below="@+id/ivCross"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text=""
+                android:textColor="@color/black_1c"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="Dec 16, 2019"
+                android:textColor="@color/black_8c"
+                android:layout_below="@+id/tvOutstanding"/>
+
+            <TextView
+                android:id="@+id/tvPayCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:gravity="center"
+                android:paddingEnd="16dp"
+                android:drawablePadding="24dp"
+                android:textSize="18sp"
+                android:drawableStart="@drawable/ic_cash_active"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="Pay in cash to next driver"
+                android:textColor="@color/black_8c"
+                android:layout_below="@+id/tvDate"/>
+
+            <TextView
+                android:id="@+id/tvCreditCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="center"
+                android:paddingEnd="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:drawablePadding="24dp"
+                android:textSize="18sp"
+                android:drawableStart="@drawable/ic_card_active"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="@string/creditCard"
+                android:textColor="@color/black_8c"
+                android:layout_below="@+id/tvPayCash"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

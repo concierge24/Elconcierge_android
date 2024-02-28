@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="color"
+            type="com.codebrew.clikat.utils.configurations.ColorConfig" />
+
+        <variable
+            name="drawables"
+            type="com.codebrew.clikat.utils.configurations.DrawablesConfig" />
+
+        <variable
+            name="strings"
+            type="com.codebrew.clikat.utils.configurations.TextConfig" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_cnstraint"
+        constraintBackground="@{color.appBackground}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/dp_04"
+            android:fontFamily="@font/proximanovasemibold"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_xlarge"
+            android:textStyle="bold"
+            tools:text="@string/change_language"
+            app:layout_constraintBottom_toTopOf="@+id/tv_title_subhead"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textcolor="@{color.textHead}" />
+
+        <TextView
+            android:id="@+id/tv_title_subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/dp_04"
+            android:fontFamily="@font/proximanovaregular"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="@string/some_of_our_best_food_categories_for_you"
+            app:layout_constraintBottom_toTopOf="@+id/tv_custom_tag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:textcolor="@{color.textSubhead}" />
+
+        <TextView
+            android:id="@+id/tvViewAll"
+            textcolor="@{color.appBackground}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/value_16"
+            android:background="@drawable/back_rec_theme_color_light_4"
+            android:fontFamily="@font/proximanovaregular"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/value_8"
+            android:paddingTop="@dimen/value_4"
+            android:paddingEnd="@dimen/value_8"
+            android:paddingBottom="@dimen/value_4"
+            android:text="@string/see_all"
+            android:textSize="@dimen/text_small_medium"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_custom_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:fontFamily="@font/proximanovasemibold"
+            android:text="@string/what_are_you_looking_for"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_xxxlarge"
+            app:layout_constraintBottom_toTopOf="@+id/rv_banner_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_subhead"
+            app:textcolor="@{color.appBackground}"
+            tools:text="What are you looking \nfor?" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_banner_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/rv_home_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_custom_tag"
+            app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:nestedScrollingEnabled="false"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/rv_custom_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_banner_list"
+            app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_custom_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/dp_04"
+            android:nestedScrollingEnabled="false"
+            app:background="@{color.appBackground}"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_home_list"
+            app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

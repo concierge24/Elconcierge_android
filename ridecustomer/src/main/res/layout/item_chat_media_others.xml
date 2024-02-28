@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp">
+
+    <TextView
+        android:id="@+id/tvDateHeaderMediaOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="Today" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tvDateHeaderMediaOther"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="2dp"
+        android:transitionName="chat_image"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/imageViewOther"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <!--app:sriv_border_color="#008fea"-->
+        <!--app:sriv_border_width="2dip"-->
+        <!--app:sriv_left_bottom_corner_radius="4dip"-->
+        <!--app:sriv_left_top_corner_radius="4dip"-->
+        <!--app:sriv_right_bottom_corner_radius="4dip"-->
+        <!--app:sriv_right_top_corner_radius="4dip"-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivPlay"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/btn_play"-->
+        <!--android:visibility="visible" />-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/ivCancelOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <!--android:src="@drawable/ic_media_stop"-->
+            <ProgressBar
+                android:id="@+id/progressBarOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ivCancelOthers"
+                android:layout_alignTop="@id/ivCancel"
+                android:layout_alignEnd="@+id/ivCancelOthers"
+                android:layout_alignBottom="@+id/ivCancelOthers" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="2:30"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTimeMediaOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvImage"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="Today · 8:20 pm"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+</RelativeLayout>

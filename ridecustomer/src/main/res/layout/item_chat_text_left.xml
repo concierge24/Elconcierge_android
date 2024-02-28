@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7591241" />
+
+
+    <com.trava.user.utils.ShapeTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingMultiplier="1.24"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:topLeftRadius="12dp"
+        app:topRightRadius="12dp"
+        app:bottomRightRadius="12dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:solidBackgroundColor="@color/white"
+        tools:text="Hey! I am interested in the property you’ve listed. I was thinking of having a look at it. Can we schedule a tour? and Is the price listed fixed?
+Thanks."
+        android:layout_marginLeft="8dp" />
+
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mont_regular"
+        android:gravity="end"
+        android:padding="4dp"
+        android:layout_marginStart="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+        tools:text="5:30 AM"
+        android:layout_marginLeft="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

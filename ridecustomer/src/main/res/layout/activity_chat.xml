@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rootView"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:tint="@color/black"
+            android:src="@drawable/ic_back_arrow_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/mont_bold"
+            android:text="@string/chat"
+            android:textColor="@color/text_dark_1"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cvBottom" />
+
+    <ImageView
+        android:id="@+id/ivDown"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/cvBottom"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        android:scaleType="centerInside"/>
+
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/ivSend"
+        app:cardCornerRadius="24dp">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            android:fontFamily="@font/mont_regular"
+            android:hint="@string/write_your_msg_here"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ivSend"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/ic_menu_send" />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/group"
+        app:constraint_referenced_ids="ivSend,cvBottom,ivAdd"/>
+
+</RelativeLayout>

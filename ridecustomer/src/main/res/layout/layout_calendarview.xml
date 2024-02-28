@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_back"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_cross"
+        android:layout_alignParentEnd="true"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/mont_bold"
+        android:gravity="center"
+        android:text="@string/please_select_start_and_end_date"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        custom:disable_date_color="#ABABAB"
+        custom:range_color="@color/white"
+        custom:selected_date_circle_color="@color/black"
+        custom:title_color="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_apply"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/calendar"
+        android:fontFamily="@font/mont_bold"
+        android:gravity="center"
+        android:text="@string/apply"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

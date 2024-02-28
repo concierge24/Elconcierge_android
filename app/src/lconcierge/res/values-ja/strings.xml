@@ -1,0 +1,1578 @@
+<resources>
+    <string name="app_id" translatable="false">611128796015197</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb611128796015197</string>
+
+    <string name="google_map" translatable="false">AIzaSyCh7QNGa6w2E5Yw-M5zy1Z186kHexKu_r4</string>
+
+<!--    <string name="default_notification_channel_id">clickat_notification</string>-->
+    <string name="default_notification_channel_id">クリック通知
+</string>
+
+    <string name="packages">パッケージ
+</string>
+    <string name="welcome">ようこそ
+</string><!--General app strings-->
+    <string name="recomended">オススメ
+</string>
+    <string name="offers">オファー
+</string>
+
+
+    <string name="home">ホーム
+</string>
+    <string name="live_support">ライブサポート
+</string>
+    <string name="cart">カート</string>
+    <string name="promotions">プロモーション</string>
+    <string name="notifications">お知らせ</string>
+    <string name="my_account">マイアカウント
+</string>
+    <string name="my_favorites">私のお気に入り
+</string>
+
+
+    <string name="done">できた
+</string>
+    <string name="choose_from_gallery">ギャラリー
+</string>
+    <string name="choose_image_selection">画像の選択を選択
+</string>
+    <string name="choose_from_camera">カメラ
+</string>
+
+    <string name="order_history">％sの履歴
+</string>
+    <string name="track_my_order">私の％sを追跡
+</string>
+    <string name="rate_my_order">私の％sを評価
+</string>
+    <string name="upcoming_order">現在の％s
+</string>
+    <string name="loyality_points">ロイヤルティポイント
+</string>
+
+    <string name="settings">設定
+</string><!--App Strings-->
+    <string name="login">ログインする
+</string>
+    <string name="forgot_password">パスワードをお忘れですか？
+</string>
+    <string name="_continue">継続する
+</string>
+    <string name="sign_up">サインアップ
+</string>
+    <string name="signup_otp_msg">携帯番号でOTP（ワンタイムパスワード）をお送りします。電話番号を正しく入力したら、下のボタンをタップしてください。</string>
+    <string name="send_otp">OTPを送信する
+</string>
+    <string name="recieve_otp">コードを受け取りませんでしたか？</string>
+    <string name="resend_otp">OTPを再送信
+</string>
+    <string name="submit">参加する
+</string>
+    <string name="tap_to_add_profile_pic">タップしてプロフィール写真を追加します</string>
+    <string name="finish">仕上げ
+</string>
+    <string name="oreder_scheduler">％sスケジューラ
+</string>
+    <string name="order_details">％s詳細
+</string>
+    <string name="schedule_your_order">％sをスケジュール
+</string>
+    <string name="delivered">お届け
+</string>
+    <string name="reorder">再注文
+</string>
+    <string name="cancel_order">％sをキャンセル
+</string>
+    <string name="track">追跡
+</string>
+    <string name="hint_email">Eメール
+</string>
+    <string name="hint_password">パスワード
+</string>
+    <string name="hint_digit_phone_number">電話番号
+</string>
+    <string name="enter_otp">OTPを入力してください
+</string>
+    <string name="hint_full_name">フルネーム
+</string>
+    <string name="action_okay">OK</string>
+    <!--Validation String-->
+    <string name="empty_email">
+メールIDを入力してください</string>
+    <string name="empty_email_phone">メールまたは電話番号を入力してください</string>
+    <string name="invalid_email">有効なメールIDを入力してください
+</string>
+    <string name="empty_pwd">
+パスワードを入力してください</string>
+    <string name="empty_phone_number">電話番号を入力してください
+</string>
+    <string name="empty_otp">OTPを入力してください
+</string>
+    <string name="empty_fn">氏名を入力してください
+</string>
+    <string name="payment_method">支払方法
+</string>
+    <string name="set_schedule">スケジュールを設定
+</string>
+    <string name="select_category">カテゴリを選んでください</string>
+    <string name="select_dates">日付を選択
+</string>
+    <string name="internet_connection">インターネット接続を確認してください。</string>
+    <string name="login_expired">アカウントは他のデバイスにログインしています。続行するには、もう一度ログインしてください。
+</string>
+    <string name="ok">OK</string>
+    <string name="guest">ゲスト
+</string>
+    <string name="edit">編集する
+</string>
+    <string name="qunatity">量
+</string>
+    <string name="net_total">合計額
+</string>
+    <string name="delivery">％s〜
+</string>
+    <string name="delivery_speed">配達速度
+</string>
+    <string name="delivery_charges">配送料
+</string>
+    <string name="handling_charges">手数料
+</string>
+    <string name="empty">フィールドは空にできません</string>
+    <string name="txtOrderDone">これまでに％s完了
+</string>
+    <string name="txtPaymentOptions">支払いオプション
+</string>
+    <string name="txtInbusiness">創業以来
+</string>
+    <string name="reviews">レビュー
+</string>
+    <string name="go">Go</string>
+    <string name="multi_serach">マルチ検索
+</string>
+    <string name="what_are_you_looking_for">何を探していますか？
+</string>
+    <string name="max_limit_reached">マックス。限界に達した
+</string>
+    <string name="multisercah">マルチ検索
+</string>
+    <string name="NoCart">項目は見つかりませんでした
+</string>
+    <string name="favorites">お気に入り
+</string>
+    <string name="share_sub">％sユーザーモバイルアプリ
+</string>
+    <string name="share_body">https://play.google.com/store/apps/details?id=%s</string>
+    <string name="save">保存する
+</string>
+    <string name="cashOnDeli">代金引換
+</string>
+    <string name="debitCreditCard">デビット/クレジットカード
+</string>
+    <string name="choosePaymentOption">支払いオプションを選択
+</string>
+    <string name="selectAdress">住所を追加してください
+.</string>
+    <string name="order_summary">％sサマリー
+</string>
+    <string name="pickkup">選び出す
+</string>
+    <string name="items">アイテム
+</string>
+    <string name="net_payable">ネット支払い
+</string>
+    <string name="additional_remarks">追加備考
+ </string>
+    <string name="place_order">％sを配置
+</string>
+    <string name="successFavourite">
+お気に入りに追加しました。</string>
+    <string name="successUnFavourite">お気に入りから削除しました。</string>
+
+    <string name="success_wishlist">％sは％sに正常に追加されました。
+</string>
+
+    <string name="update">更新！
+</string>
+    <string name="cancel">キャンセル
+</string>
+    <string name="pointsEarnedSoFar">これまでに獲得したポイント
+</string>
+    <string name="change_password">パスワードを変更する
+</string>
+    <string name="notification_lang">通知言語
+</string>
+    <string name="enterReview">レビューを書く
+</string>
+    <string name="open">営業中
+</string>
+    <string name="filter">フィルター
+</string>
+    <string name="old_password">以前のパスワード
+</string>
+    <string name="new_password">新しいパスワード
+</string>
+    <string name="confirm_password">パスワードを認証する
+</string>
+    <string name="password_match_error">パスワードが一致しません
+</string>
+    <string name="clearCart">別の％sを選択すると、カートは明確になります。続行してもよろしいですか？
+</string>
+    <string name="Ok">OK</string>
+    <string name="apply">申し込む
+</string>
+    <string name="clear">晴れ
+</string>
+    <string name="close">閉まっている
+</string>
+    <string name="cash">現金
+</string>
+    <string name="busy">忙しい
+</string>
+    <string name="logout">ログアウト
+</string>
+    <string name="please_login">ログインしてください
+</string>
+    <string name="order_no">％sいいえ。
+</string>
+    <string name="placed_on">配置
+</string>
+    <string name="delivered_on">配信
+</string>
+    <string name="expected_delivered_on">期待される％sオン
+</string>
+    <string name="points">ポイント
+</string>
+    <string name="passwrd_lenght">パスワードの長さは6文字以上にする必要があります
+.</string>
+    <string name="no_internet_connection_found">インターネット接続が見つかりません
+</string>
+    <string name="retry">リトライ
+</string>
+    <string name="pending">保留中
+</string>
+    <string name="confirmed">確認済み
+</string>
+    <string name="reject">拒否する
+</string>
+    <string name="reached">到達した
+</string>
+    <string name="doYouCancel">この％sをキャンセルしますか？
+</string>
+    <string name="date_time_msg">集荷日時を選択してください
+</string>
+    <string name="rate_">割合
+</string>
+    <string name="add_to_cart">カートに追加
+</string>
+    <string name="nothing_found">何も見つかりません！
+</string>
+    <string name="results_for">の結果
+</string>
+    <string name="skip">スキップ
+</string>
+    <string name="success">成功</string>
+    <string name="succesfully_scheduled">ご注文は正常にスケジュールされました。</string>
+    <string name="succesfully_order">％sは正常に配置されました。
+</string>
+    <string name="no_order_found">％sが見つかりません！
+</string>
+    <string name="no_fav_found">
+お気に入りは見つかりませんでした！</string>
+    <string name="success_logout">ログアウトに成功しました
+.</string>
+    <string name="status">状態</string>
+    <string name="payment">支払い
+</string>
+    <string name="total_amount">お支払い総額
+</string>
+    <string name="placed">置いた
+</string>
+    <string name="near_you">あなたの近く
+</string>
+    <string name="minimum_order">最小％s
+</string>
+    <string name="delivery_time">納期
+</string>
+    <string name="payment_options">支払いオプション
+</string>
+    <string name="desc">％sについて
+</string><!--new-->
+    <string name="review">レビュー
+</string>
+    <string name="about">独自性
+</string>
+    <string name="total">合計
+</string>
+    <string name="sub_total">小計
+</string>
+    <string name="type_here">ここに入力
+</string>
+    <string name="new_tag">新着
+</string>
+    <!--<new Messages>-->
+    <string name="action_send">送る</string>
+    <string name="others">その他</string>
+    <string name="just_now">ちょうど今
+</string><!---->
+    <string name="a_min_ago">少し前
+</string>
+    <string name="min_ago">分前
+</string>
+    <string name="a_hour_ago">1時間前
+</string>
+    <string name="hour_ago">1時間前
+</string>
+    <string name="yest">昨日
+</string>
+    <string name="days_afo">数日前
+</string>
+    <string name="days">日々
+</string>
+    <string name="forgot_password1">パスワードをお忘れですか
+</string>
+    <string name="log_out_msg">ログアウトしてもよろしいですか？
+</string>
+    <string name="view_all">すべてを見る
+</string>
+    <string name="select_country">国を選択
+</string>
+    <string name="pick_uptime">日付と時刻を選択
+</string>
+    <string name="supplier_name">％s：
+</string>
+
+    <string name="isMonthlyErrorMsg">毎月の予定日を選択してください
+.</string>
+    <string name="min_order_time">最小納期
+</string>
+    <string name="hour">時
+</string>
+    <string name="hours">時間
+</string>
+    <string name="min">議事録
+</string>
+    <string name="day">日</string>
+    <string name="compareProduct">％sを比較
+</string>
+    <string name="results">結果
+</string>
+    <string name="supplierClosed">現在閉鎖されており、注文は次のサプライヤーの営業時間/日中に確認されます
+.</string>
+
+
+    <string name="supplierBusy1">今日の注文は現在忙しいです。ご注文が遅れる可能性があります
+.</string>
+    <string name="wrong_date_selection">将来の日時を延期してください
+</string>
+    <string name="per_hour">1時間当たり
+</string>
+    <string name="Alert">警告！
+</string>
+
+    <!--need translate-->
+
+    <string name="clearCart_lang">
+別の言語を選択すると、カートが明確になります。続行してもよろしいですか？</string>
+    <string name="sort_by">並び替え
+</string>
+    <string name="clear_cart_back">この画面から戻るとカートは空になります.</string>
+    <string name="add">追加
+</string>
+    <string name="alert">警告！
+</string>
+    <string name="scheduled_order">スケジュールされた％s
+</string>
+    <string name="expected_delivery_on">配送予定日
+</string>
+    <string name="yes">はい
+</string>
+    <string name="text_single">シングル
+</string>
+    <string name="text_multiple">複数
+</string>
+    <string name="loyality_products">ロイヤルティ製品
+</string>
+    <string name="loyality_orders">ロイヤルティ％s
+</string>
+    <string name="track_noti">配送予定日を過ぎた場合のみ、注文を追跡できます
+</string>
+    <string name="no_notification">通知が見つかりませんでした。
+</string>
+    <string name="share_supplier">
+JUST cbd経由でankiyを使用することをお勧めします</string>
+
+    <string name="sup">％sを共有！
+</string>
+    <string name="basket_message">最後のショッピングカートを完了するのを忘れましたか？
+</string>
+
+    <string name="order_pending">％s現在
+</string>
+    <string name="no_date_selected">日付が選択されていません
+</string>
+    <string name="ankiy">安っぽい
+</string>
+
+    <string name="cancel_msg">
+％sは正常にキャンセルされました。</string>
+
+    <string name="search">％sを検索
+</string>
+    <string name="discount">ディスカウント</string>
+
+    <!--pending-->
+    <string name="reddem">引き換える
+</string>
+
+    <string name="location">ロケーション
+</string>
+
+    <string name="banner">バナー
+</string>
+    <string name="reviews_text"> ％.0fレビュー
+</string>
+    <string name="reviews_text_"> ％d件のレビュー
+</string>
+    <string name="hour_tag">％d時間
+</string>
+
+
+    <string name="day_tag">％d日
+</string>
+
+    <string name="minute_tag">％d分
+</string>
+
+    <string name="currency_tag">％1 $ s％2 $ s
+</string>
+
+    <string name="min_max_time">％1 $ d-％2 $ d分
+</string>
+
+    <string name="discountprice_tag">％1 $ s％2 $ s
+</string>
+
+    <string name="percentage_tag">Upto %s%% off</string>
+
+    <string name="supplier_tag">％s
+</string>
+
+    <string name="discountprice_search_multiple">%1$s %2$s/%3$s</string>
+
+    <string name="filter_price_tag">%1$s %2$d - %1$s %3$d</string>
+
+    <string name="result_tag">%d Results</string>
+
+    <string name="resturant_count_tag">%1$d %2$s</string>
+
+    <string name="clearCart_multiprod_quant">複数の製品数量を選択すると、カートがクリアになります。続行してもよろしいですか？
+</string>
+
+    <string name="clearCart_product">別の商品を選択すると、カートが明確になります。続行してもよろしいですか？
+</string>
+
+    <string name="title_activity_filter_screen">画面アクティビティのフィルタリング
+</string>
+    <string name="search_hint">何を探していますか？
+</string>
+    <string name="no">番号</string>
+
+    <string name="valid_email">メールアドレスを入力してください
+</string>
+    <string name="cart_added">カートに追加
+</string>
+
+    <string name="title_for_your_review">レビューのタイトル
+</string>
+    <string name="write_review_here">ここにレビューを書きます…
+</string>
+    <string name="rating_review">評価＆amp;レビュー
+</string>
+    <string name="rate_product">レート％s
+</string>
+    <string name="rate_supplier">レート％s
+</string>
+    <string name="product_description">％s説明
+</string>
+    <string name="select_agent">％sを選択
+</string>
+    <string name="select_supplier">％sを選択
+</string>
+    <string name="book_an_appointment">予約を取る
+</string>
+    <string name="agent_available">％s利用可能
+</string>
+    <string name="agent_not_available">％sは利用できません
+</string>
+    <string name="experience_tag">％d年の経験
+</string>
+
+    <string name="agent_detail">％s詳細
+</string>
+    <string name="view_menu">表示メニュー
+</string>
+    <string name="change">変化する
+</string>
+    <string name="schedule_delivery">配送のスケジュール
+</string>
+    <string name="qty">数量
+</string>
+    <string name="view_products_as">％sを表示
+</string>
+    <string name="total_item_tag">％dアイテム
+</string>
+
+
+    <string name="restaurant_order_type">自宅でサービスを楽しむには、％1 $ sから％2 $ sを選択してください
+</string>
+    <string name="supplier_lookup_tag">％sをお探しですか？
+</string>
+
+    <string name="order_tag">％1 $ s＃％2 $ d
+</string>
+
+
+    <string name="long_desc">長い説明は、画像などの非テキスト要素に長い代替テキストを提供する方法です。一般に、250文字を超える代替テキスト。これより簡潔にすることはできません
+
+説明や意味を少なくすることなく、長い説明が必要です。長い説明の適切な使用例は、チャート、グラフ、マップ、インフォグラフィック、およびその他の複雑な画像です。
+
+
+代替テキストと同様に、長い説明は説明的で意味のあるものにする必要があります。また、画像に組み込まれているすべてのテキストを含める必要があります。長い説明は、視覚障害のあるユーザーにできるだけ多くのものを提供する必要があります
+
+目の見えるユーザーが画像から理解できるような情報。</string>
+
+
+    <string name="book_slot">確認
+</string>
+    <string name="phone_tag">％sに送信されたOTPを入力してください
+</string>
+    <string name="in_kitchen">台所に
+</string>
+
+    <string name="instruction">命令
+</string>
+    <string name="explanation_multiple_request">アプリが機能を実行するために必要なため、許可をリクエストしています。再試行するには[許可を付与]を選択し、終了するには[キャンセル]を選択してください。</string>
+    <string name="when_would_you_like_your_service">
+いつサービスをご希望ですか？</string>
+
+    <string name="disc_yes_text">はい\ n割引で製品を表示
+</string>
+    <string name="disc_no_text">いいえ\ n商品を割引価格で表示しません
+</string>
+
+    <string name="avail_yes_text">はい\ n在庫がある商品を表示
+</string>
+    <string name="avail_no_text">いいえ、\ n在庫がない商品は表示しません
+</string>
+
+    <string name="price_low_to_high">価格：低から高
+</string>
+    <string name="price_high_to_low">価格：高い順
+</string>
+    <string name="popularity">人気
+</string>
+    <string name="price_range">価格帯
+</string>
+    <string name="availability">可用性</string>
+    <string name="remove_cart">削除する
+</string>
+    <string name="add_cart_tag">追加
+</string>
+    <string name="login_using_facebook">Facebookを使用してログイン</string>
+    <string name="login_signup_text">アカウントをお持ちではないですか？サインアップ
+</string>
+
+    <string name="proceed">続行する
+</string>
+    <string name="reset">リセット
+</string>
+    <string name="brands">ブランド
+</string>
+    <string name="next">次
+</string>
+    <string name="view_more">もっと見る
+</string>
+    <string name="view_detail">詳細を表示
+</string>
+    <string name="get_started">始めましょう
+</string>
+    <string name="track_order">％sを追跡
+</string>
+    <string name="shop_by_type">タイプで選ぶ
+</string>
+    <string name="special_offers">特別オファー
+</string>
+    <!--    <string name="special_offers">プロモーション
+    </string>-->
+    <!-- <string name="special_offers">特別オファー
+    </string>-->
+    <string name="awesome_deals">素晴らしいお得な情報が毎日アンロックされます
+</string>
+    <string name="awesome_product">素晴らしい製品
+</string>
+    <string name="recent_orders">最近の注文
+</string>
+    <string name="we_hand_picked_some_great_services_for_you">すばらしい％sをいくつか厳選しました。
+</string>
+    <string name="categories">カテゴリー
+</string>
+    <string name="product_price">製品価格：
+</string>
+    <string name="view_slot">スロットを表示
+</string>
+    <string name="book_now">今予約する
+</string>
+    <string name="occupation_here">ここの職業
+</string>
+    <string name="order_recieved">％sを受け取りました
+</string>
+    <string name="otp_verification">OTP検証
+</string>
+    <string name="enter_mobile">モバイルに入る
+</string>
+    <string name="signup">サインアップ
+</string>
+    <string name="signup_using_facebook">Facebookを使用してサインアップ
+</string>
+    <string name="don_t_have_an_account_login">すでにアカウントをお持ちですか？ログインする
+</string>
+    <string name="menu">メニュー
+</string>
+    <string name="buy_now">今買う
+</string>
+    <string name="delivery_location">住所の場所
+</string>
+    <string name="rating_amp_reviews">評価＆amp;レビュー
+</string>
+    <string name="no_rating_found">評価が見つかりません
+</string>
+    <string name="no_promocode_cart">カートに関するプロモーションコードが見つかりません
+</string>
+    <string name="enter_valid_number">有効な電話番号を入力してください
+</string>
+    <string name="artist_not_available">％sは特定の日付では利用できません＆amp;時間
+</string>
+    <string name="selected_time_alert">選択した時間は現在の日時より小さくすることはできません
+</string>
+    <string name="select_maximum_price_alert">最高価格を選択してください
+</string>
+    <string name="select_category_alert">カテゴリーを選択してください
+</string>
+    <string name="title_activity_home">ホームアクティビティ
+</string>
+    <string name="title_home">ホーム
+</string>
+
+    <string name="complete_address">完全な住所
+</string>
+    <string name="your_location">あなたの場所
+</string>
+    <string name="add_address">住所を追加
+</string>
+    <string name="delete">削除する
+</string>
+    <string name="pending_orders">保留中％s
+</string>
+    <string name="completed_orders">％sを完了しました
+</string>
+    <string name="customer_code">顧客コーデック
+</string>
+    <string name="enter_customer_code">顧客コードを入力してください
+</string>
+
+    <string name="login_sinup_text">ログインまたはサインアップ
+</string>
+
+    <string name="addon_tag">％sの選択
+</string>
+
+    <string name="addon_selction">％sオプションを選択してください
+</string>
+
+    <string name="addon_name_tag">アドオン：％s
+</string>
+    <string name="orders_">注文
+</string>
+    <string name="orders">注文
+</string>
+    <string name="view_category">カテゴリーを見る
+</string>
+    <string name="tax">税金
+</string>
+    <string name="pickup_from">からのピックアップ
+</string>
+    <string name="delivery_to">へ配達する
+</string>
+    <string name="approved">承認済み
+</string>
+    <string name="on_the_way">途中
+</string>
+    <string name="started">始めました
+</string>
+    <string name="ended">終了しました
+</string>
+    <string name="rating_given">与えられた評価
+</string>
+    <string name="customer_cancelled">顧客はキャンセルしました
+</string>
+    <string name="shipped">発送済み
+</string>
+    <string name="packed">詰め込み
+</string>
+
+    <string name="returned_from_app_settings_to_activity">"次の権限：カメラ：％s
+     "</string>
+    <string name="ready_to_pick">ピックする準備ができて
+</string>
+
+    <string name="share_app">アプリを共有
+</string>
+
+    <string name="about_us">私たちに関しては
+</string>
+    <string name="change_language">言語を変更
+</string>
+    <string name="terms">規約＆amp;条件
+</string>
+    <string name="my_wishlist">私のほしい物リスト
+</string>
+    <string name="popular_tag">人気の ％s
+</string>
+
+    <!--<string name="self_pickup">セルフピックアップ
+    </string>-->
+    <string name="self_pickup">カーブサイドピックアップ
+</string>
+
+    <string name="delivery_txt">配達
+</string>
+
+    <string name="current_adrs">現住所
+</string>
+    <string name="maximum_limit_cart">上限に達しました
+</string>
+    <string name="search_food_hint">食品を探す
+</string>
+    <string name="special_offer">特別オファー
+</string>
+    <!--    <string name="special_offer">プロモーション</string>-->
+    <string name="discount_product">割引商品
+</string>
+    <string name="popular_brand">Popular Brands</string>
+    <string name="royo_recommend">％sユーザー推奨
+</string>
+    <string name="order_now">今すぐ注文
+</string>
+    <string name="picked_up">今すぐ注文
+</string>
+    <string name="both_delivery_msg_option">この％sは集荷と配達の両方を提供します。どのようにしますか？</string>
+    <string name="status_on">％sオン
+</string>
+    <string name="out_delivery">配送中
+</string>
+
+    <string name="privacy_policy">個人情報保護方針
+</string>
+    <string name="place_booking">予約する
+</string>
+    <string name="razor_pay">Razor Pay</string>
+    <string name="conekta">コネクタ
+</string>
+    <string name="zelle">ゼレ
+</string>
+    <string name="cashapp">キャッシュアプ​​リ
+</string>
+    <string name="cash_on">代金引換
+</string>
+    <string name="make_payment">支払う
+</string>
+    <string name="name_on_card">カード上の名前
+</string>
+    <string name="total_payable_amount">合計支払額％1 $ s％2 $ s
+</string>
+    <string name="no_chat_found">チャットが見つかりません
+</string>
+    <string name="write_a_message">メッセージを書く
+</string>
+
+    <string name="no_quetion_found">質問は見つかりませんでした
+</string>
+    <string name="select_answer">リストから少なくとも1つの回答を選択してください
+</string>
+    <string name="back">バック
+</string>
+
+    <string name="set_your_location_manually">場所を手動で設定する
+</string>
+    <string name="btn_add_address">住所を追加
+</string>
+
+
+    <string name="add_a_tip_to_rider">"ドライバーにチップを追加する
+ "</string>
+    <string name="tip_charges">チップチャージ
+</string>
+    <string name="eta">ETA</string>
+
+    <string-array name="more_array">
+        <item>アプリを共有
+</item>
+        <item>規約＆amp;条件
+</item>
+        <item>私たちに関しては
+</item>
+        <item>個人情報保護方針
+</item>
+    </string-array>
+
+    <string-array name="app_language">
+        <item>英語</item>>
+        <item>スペイン語
+</item>>
+        <item>アラビア語
+</item>>
+    </string-array>
+
+    <string-array name="food_instruct_header">
+        <item>探す</item>
+        <item>オンライン注文
+</item>
+        <item>配達
+</item>
+    </string-array>
+    <!--    <string-array name="food_instruct_header">
+            <item>探す</item>
+            <item>オンライン注文
+    </item>
+            <item>配達
+    </item>
+            <item>地図
+    </item>
+        </string-array>-->
+
+    <string-array name="food_instruct_title">
+        <item>世界のトップレストラン＆amp;を探索する食物</item>
+        <item>お支払い方法をお選びください</item>
+        <item>
+最高の価格で高品質の料理を手に入れよう</item>
+    </string-array>
+
+    <!--    <string-array name="food_instruct_title">
+            <item>世界のトップレストラン＆amp;を探索する食物</item>
+            <item>お支払い方法をお選びください
+    </item>
+            <item>最高の価格で高品質の料理を手に入れよう
+    </item>
+            <item>地図</item>
+        </string-array>-->
+
+    <string-array name="ecom_instruct_header">
+        <item>探す</item>
+        <item>選択する
+</item>
+        <item>楽しい</item>
+    </string-array>
+
+    <string-array name="ecom_instruct_header_v2">
+        <item>発見する
+</item>
+        <item>支払いをする
+ </item>
+        <item>ショッピングをお楽しみください
+</item>
+    </string-array>
+
+
+    <string-array name="ecom_instruct_title">
+        <item>世界のトップサービスを探索する</item>
+        <item>
+サービスに適したオプションを選択してください</item>
+        <item>
+サービスに適したオプションを選択してください</item>
+    </string-array>
+
+    <string-array name="ecom_instruct_title_v2">
+        <item>
+世界のトップブランド\ nとブティックを探索します。</item>
+        <item>
+支払いに適したオプションを選択してください</item>
+        <item>最高の価格で高品質の製品を入手。
+</item>
+    </string-array>
+
+    <string-array name="app_search">
+        <item>製品</item>
+        <item>飲食店
+</item>
+    </string-array>
+
+    <string-array name="filter_array">
+        <item>カテゴリー</item>
+        <item>ソート</item>
+        <item>価格帯
+</item>
+        <item>ディスカウント</item>
+        <item>可用性
+</item>
+    </string-array>
+
+    <string name="select_language">言語を選択する
+</string>
+
+    <string name="share_referral">コード％1 $ sを使用して、ここで％2 $ sを紹介ボーナスとして取得します：％3 $ s
+</string>
+    <string name="referral_text_tag">友達を紹介して％1 $ sを手に入れ、友達は最初の注文が正常に完了した後に％2 $ sを手に入れます。
+</string>
+
+    <string name="referral">照会
+</string>
+    <string name="refer_a_friend">友達を紹介する
+</string>
+    <string name="my_referal">私の紹介
+</string>
+    <string name="invite_your_friend_and_earn_money">友達を招待してお金を稼ぐ</string>
+    <string name="hint_referral_code">紹介コード
+</string>
+    <string name="referral_code">紹介金額
+</string>
+    <string name="pay_using">使用して支払う
+</string>
+    <string name="choose_payment">支払いを選択
+</string>
+    <string name="add_customization">+カスタマイズを追加
+</string>
+    <string name="morning">朝</string>
+    <string name="aftenoon">午後
+</string>
+    <string name="evening">イブニング</string>
+    <string name="night">夜
+</string>
+    <string name="out_of_stock">在庫切れ
+</string>
+    <string name="customizable">カスタマイズ可能
+</string>
+    <string name="remove">削除する
+</string>
+    <string name="promo_remove">プロモーションが削除されました
+</string>
+    <string name="service_at">サービスで
+</string>
+    <string name="cod">代金引換
+</string>
+    <string name="please_select_slot">予約タイムスロットを選択してください
+</string>
+
+    <string name="sorry_cart_value">ごめんなさい！カートの最小値は％sである必要があります
+</string>
+
+    <string name="referral_amt_tag">利用可能な紹介ポイント％s
+</string>
+    <string name="price_detail">価格詳細
+</string>
+    <string name="promo_applied">プロモーションが適用されました
+</string>
+    <string name="service_date">サービス日：-
+</string>
+    <string name="service_time">サービス時間：-
+</string>
+    <string name="agent_to_be_book">予約するエージェント：
+-</string>
+    <string name="change_date_amp_time">日付を変更＆amp;時間
+</string>
+    <string name="choose_booking_time_slot">予約時間帯を選択
+</string>
+    <string name="wait">待つ ！
+</string>
+    <string name="pickup">セルフピックアップ
+</string>
+    <string name="delivery_tag">配達
+</string>
+    <string name="select_location">場所を選択
+</string>
+    <string name="search_for_your_location">現在地を検索…
+</string>
+    <string name="edit_address">住所を編集
+</string>
+    <string name="update_address">住所を更新
+</string>
+    <string name="please_complete_address">完全な住所を追加してください
+</string>
+    <string name="house_building_tag">ハウス番号/フラット番号/フロア/建物
+</string>
+    <string name="enter_complete_address">完全な住所を入力してください
+</string>
+    <string name="search_for_resturant">レストラン、いとこ…を検索します。
+</string>
+    <string name="start_time">始まる時間
+</string>
+    <string name="pick_up">からのピックアップ
+</string>
+    <string name="address_detail">住所詳細
+</string>
+    <string name="pickup_on">ピックアップ
+</string>
+    <string name="provide_prod_rating">製品の評価を入力してください
+</string>
+    <string name="provide_rate_title">料金のタイトルを入力してください
+</string>
+    <string name="provide_rate_comment">料金のコメントを入力してください
+</string>
+    <string name="enter_name">名前を入力してください
+</string>
+    <string name="enter_valid_card">有効なカードを入力してください
+</string>
+    <string name="enter_valid_cvc">有効なCVCを入力してください
+</string>
+    <string name="enter_valid_expiry_month">有効な有効期限月を入力してください
+</string>
+    <string name="enter_valid_date">有効期限を入力してください
+</string>
+    <string name="no_detail_found">詳細が見つかりません
+</string>
+    <string name="product_detail">％s詳細
+</string>
+    <string name="duration">期間
+</string>
+
+    <string name="pick_up_tag">選び出す
+</string>
+
+    <string name="offline_supplier_tag">％sはオンライン注文を受け付けていません
+</string>
+    <string name="enter_email">メールアドレスを入力して
+</string>
+    <string name="enter_supplier_code">サプライヤーコードを入力してください
+</string>
+    <string name="payment_card">カード</string>
+    <string name="payment_cash">代金引換
+</string>
+    <string name="payment_both">カード/代金引​​換
+</string>
+    <string name="today">今日
+</string>
+    <string name="yesterday">昨日
+</string>
+    <string name="live_tracking">ライブ追跡
+</string>
+    <string name="use_current_location">現在地を使用
+</string>
+    <string name="subtotal">小計
+</string>
+    <string name="referral_amount">紹介金額
+</string>
+    <string name="promo_code">プロモーションコード
+</string>
+    <string name="tap_to_copy">タップしてコピー
+</string>
+    <string name="refer_now">今すぐ参照
+</string>
+    <string name="sort_amp_filter">並べ替え＆amp;フィルタ
+</string>
+    <string name="choose_payment_receipt_to_upload">アップロードする領収書を選択
+</string>
+    <string name="payment_details">支払詳細：
+</string>
+    <string name="email_tag">メール：％s
+</string>
+    <string name="phoneno_tag">電話番号
+</string>
+    <string name="online_payment">デビットカード
+</string>
+    <string name="payment_receipt_uploaded">支払領収書がアップロードされました
+</string>
+    <string name="enter_instruction">ここに手順を入力してください
+</string>
+
+    <string name="select_preciption">アップロードする処方箋を選択
+</string>
+    <string name="uploaded_pescription">アップロードされた処方箋
+</string>
+    <string name="please_select_precription">プレシジョン画像を選択してください
+</string>
+    <string name="english">英語
+</string>
+    <string name="supplier_service_charge">％sサービス料
+</string>
+    <string name="support_email">サポートメール
+</string>
+
+    <string name="support_email_text">注文IDを使用したクエリがあります：％s
+</string>
+    <string name="service">サービス
+</string>
+    <string name="selected_question">選択した質問
+</string>
+    <string name="addon_charges">アドオン料金
+</string>
+    <string name="featured">注目の％s
+</string>
+    <string name="top_deals">％sのトップセール
+</string>
+    <string name="feature_provider">注目のサービスプロバイダー
+</string>
+    <string name="create_your_account">アカウントを作成
+    </string>
+    <string name="create_new_account">新しいアカウントを作成する
+</string>
+    <string name="continue_with_google">グーグルで続行
+</string>
+    <string name="provacy_policy_text">続行すると、CAREの利用規約に同意し、CAREのプライバシーポリシーを読んだことを確認したことになります。
+</string>
+    <string name="already_have_an_account_login">すでにアカウントをお持ちですか？ログインする
+</string>
+    <string name="sign_up_new">サインアップ
+</string>
+    <string name="hint_first_name">ファーストネーム *
+</string>
+    <string name="hint_last_name">苗字 *
+</string>
+    <string name="hint_phone_no">電話番号 *
+</string>
+    <string name="hint_email_new">Eメール *
+</string>
+    <string name="hint_password_new">パスワード</string>
+    <string name="hint_confirm_password">パスワードを認証する *
+</string>
+    <string name="signup_screen_text">アカウントをお持ちではありませんか？サインアップ
+</string>
+    <string name="otp_msg_text">登録したメールアドレスと電話番号に送信されたOTPを入力してください
+</string>
+    <string name="hint_enter_otp">OTPを入力してください
+</string>
+    <string name="verify">確認
+</string>
+    <string name="plese_accept_terms_and_conditions">利用規約に同意してください
+</string>
+    <string name="continue_with_facebook">Facebookを続行
+</string>
+    <string name="recommed_supplier">推奨％s
+</string>
+    <string name="more">もっと
+</string>
+
+    <string name="save_card">カードを保存
+</string>
+    <string name="saved_cards">保存したカード
+</string>
+    <string name="card_no_xxxxxxxxxxxx">カード番号：XXXXXXXXXXXX
+</string>
+    <string name="expiry_month">有効期限月
+</string>
+    <string name="expiry_year">満期
+</string>
+    <string name="add_card_d">カードを追加
+</string>
+    <string name="no_card_found">カードが見つかりません
+</string>
+    <string name="un_service_able">サービス不能
+</string>
+
+    <string name="card_tag">XXXXXXXXXXXX％s
+</string>
+    <string name="card_add_login_error">カードを追加するにはログインしてください
+</string>
+    <string name="square_pay">スクエアペイ
+</string>
+    <string name="select_time_slot">タイムスロットを選択
+</string>
+
+    <string name="area_to_focus_on">注目すべき分野
+</string>
+    <string name="areas_to_focus">重点を置く分野
+</string>
+    <string name="have_pets">ペットを飼う
+</string>
+    <string name="parking_instructions">駐車場案内
+</string>
+    <string name="enter_parking_instruction">駐車指示を入力してください
+</string>
+    <string name="will_someone_be_there_to_let_the_cleaner_in">誰かが掃除人を入れてくれるでしょうか？
+</string>
+
+    <string name="shimmer_categories">カテゴリー
+</string>
+
+    <string name="things_to_remember">覚えておくべきこと
+</string>
+
+
+    <string name="faq">よくある質問
+</string>
+
+
+    <string name="become_care_giver">患者または介護者になる
+</string>
+    <string name="enter_instructionc">MC IDを入力してください＃
+</string>
+    <string name="rating">評価</string>
+    <string name="delivery_in">での配送
+</string>
+    <string name="for_delivery">配送について
+</string>
+    <string name="open_">開いた
+</string>
+    <string name="mins">最小
+</string>
+    <string name="nationality">国籍：
+</string>
+    <string name="brand">ブランド：
+</string>
+    <string name="speciality">専門
+</string>
+    <string name="search_">探す
+</string>
+    <string name="shipping_status">配送状況
+</string>
+    <string name="receipe">レシピ
+</string>
+    <string name="return_product">返品商品
+</string>
+    <string name="awaiting_payment">出荷待ち
+</string>
+    <string name="cancelled">キャンセル
+</string>
+    <string name="onhold">保留
+</string>
+    <string name="reason_to_return">返品理由
+</string>
+    <string name="enter_reason_to_return_product">製品を返品する理由を入力してください
+</string>
+    <string name="return_requested">返品をリクエストしました
+</string>
+    <string name="returned">戻ってきた
+</string>
+    <string name="product_picked_up">製品ピックアップ
+</string>
+    <string name="agent_is_on_the_way">エージェントが向かっています
+</string>
+    <string name="write_reason_here">ここに理由を書いてください…
+</string>
+    <string name="login_first">最初にログインしてください
+</string>
+    <string name="requests">％sリクエスト
+</string>
+    <string name="supplierName">サプライヤ名
+</string>
+    <string name="upload_presc">処方箋をアップロード
+</string>
+
+    <string name="are_you_sure_cancel_request">このリクエストをキャンセルしてもよろしいですか？
+</string>
+    <string name="net_total_greater_than">小計は％1 $ s％2 $ sより大きくなければなりません
+</string>
+    <string name="request_id">リクエストID：
+</string>
+    <string name="requested_on">依頼日
+:</string>
+    <string name="pay_now">今すぐ支払う％1 $ s％2 $ s
+</string>
+    <string name="remaining_amount">残額
+</string>
+
+    <string name="maximum_limit_addon">最大アドオン制限に達しました％d
+</string>
+    <string name="refund_amount">払い戻し金額
+</string>
+    <string name="token_expire">アカウントは他のデバイスにログインしています。続行するにはもう一度ログインしてください
+.</string>
+    <string name="service_detail">サービス詳細
+</string>
+    <string name="paypal">Paypal</string>
+    <string name="donate_to_someone">誰かに寄付する
+</string>
+    <string name="adrs_donate_subtext">寄付したい場所の下にアドレスを追加してください
+</string>
+    <string name="delivery_address">配送先住所
+</string>
+    <string name="return_request_msg">返品リクエストが正常に生成されました
+.</string>
+
+    <string name="product_removed_wishlist">ウィッシュリストから削除された製品
+</string>
+    <string name="removed_wishlist">％sは％sから削除されました
+</string>
+    <string name="more_details">％sは％sから削除されました
+</string>
+    <string name="rate_food_item">レート％s
+</string>
+    <string name="rate_product_msg">％sを正常に評価
+</string>
+
+    <string name="rate_user_tag">レート％s
+</string>
+    <string name="paystack">ペイスタック
+</string>
+    <string name="online_pay_tag">オンライン（％s）
+</string>
+    <string name="saded">追加</string>
+    <string name="myFatoora">私のFatoorah
+</string>
+    <string name="suppliers">サプライヤー
+</string>
+    <string name="products">製品
+</string>
+    <string name="wishlist">ウィッシュリスト
+</string>
+    <string name="supplier">サプライヤー
+</string>
+    <string name="product">製品
+</string>
+    <string name="payment_unsuccessful">お支払いに失敗しました
+</string>
+    <string name="payment_done_successful">お支払いが完了しました
+</string>
+    <string name="payment_failed">支払いが失敗しました
+</string>
+    <string name="mumybene">ムミベン</string>
+    <string name="enter_your_mmy_bean_phone">Mumybene電話番号を入力してください
+</string>
+    <string name="phone_number">電話番号
+</string>
+    <string name="enter_phone">電話番号を入力してください
+</string>
+    <string name="sort_by_new">新しい順に並べ替え
+</string>
+    <string name="sort_by_distance">距離で並べ替え
+</string>
+    <string name="sort_by_rating">評価で並べ替え
+</string>
+    <string name="windcave">風洞でのオンライン決済</string>
+
+    <string name="stripe_pay">ストライプペイ</string>
+    <string name="max">マックス</string>
+    <string name="minm">最小</string>
+    <string name="pls_select_atleast">
+少なくとも選択してください</string>
+    <string name="items_in">
+のアイテム</string>
+    <string name="description">説明</string>
+    <string name="customer_support">
+顧客サポート</string>
+    <string name="expected_delivered_time">予想配達時間</string>
+    <string name="min_tag">分</string>
+    <string name="view_branches">ブランチを表示</string>
+    <string name="tap">をタップ
+</string>
+    <string name="elavon">エラボン
+</string>
+    <string name="food_item_detail">食品詳細
+</string>
+    <string name="brand_name">ブランド名：\ t</string>
+    <string name="mpaisa">mPaisa</string>
+    <string name="schedule_order">注文のスケジュール</string>
+    <string name="edit_schedule_order">スケジュール注文の編集
+</string>
+    <string name="confirm">確認</string>
+    <string name="choose_date_time">日付と選択時間
+</string>
+    <string name="pay_pal">ペイパル</string>
+
+    <string name="facebook">フェイスブック
+</string>
+    <string name="twitter">ツイッター</string>
+    <string name="linkein">Linked in</string>
+    <string name="google_plus">Google+</string>
+    <string name="hint_email_phone">メール/電話番号
+</string>
+
+    <string name="restaurant">飲食店</string>
+    <string name="restaurants">レストラン</string>
+    <string name="payhere">会計はこちら
+</string>
+    <string name="type_building_suite">建物のタイプ/スイート番号</string>
+    <string name="please_add">
+追加してください</string>
+    <string name="previous_cart_items_removed">別のサービスプロバイダーを選択すると、カートは明確になります。続行しますか？
+</string>
+    <string name="request_cancelled">キャンセルされたリクエスト
+</string>
+    <string name="wallet">財布
+</string>
+    <string name="current_balance">経常収支
+</string>
+    <string name="add_amount">金額を追加
+</string>
+    <string name="send_money_to_someone">誰かに送金する
+</string>
+    <string name="histroy">歴史
+</string>
+    <string name="send_money">送金する
+</string>
+    <string name="entre_amount_you_want_send">送金したい金額を入力してください
+</string>
+    <string name="entre_amount_you_want_add">追加する金額を入力してください</string>
+    <string name="send_by">から</string>
+    <string name="email_address">電子メールアドレス</string>
+    <string name="enter_phone_number">ここに電話番号を入力してください</string>
+    <string name="add_payment">支払いを追加</string>
+    <string name="continue_to_add_amount">金額を追加し続けます</string>
+    <string name="enter_amount">金額を入力します
+</string>
+    <string name="money_sent_success">送金に成功しました
+</string>
+    <string name="amount_added">％sで追加された金額</string>
+    <string name="amount_deducted">
+％で差し引かれる金額s</string>
+    <string name="amount_added_success">"金額が正常に追加されました "</string>
+    <string name="amount_received">％sで受け取った金額</string>
+    <string name="amount_sent">
+％sに送金された金額</string>
+    <string name="refund_added">％sで払い戻しが追加されました</string>
+    <string name="order_placed">％sに発注
+</string>
+    <string name="pay_by_wallet">ウォレットで支払うと、％s \ %%の割引が受けられます！
+</string>
+    <string name="wallet_with_amt">ウォレット（％1 $ s％2 $ s）</string>
+    <string name="insufficient_balance">残高不足です
+</string>
+    <string name="add_money">お金を追加
+</string>
+    <string name="wallet_discount">ウォレット割引
+</string>
+    <string name="initial_payment_source">ウォレット割引
+</string>
+    <string name="enter_amount_you_want_to_add">追加する金額を入力してください
+</string>
+    <string name="select_payment_method">お支払い方法を選択
+</string>
+    <string name="choose_where_you_want_refund">払い戻しを希望する場所を選択してください</string>
+    <string name="comment">コメント</string>
+    <string name="enter_comment">コメントを入力してください</string>
+    <string name="edit_order">注文を編集
+</string>
+    <string name="add_items">アイテムを追加
+</string>
+    <string name="select_atleast_one">
+少なくとも1つの製品を選択してください</string>
+    <string name="order_edited_success">「注文は正常に編集されました」
+</string>
+    <string name="save_items">できた
+</string>
+    <string name="new_added_items">％d個の新しいアイテムが追加されました
+</string>
+    <string name="please_choose_atlease_one_service">少なくとも1つのサービスを選択してください
+</string>
+    <string name="pay_tabs">「ペイタブ」
+</string>
+    <string name="billing_address">請求先住所
+</string>
+    <string name="city">市</string>
+    <string name="state">状態
+</string>
+    <string name="country">国</string>
+    <string name="pincode">ピンコード
+</string>
+    <string name="shipping_address">お届け先の住所
+</string>
+    <string name="same_as_billing">請求先住所と同じ
+</string>
+    <string name="enter_address">住所を入力してください
+</string>
+    <string name="enter_city">市に入る
+</string>
+    <string name="enter_state">州に入る
+</string>
+    <string name="enter_country">国を入力してください
+</string>
+    <string name="enter_pincode">
+PINコードを入力してください</string>
+    <string name="enter_shipping_address">配送先住所を入力してください</string>
+    <string name="enter_shipping_city">配送先の都市を入力してください</string>
+    <string name="enter_shipping_country">配送国を入力してください</string>
+    <string name="enter_shipping_state">
+配送状態を入力してください</string>
+    <string name="enter_shipping_pincode">
+配送ピンコードを入力してください</string>
+    <string name="country_code">国コード
+</string>
+    <string name="defaultPaymentMethod">デフォルトの支払い方法
+</string>
+    <string name="email">Eメール
+</string>
+    <string name="full_name">フルネーム
+</string>
+    <string name="card_number">カード番号*
+</string>
+    <string name="personaldetails">個人の詳細
+</string>
+    <string name="expires">期限切れ
+</string>
+    <string name="addDebCreCard">クレジット/デビットカードを追加</string>
+    <string name="youWillText">
+購入するまで請求されません</string>
+    <string name="add_new_card">新しいカードを追加</string>
+    <string name="error_enter_cardNumber">
+カード番号を入力してください。</string>
+    <string name="error_invalid_card">有効なカード番号を入力してください。</string>
+    <string name="error_empty_cardExpires">
+有効なカードの有効期限を入力してください。</string>
+    <string name="error_empty_cvv">
+履歴書を入力してください。</string>
+    <string name="error_empty_firstName">カードに名前を入力してください。</string>
+    <string name="error_validYear">有効な年を入力してください。</string>
+    <string name="error_validMonth">有効な月を入力してください。</string>
+    <string name="cvv">CVV*</string>
+    <string name="card_cvv_incorrect">カードのcvvが正しくありません。</string>
+    <string name="error_valid_cvv">
+有効なcvvを入力してください。</string>
+    <string name="specialCharactersnot_first">名に特殊文字を含めることはできません。</string>
+    <string name="specialCharactersnot_last">
+姓に特殊文字を含めることはできません。</string>
+    <string name="edit_order_detail">
+％sを編集</string>
+    <string name="edit_booking">予約を編集
+</string>
+    <string name="peach">桃</string>
+    <string name="expected_delivery_time">予想配達時間
+</string>
+    <string name="end_time">終了時間
+</string>
+    <string name="payment_pending">支払い保留中
+</string>
+    <string name="text_braintree">ブレインツリー</string>
+    <string name="category">カテゴリー
+</string>
+    <string name="ecom_my_cart">私のカート
+</string>
+    <string name="braintree_token_error">
+トークンを受け取っていません</string>
+    <string name="admin_block_msg">申し訳ありませんが、管理者によってブロックされています。ブロックを解除するには管理者に連絡してください</string>
+    <string name="valid_to">有効
+</string>
+    <string name="valid_from">から有効
+</string>
+    <string name="renew_subscription">
+サブスクリプションを更新</string>
+    <string name="cancel_subscription">サブスクリプションをキャンセル</string>
+    <string name="subscriptions">定期購入
+</string>
+    <string name="subcription_plan_tag">％sアクセス</string>
+    <string name="yearly">毎年</string>
+    <string name="monthly">毎月</string>
+    <string name="weekly">毎週
+</string>
+    <string name="show_branch">ブランチを表示</string>
+    <string name="buy_subcrip">サブスクリプションを購入</string>
+    <string name="my_subscrip_plan_text">
+現在のサブスクリプションプランを確認する</string>
+    <string name="my_subscriptions">マイサブスクリプション</string>
+    <string name="upload_documents">ID証明をアップロードする</string>
+    <string name="please_upload_id_proof">
+身分証明書をアップロードしてください</string>
+    <string name="table_booking">
+テーブル予約</string>
+    <string name="schedule_booking_charges">注文料金のスケジュール
+</string>
+    <string name="no_slots_available">スロットが見つかりません</string>
+    <string name="schedule_start_date">スケジュール開始日</string>
+    <string name="schedule_end_date">終了予定日
+</string>
+    <string name="scheduling_charges">料金のスケジューリング
+</string>
+    <string name="referral_applied">紹介が適用されました
+</string>
+    <string name="login_with_google">
+グーグルを使用してログイン</string>
+</resources>
+

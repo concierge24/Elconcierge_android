@@ -1,0 +1,913 @@
+<resources>
+
+
+    <string name="default_notification_channel_id"> clickat_notification </string>
+
+    <string name="packages"> Pakketjes </string>
+    <string name="welcome"> Welkom </string>
+    <string name="recomended"> Aanbevolen </string>
+    <string name="offers"> Aanbiedingen </string>
+
+
+    <string name="home"> Home </string>
+    <string name="live_support"> Live ondersteuning </string>
+    <string name="cart"> Winkelwagen </string>
+    <string name="Promotions"> Promoties </string>
+    <string name="Notificaties"> Meldingen </string>
+    <string name="my_account"> Mijn account </string>
+    <string name="my_favorites"> Mijn favorieten </string>
+
+
+    <string name="done"> Klaar </string>
+    <string name="choose_from_gallery"> Galerij </string>
+    <string name="choose_image_selection"> Kies afbeeldingsselectie </string>
+    <string name="choose_from_camera"> Camera </string>
+
+    <string name="order_history">%s geschiedenis </string>
+    <string name="track_my_order"> Volg Mijn %s </string>
+    <string name="rate_my_order"> Beoordeel mijn %s </string>
+    <string name="aankomende_order"> Huidige %s </string>
+    <string name="loyality_points"> Loyaliteitspunten </string>
+
+    <string name="settings"> Instellingen </string>
+    <string name="login"> Inloggen </string>
+    <string name="forget_password"> Wachtwoord vergeten? </string>
+    <!--<string name = "_ continue"> Doorgaan </string>-->
+    <string name="sign_up"> Aanmelden </string>
+    <string name="signup_otp_msg"> We sturen u een OTP (eenmalig wachtwoord) op uw mobiele nummer. Tik op de onderstaande knop nadat je je telefoonnummer correct hebt getypt. </string>
+    <string name="send_otp"> OTP verzenden </string>
+    <string name="recieve_otp"> Heeft u uw code niet ontvangen? </string>
+    <string name="resend_otp"> OTP opnieuw verzenden </string>
+    <string name="submit"> Verzenden </string>
+    <string name="tap_to_add_profile_pic"> Tik om profielfoto toe te voegen </string>
+    <string name="finish"> Voltooien </string>
+    <string name="oreder_scheduler">%s Scheduler </string>
+    <string name="order_details">%s Details </string>
+    <string name="schedule_your_order"> Plan uw %s </string>
+    <string name="afgeleverd"> Bezorgd </string>
+    <string name="reorder"> Herordenen </string>
+    <string name="cancel_order"> Annuleer %s </string>
+    <string name="track"> Track </string>
+    <string name="hint_email"> E-mail </string>
+    <string name="hint_password"> Wachtwoord </string>
+    <string name="hint_digit_phone_number"> Telefoonnummer </string>
+    <string name="enter_otp"> Voer OTP in </string>
+    <string name="hint_full_name"> Volledige naam </string>
+    <string name="action_okay"> OK </string>
+    <!--<! - Validatietekenreeks ->-->
+    <string name="empty_email"> Voer een e-mailadres in </string>
+    <string name="empty_email_phone"> Voer een e-mailadres of telefoonnummer in </string>
+    <string name="invalid_email"> Voer een geldig e-mailadres in </string>
+    <string name="empty_pwd"> Voer wachtwoord in </string>
+    <string name="empty_phone_number"> Voer een telefoonnummer in </string>
+    <string name="empty_otp"> Voer een OTP in </string>
+    <string name="empty_fn"> Voer de volledige naam in </string>
+    <string name="payment_method"> Betaalmethode </string>
+    <string name="set_schedule"> Schema instellen </string>
+    <string name="select_category"> Selecteer categorie </string>
+    <string name="select_dates"> Selecteer datums </string>
+    <string name="internet_connection"> Controleer uw internetverbinding. </string>
+    <string name="login_expired"> Sorry, je account is ingelogd op een ander apparaat! Log opnieuw in om door te gaan. </string>
+    <string name="ok"> OK </string>
+    <string name="guest"> Gast </string>
+    <string name="edit"> Bewerken </string>
+    <string name="qunatity"> Hoeveelheid </string>
+    <string name="net_total"> Netto totaal </string>
+    <string name="delivery">%s naar </string>
+    <string name="delivery_speed"> Bezorgsnelheid </string>
+    <string name="delivery_charges"> Bezorgkosten </string>
+    <string name="handling_charges"> Afhandeling van kosten </string>
+    <string name="empty"> Veld mag niet leeg zijn </string>
+    <string name="txtOrderDone">%s tot nu toe voltooid </string>
+    <string name="txtPaymentOptions"> Betalingsopties </string>
+    <string name="txtInbusiness"> In bedrijf sinds </string>
+    <string name="reviews"> Recensies </string>
+    <string name="go"> Ga </string>
+    <string name="multi_serach"> Meervoudig zoeken </string>
+    <string name="what_are_you_looking_for"> Waar ben je naar op zoek? </string>
+    <string name="max_limit_reached"> Max. limiet bereikt </string>
+    <string name="multisercah"> Meervoudig zoeken </string>
+    <string name="NoCart"> Geen items gevonden </string>
+    <string name="favourites"> Favoriet </string>
+    <string name="share_sub">%s gebruiker mobiele app </string>
+    <string name="share_body"> https://play.google.com/store/apps/details?id= %s </string>
+    <string name="save"> Opslaan </string>
+    <string name="cashOnDeli"> Rembours </string>
+    <string name="debitCreditCard"> Debet / creditcard </string>
+    <string name="choosePaymentOption"> Kies betalingsoptie </string>
+    <string name="selectAdress"> Voeg adres toe. </string>
+    <string name="order_summary">%s Samenvatting </string>
+    <string name="pickkup"> Ophalen </string>
+    <string name="items"> Artikelen </string>
+    <string name="net_payable"> Netto te betalen </string>
+    <string name="additional_remarks"> Aanvullende opmerkingen </string>
+    <string name="place_order"> Plaats %s </string>
+    <string name="successFavourite"> Succesvol toegevoegd aan favoriet. </string>
+    <string name="successUnFavourite"> Succesvol verwijderd uit favoriet. </string>
+
+    <string name="success_wishlist" formatted="false">%s succesvol toegevoegd aan %s . </string>
+
+    <string name="update"> Update! </string>
+    <string name="cancel"> Annuleren </string>
+    <string name="pointsEarnedSoFar"> Punten verdiend tot dusver </string>
+    <string name="change_password"> Wachtwoord wijzigen </string>
+    <string name="notification_lang"> Meldingstaal </string>
+    <string name="enterReview"> Schrijf uw recensie </string>
+    <!--<string name = "open"> Nu openen </string>-->
+    <string name="filter"> Filters </string>
+    <string name="old_password"> Oud wachtwoord </string>
+    <string name="new_password"> Nieuw wachtwoord </string>
+    <string name="confirm_password"> Bevestig wachtwoord </string>
+    <string name="password_match_error"> Wachtwoord komt niet overeen </string>
+    <string name="clearCart"> Uw winkelwagen zal leeg zijn als u verschillende %s selecteert. Weet u zeker dat u wilt doorgaan? </string>
+    <string name="Ok"> OK </string>
+    <string name="apply"> Toepassen </string>
+    <string name="clear"> Wissen </string>
+    <string name="close"> Gesloten </string>
+    <string name="cash"> Contant geld </string>
+    <string name="busy"> Bezet </string>
+    <string name="logout"> Uitloggen </string>
+    <string name="please_login"> Gelieve in te loggen </string>
+    <string name="order_no">%s Nee. </string>
+    <string name="posted_on"> Geplaatst op </string>
+    <string name="geleverd_on"> Geleverd op </string>
+    <string name="verwacht_delivered_on"> Verwacht %s aan </string>
+    <string name="points"> Punten </string>
+    <string name="passwrd_lenght"> Wachtwoordlengte moet minimaal 6 karakters lang zijn. </string>
+    <string name="no_internet_connection_found"> ​​Geen internetverbinding gevonden </string>
+    <string name="retry"> Opnieuw proberen </string>
+    <string name="pending"> In behandeling </string>
+    <string name="Confirmated"> Bevestigd </string>
+    <string name="reject"> Weigeren </string>
+    <string name="bereikt"> Bereikt </string>
+    <string name="doYouCancel"> Wil je deze %s echt annuleren? </string>
+    <string name="date_time_msg"> Selecteer de ophaaldatum en -tijd </string>
+    <string name="rate"> Tarief </string>
+    <string name="add_to_cart"> Toevoegen aan winkelwagen </string>
+    <string name="nothing_found"> ​​Niets gevonden! </string>
+    <string name="results_for"> Resultaten voor </string>
+    <string name="skip"> Overslaan </string>
+    <string name="success"> Succes </string>
+    <string name="succesfully_scheduled"> Uw bestelling is succesvol gepland. </string>
+    <string name="succesfully_order"> Uw %s is succesvol geplaatst. </string>
+    <string name="no_order_found"> ​​Geen %s gevonden! </string>
+    <string name="no_fav_found"> ​​Geen favoriet gevonden! </string>
+    <string name="success_logout"> Je bent succesvol uitgelogd. </string>
+    <string name="status"> Status </string>
+    <string name="payment"> Betaling </string>
+    <string name="total_amount"> Totaalbedrag </string>
+    <string name="geplaatst"> Geplaatst </string>
+    <string name="near_you"> Bij jou in de buurt </string>
+    <string name="minimum_order"> Minimum %s </string>
+    <string name="delivery_time"> Levertijd </string>
+    <string name="payment_options"> Betalingsopties </string>
+    <string name="desc"> Over %s </string>
+    <string name="review"> Recensies </string>
+    <string name="about"> Uniciteit </string>
+    <string name="total"> Totaal </string>
+    <string name="sub_total"> Subtotaal </string>
+    <string name="type_here"> Typ hier </string>
+    <string name="new_tag"> Nieuw </string>
+    <!--<! - <nieuwe berichten> ->-->
+    <string name="action_send"> Verzenden </string>
+    <string name="others"> Anderen </string>
+    <string name="just_now"> Zojuist </string>
+    <string name="a_min_ago"> een minuut geleden </string>
+    <string name="min_ago"> Minuut geleden </string>
+    <string name="a_hour_ago"> een uur geleden </string>
+    <string name="hour_ago"> Uur geleden </string>
+    <string name="yest"> Gisteren </string>
+    <string name="days_afo"> Dagen geleden </string>
+    <string name="days"> Dagen </string>
+    <string name="forget_password1"> Wachtwoord vergeten </string>
+    <string name="log_out_msg"> Weet u zeker dat u wilt uitloggen? </string>
+    <string name="view_all"> Bekijk alles </string>
+    <string name="select_country"> Selecteer land </string>
+    <string name="pick_uptime"> Selecteer datum en tijd </string>
+    <string name="supplier_name">%s: </string>
+
+    <string name="isMonthlyErrorMsg"> Selecteer maandelijks geplande datums. </string>
+    <string name="min_order_time"> Min. Levertijd </string>
+    <string name="hour"> Uur </string>
+    <string name="hours"> Uren </string>
+    <string name="min"> Minuten </string>
+    <string name="day"> Dag </string>
+    <string name="CompareProduct"> Vergelijk %s </string>
+    <string name="results"> Resultaten </string>
+    <string name="supplierClosed"> Is momenteel gesloten, uw bestelling wordt bevestigd tijdens de volgende werkdag van de leverancier. </string>
+
+
+    <string name="supplierBusy1"> Is momenteel bezig met bestellingen van vandaag. Uw bestelling kan te laat zijn. </string>
+    <string name="wrong_date_selection"> Stel uit voor toekomstige datum en tijd </string>
+    <string name="per_hour"> Per uur </string>
+    <string name="Alert"> Waarschuwing! </string>
+
+    <!--<! - vertalen nodig ->-->
+
+    <string name="clearCart_lang"> Uw winkelwagen is leeg als u een andere taal selecteert. Weet u zeker dat u wilt doorgaan? </string>
+    <string name="sort_by"> Sorteren op </string>
+    <string name="clear_cart_back"> Je winkelwagentje is leeg als je terugkeert van dit scherm. </string>
+    <string name="add"> Toevoegen </string>
+    <string name="alert"> Waarschuwing! </string>
+    <!--<string name = "schedule_order"> Gepland% s </string>-->
+    <string name="verwachte_delivery_on"> Verwachte levering op </string>
+    <string name="yes"> Ja </string>
+    <string name="text_single"> enkel </string>
+    <string name="text_multiple"> meerdere </string>
+    <string name="loyality_products"> Loyaliteitsproducten </string>
+    <string name="loyality_orders"> Loyaliteit %s </string>
+    <string name="track_noti"> U kunt uw bestelling alleen volgen na de verwachte levertijd </string>
+    <string name="no_notification"> Geen melding gevonden. </string>
+    <string name="share_supplier"> Ik zou graag willen aanbevelen om ankiy via JUST cbd te gebruiken </string>
+
+    <string name="sup"> Deel %s! </string>
+    <string name="basket_message"> Bent u uw laatste winkelwagen vergeten? </string>
+
+    <string name="order_pending">%s huidig ​​</string>
+    <string name="no_date_selected"> Geen datum geselecteerd </string>
+    <string name="ankiy"> ankiy </string>
+
+    <string name="cancel_msg"> Uw% s is succesvol geannuleerd. </string>
+
+    <!--<string name = "search"> Zoek% s </string>-->
+    <string name="discount"> Korting </string>
+
+    <!--<! - in afwachting ->-->
+    <string name="reddem"> Inwisselen </string>
+
+    <string name="location"> Locatie </string>
+
+    <string name="banner"> banner </string>
+    <!--<string name = "reviews_text">% .0f Recensies </string>-->
+    <string name="reviews_text">%d beoordelingen </string>
+    <string name="hour_tag">%d uur </string>
+
+
+    <string name="day_tag">%d dag </string>
+
+    <string name="minute_tag">%d min </string>
+
+    <string name="currency_tag" formatted="false">%1$s %2$s </string>
+
+    <string name="min_max_time" formatted="false">%1$d -%2$d min </string>
+
+     <string name="discountprice_tag" formatted="false">%1$s %2$s </string>
+
+    <string name="percentage_tag"> To t%s%% korting </string>
+
+    <string name="supplier_tag"> door %s </string>
+
+    <string name="discountprice_search_multiple" formatted="false">%1$s %2$s / %3s </string>
+
+    <string name="filter_price_tag" formatted="false">%1$s %2$d - %1$s %3$d </string>
+
+    <string name="result_tag">%d resultaten </string>
+
+    <string name="resturant_count_tag" formatted="false">%1$d %2$s </string>
+
+    <string name="clearCart_multiprod_quant"> Uw winkelwagen zal leeg zijn als u meerdere productaantallen selecteert. Weet u zeker dat u wilt doorgaan? </string>
+
+    <string name="clearCart_product"> Uw winkelwagen is leeg als u een ander product selecteert. Weet u zeker dat u wilt doorgaan? </string>
+
+    <string name="title_activity_filter_screen"> FilterScreenActivity </string>
+    <string name="search_hint"> Waar ben je naar op zoek? </string>
+    <string name="no"> Nee </string>
+
+    <string name="valid_email"> Voer een e-mailadres in </string>
+    <string name="cart_added"> Toegevoegd aan winkelwagen </string>
+
+    <string name="title_for_your_review"> Titel voor uw recensie </string>
+    <string name="write_review_here"> Schrijf hier een recensie… </string>
+    <string name="rating_review"> Beoordeling &amp; Recensies </string>
+    <string name="rate_product"> Beoordeel %s </string>
+    <string name="rate_supplier"> Tarief %s </string>
+    <string name="product_description"> %s Beschrijving </string>
+    <string name="select_agent"> Selecteer %s </string>
+    <string name="select_supplier"> Selecteer %s </string>
+    <string name="book_an_appointment"> Maak een afspraak </string>
+    <string name="agent_available">%s beschikbaar </string>
+    <string name="agent_not_available">%s niet beschikbaar </string>
+    <string name="experience_tag">%d jaar ervaring </string>
+
+    <string name="agent_detail">%s Detail </string>
+    <string name="view_menu"> Bekijk Menu </string>
+    <string name="change"> Wijzigen </string>
+    <string name="schedule_delivery"> Levering plannen </string>
+    <string name="qty"> Aantal </string>
+    <string name="view_products_as"> Bekijk %s als </string>
+    <string name="total_item_tag">%d items </string>
+
+
+    <string name="restaurant_order_type" formatted="false"> Selecteer %2$s van %1$s om te genieten van diensten bij u thuis </string>
+    <string name="supplier_lookup_tag"> Op zoek naar %s ? </string>
+
+    <string name="order_tag" formatted="false">%1$s # %2$d </string>
+
+
+    <string name="long_desc"> Een lange beschrijving is een manier om lange alternatieve tekst te bieden voor niet-tekstelementen, zoals afbeeldingen. In het algemeen zou alternatieve tekst van meer dan 250 tekens, die niet beknopter kan worden gemaakt zonder deze minder beschrijvend of zinvol te maken, een lange beschrijving moeten hebben. Voorbeelden van geschikt gebruik van lange beschrijvingen zijn grafieken, grafieken, kaarten, infographics en andere complexe afbeeldingen.
+
+Net als alternatieve tekst moet een lange beschrijving beschrijvend en zinvol zijn. Het moet ook alle tekst bevatten die in de afbeelding is opgenomen. Een lange beschrijving moet visueel gehandicapte gebruikers zoveel informatie bieden als ziende gebruikers uit de afbeelding zouden begrijpen. </string>
+
+
+    <string name="book_slot"> Bevestig </string>
+    <string name="phone_tag"> Voer de OTP in die naar %s is verzonden </string>
+    <string name="in_kitchen"> In de keuken </string>
+
+    <string name="instruction"> instructie </string>
+    <string name="explained_multiple_request"> We vragen toestemming omdat het nodig is voor de app om zijn functionaliteit uit te voeren. Selecteer Toestemming verlenen om het opnieuw te proberen en Annuleren om af te sluiten. </string>
+    <string name="when_would_you_like_your_service"> Wanneer wil je jouw service? </string>
+
+    <string name="disc_yes_text"> Ja \ nToon producten met korting </string>
+    <string name="disc_no_text"> Nee \ nGeen producten met korting weergeven </string>
+
+    <string name="available_yes_text"> Ja \ nToon producten die op voorraad zijn </string>
+    <string name="beschikbaar_no_text"> Nee \ nGeen producten weergeven die niet op voorraad zijn </string>
+
+    <string name="price_low_to_high"> Prijs: laag naar hoog </string>
+    <string name="price_high_to_low"> Prijs: van hoog naar laag </string>
+    <string name="populariteit"> Populariteit </string>
+    <string name="price_range"> Prijsklasse </string>
+    <string name="availability"> Beschikbaarheid </string>
+    <string name="remove_cart"> Verwijderen </string>
+    <string name="add_cart_tag"> Toevoegen </string>
+    <string name="login_using_facebook"> Log in met Facebook </string>
+    <string name="login_signup_text"> Heeft u geen account? Aanmelden </string>
+
+    <string name="going"> Ga verder </string>
+    <string name="reset"> Reset </string>
+    <string name="brands"> Merken </string>
+    <string name="next"> Volgende </string>
+    <string name="view_more"> Bekijk meer </string>
+    <string name="view_detail"> Bekijk details </string>
+    <string name="get_started"> Aan de slag </string>
+    <string name="track_order"> Track %s </string>
+    <string name="shop_by_type"> Winkelen op type </string>
+    <string name="special_offers"> Speciale aanbiedingen </string>
+    <!--<! - <string name = "special_offers"> Promoties </string> ->-->
+    <!--<! - <string name = "special_offers"> Speciale aanbiedingen </string> ->-->
+    <string name="awesome_deals"> Elke dag geweldige deals ontgrendeld </string>
+    <string name="awesome_product"> Geweldig product </string>
+    <string name="recent_orders"> Recente bestellingen </string>
+    <string name="we_hand_picked_some_great_services_for_you"> We hebben met de hand een aantal geweldige %s voor je uitgekozen. </string>
+    <string name="categories"> Categorieën </string>
+    <string name="product_price"> Productprijs: </string>
+    <string name="view_slot"> Bekijk slot </string>
+    <string name="book_now"> Boek nu </string>
+    <string name="beroep_here"> Beroep hier </string>
+    <string name="order_recieved">%s ontvangen </string>
+    <string name="otp_verification"> OTP-verificatie </string>
+    <string name="enter_mobile"> Mobiel invoeren </string>
+    <string name="signup"> Aanmelden </string>
+    <string name="signup_using_facebook"> Aanmelden via Facebook </string>
+    <string name="don_t_have_an_account_login"> Heb je al een account? Inloggen </string>
+    <string name="menu"> Menu </string>
+    <string name="buy_now"> Koop nu </string>
+    <string name="delivery_location"> Adreslocatie </string>
+    <!--<string name = "rating_amp @CC"> Beoordeling &amp; Recensies </string>-->
+    <string name="no_rating_found"> ​​Geen beoordeling gevonden </string>
+    <string name="no_promocode_cart"> Geen promoCode gevonden met betrekking tot de winkelwagen </string>
+    <string name="enter_valid_number"> Voer een geldig telefoonnummer in </string>
+    <string name="artist_not_available">%s niet beschikbaar voor bepaalde datum &amp; tijd </string>
+    <string name="selected_time_alert"> De geselecteerde tijd mag niet korter zijn dan de huidige datum-tijd </string>
+    <string name="select_maximum_price_alert"> selecteer de maximale prijs </string>
+    <string name="select_category_alert"> selecteer een categorie </string>
+    <string name="title_activity_home"> HomeActivity </string>
+    <string name="title_home"> Home </string>
+
+    <string name="complete_address"> Volledig adres </string>
+    <string name="your_location"> Uw locatie </string>
+    <string name="add_address"> Adres toevoegen </string>
+    <string name="delete"> Verwijderen </string>
+    <string name="pending_orders"> In afwachting van %s </string>
+    <string name="complete_orders"> Voltooid %s </string>
+    <string name="customer_code"> Klantcodea </string>
+    <string name="enter_customer_code"> Voer klantcode in </string>
+
+    <string name="login_sinup_text"> Inloggen of registreren </string>
+
+    <string name="addon_tag"> Keuze uit %s </string>
+
+    <string name="addon_selction"> Selecteer %s optie </string>
+
+    <string name="addon_name_tag"> Addons: %s </string>
+    <string name="orders"> Bestellingen </string>
+    <!--<string name = "orders"> Bestellingen </string>-->
+    <string name="view_category"> Bekijk categorieën </string>
+    <string name="tax"> Belasting </string>
+    <string name="pickup_from"> Ophalen van </string>
+    <string name="delivery_to"> Levering aan </string>
+    <string name="Approved"> Goedgekeurd </string>
+    <string name="on_the_way"> Onderweg </string>
+    <string name="Started"> Gestart </string>
+    <string name="ended"> Beëindigd </string>
+    <string name="rating_given"> Beoordeling gegeven </string>
+    <string name="customer_cancelled"> Klant geannuleerd </string>
+    <string name="verzonden"> Verzonden </string>
+    <string name="packed"> Verpakt </string>
+
+    <string name="return_from_app_settings_to_activity">Volgende machtigingen: Camera: %s</string>
+    <string name="ready_to_pick"> Klaar om gekozen te worden </string>
+
+    <string name="share_app"> App delen </string>
+
+    <string name="about_us"> Over ons </string>
+    <string name="change_language"> Taal wijzigen </string>
+    <string name="terms"> Termen &amp; Voorwaarden </string>
+    <string name="my_wishlist"> Mijn verlanglijst </string>
+    <string name="popular_tag"> Populair %s </string>
+
+    <!--<! - <string name = "self_pickup"> Zelf ophalen </string> ->-->
+    <string name="self_pickup"> Ophalen aan de stoeprand </string>
+
+    <string name="delivery_txt"> Levering </string>
+
+    <string name="current_adrs"> Huidig ​​adres </string>
+    <string name="maximum_limit_cart"> Maximum limiet bereikt </string>
+    <string name="search_food_hint"> Zoek naar voedselproduct </string>
+    <string name="special_offer"> Speciale aanbiedingen </string>
+    <!--<! - <string name = "special_offer"> Promoties </string> ->-->
+    <string name="discount_product"> Kortingsproducten </string>
+    <string name="popular_brand"> Populaire merken </string>
+    <string name="royo_recommend">%s door gebruiker aanbevolen </string>
+    <string name="order_now"> BESTEL NU </string>
+    <string name="Pick_up"> Opgehaald </string>
+    <string name="both_delivery_msg_option"> Deze %s biedt zowel afhalen als bezorgen, wat wil je doen? </string>
+    <string name="status_on">%s aan </string>
+    <string name="out_delivery"> Wordt verzonden </string>
+
+    <string name="privacy_policy"> Privacybeleid </string>
+    <string name="place_booking"> Boeking plaatsen </string>
+    <string name="razor_pay"> Razor Pay </string>
+    <string name="conekta"> ConeKta </string>
+    <string name="zelle"> Zelle </string>
+    <string name="cashapp"> Cash-app </string>
+    <string name="cash_on"> Onder rembours </string>
+    <string name="make_payment"> Voer betaling uit </string>
+    <string name="name_on_card"> Naam op kaart </string>
+     <string name="total_payable_amount" formatted="false"> Totaal te betalen bedrag %1$s %2$s </string>
+    <string name="no_chat_found"> ​​Geen chat gevonden </string>
+    <string name="write_a_message"> Schrijf een bericht </string>
+
+    <string name="no_quetion_found"> ​​Geen vraag gevonden </string>
+    <string name="select_answer"> Selecteer ten minste één antwoord uit de lijst </string>
+    <string name="back"> Terug </string>
+
+    <string name="set_your_location_manually"> Stel uw locatie handmatig in </string>
+    <string name="btn_add_address"> Adres toevoegen </string>
+
+
+    <string name="add_a_tip_to_rider">Voeg een fooi toe aan je chauffeur</string>
+    <string name="tip_charges"> Tipkosten </string>
+    <string name="eta"> ETA </string>
+
+    <string-array name="more_array">
+        <item> App delen </item>
+        <item> Voorwaarden &amp; Voorwaarden </item>
+        <item> Over ons </item>
+        <item> Privacybeleid </item>
+    </string-array>
+
+    <string-array name="app_language">
+        <item> Engels </item>>
+        <item> Spaans </item>>
+        <item> Arabisch </item>>
+    </string-array>
+
+    <string-array name="food_instruct_header">
+        <item> Zoeken </item>
+        <item> Online bestelling </item>
+        <item> Levering </item>
+    </string-array>
+    <!--<! - <string-array name = "food_instruct_header">
+        <item> Zoeken </item>
+        <item> Online bestelling </item>
+        <item> Levering </item>
+        <item> Kaart </item>
+    </string-array> ->-->
+
+
+    <string-array name="food_instruct_title" formatted="false">
+        <item> Ontdek s werelds beste restaurants &amp; eten </item>
+        <item> Kies de gewenste betalingsoptie </item>
+        <item> Krijg voedsel van hoge kwaliteit voor de beste prijs </item>
+    </string-array>
+
+
+    <string-array name="ecom_instruct_header">
+        <item> Zoeken </item>
+        <item> Selecteer </item>
+        <item> Veel plezier </item>
+    </string-array>
+
+    <string-array name="ecom_instruct_header_v2">
+        <item> Ontdekken </item>
+        <item> Voer de betaling uit </item>
+        <item> Veel winkelplezier </item>
+    </string-array>
+
+
+    <string-array name="ecom_instruct_title" formatted="false">
+        <item> Ontdek s werelds beste services </item>
+        <item> Kies de gewenste optie voor service </item>
+        <item> Ontvang service van hoge kwaliteit voor de beste prijs </item>
+    </string-array>
+
+    <string-array name="ecom_instruct_title_v2" formatted="false">
+        <item> Ontdek s werelds beste merken \ n en boetiek. </item>
+        <item> Kies de gewenste optie \ n voor betaling. </item>
+        <item> Koop producten van hoge kwaliteit \ n voor de beste prijzen. </item>
+    </string-array>
+
+    <string-array name="app_search">
+        <item> Product </item>
+        <item> Restaurant </item>
+    </string-array>
+
+    <string-array name="filter_array">
+        <item> Categorie </item>
+        <item> Sorteren </item>
+        <item> Prijsklasse </item>
+        <item> Korting </item>
+        <item> Beschikbaarheid </item>
+    </string-array>
+
+    <string name="select_language"> Selecteer taal </string>
+
+    <string name="share_referral" formatted="false"> Gebruik code %1$s om %2$s als verwijzingsbonus hier te krijgen: %3$s </string>
+    <string name="referral_text_tag" formatted="false"> Verwijs een vriend en ontvang %1$s en jouw vriend krijgt %2$s na succesvolle voltooiing van zijn eerste bestelling. </string>
+
+    <string name="referral"> Verwijzing </string>
+    <string name="refer_a_friend"> Verwijs een vriend </string>
+    <string name="my_referal"> Mijn verwijzing </string>
+    <string name="invitation_your_friend_and_earn_money"> Nodig je vriend uit en verdien geld </string>
+    <string name="hint_referral_code"> Verwijzingscode </string>
+    <string name="referral_code"> Verwijzingsbedrag </string>
+    <string name="pay_using"> Betaal met </string>
+    <string name="choose_payment"> Kies betaling </string>
+    <string name="add_customization"> + Aanpassing toevoegen </string>
+    <string name="morning"> Ochtend </string>
+    <string name="aftenoon"> Middag </string>
+    <string name="evening"> Avond </string>
+    <string name="night"> Nacht </string>
+    <string name="out_of_stock"> Niet op voorraad </string>
+    <string name="customizable"> Aanpasbaar </string>
+    <string name="remove"> Verwijderen </string>
+    <string name="promo_remove"> Promo succesvol verwijderd </string>
+    <string name="service_at"> Service op </string>
+    <string name="cod"> COD </string>
+    <string name="please_select_slot"> Selecteer een boekingstijdvak </string>
+
+    <string name="sorry_cart_value"> Sorry! De minimumwaarde van het winkelwagentje moet %s </string>
+<!--    zijn-->
+
+    <string name="referral_amt_tag"> Beschikbare verwijzingspunten %s </string>
+    <string name="price_detail"> Prijsdetails </string>
+    <string name="promo_applied"> Promo toegepast </string>
+    <string name="service_date"> Servicedatum: - </string>
+    <string name="service_time"> Servicetijd: - </string>
+    <string name="agent_to_be_book"> Agent om te boeken: - </string>
+    <string name="change_date_amp_time"> Datum wijzigen &amp; Tijd </string>
+    <string name="choose_booking_time_slot"> Kies een boekingstijdvak </string>
+    <string name="wait"> Wacht! </string>
+    <string name="pickup"> Zelf ophalen </string>
+    <string name="delivery_tag"> Levering </string>
+    <string name="select_location"> Selecteer locatie </string>
+    <string name="search_for_your_location"> Zoek naar uw locatie… </string>
+    <string name="edit_address"> Adres bewerken </string>
+    <string name="update_address"> Adres bijwerken </string>
+    <string name="please_complete_address"> Voeg het volledige adres toe </string>
+    <string name="house_building_tag"> Huis nr. / appartement nr. / Floor / Building </string>
+    <string name="enter_complete_address"> Voer het volledige adres in </string>
+    <string name="search_for_resturant"> Zoek naar restaurant, neven…. </string>
+    <string name="start_time"> Starttijd </string>
+    <string name="pick_up"> Ophalen van </string>
+    <string name="address_detail"> Adresgegevens </string>
+    <string name="pickup_on"> Opgehaald op </string>
+    <string name="offer_prod_rating"> Geef een productbeoordeling op </string>
+    <string name="offer_rate_title"> Geef tarieftitel op </string>
+    <string name="offer_rate_comment"> Geef commentaar op de beoordeling </string>
+    <string name="enter_name"> Voer naam in </string>
+    <string name="enter_valid_card"> Voer een geldige kaart in </string>
+    <string name="enter_valid_cvc"> Voer een geldige Cvc in </string>
+    <string name="enter_valid_expiry_month"> Voer een geldige vervalmaand in </string>
+    <string name="enter_valid_date"> Voer een geldige vervaldatum in </string>
+    <string name="no_detail_found"> ​​Geen detail gevonden </string>
+    <string name="product_detail">%s Detail </string>
+    <string name="duration"> Duur </string>
+
+    <string name="pick_up_tag"> Ophalen </string>
+
+    <string name="offline_supplier_tag"> De %s accepteert geen online bestelling </string>
+    <string name="enter_email"> E-mailadres invoeren </string>
+    <string name="enter_supplier_code"> Voer leverancierscode in </string>
+    <string name="payment_card"> Kaart </string>
+    <string name="payment_cash"> Onder rembours </string>
+    <string name="payment_both"> Kaart / rembours </string>
+    <string name="today"> Vandaag </string>
+    <string name="yesterday"> Gisteren </string>
+    <string name="live_tracking"> Live volgen </string>
+    <string name="use_current_location"> Gebruik huidige locatie </string>
+    <string name="subtotal"> SubTotaal </string>
+    <string name="referral_amount"> Verwijzingsbedrag </string>
+    <string name="promo_code"> Promotiecode </string>
+    <string name="tap_to_copy"> Tik om te kopiëren </string>
+    <string name="refer_now"> Verwijs nu </string>
+    <string name="sort_amp_filter"> Sorteren &amp; Filter </string>
+    <string name="choose_payment_receipt_to_upload"> Kies betalingsbewijs om te uploaden </string>
+    <string name="payment_details"> Betalingsgegevens: </string>
+    <string name="email_tag"> E-mail: %s </string>
+    <string name="phoneno_tag"> Telefoonnummer: %s </string>
+    <string name="online_payment"> Debetkaarten </string>
+    <string name="payment_receipt_uploaded"> Betalingsbewijs geüpload </string>
+    <string name="enter_instruction"> Voer hier instructies in </string>
+
+    <string name="select_preciption"> Selecteer recept om te uploaden </string>
+    <string name="upload_pescription"> Geüploade receptdocumenten </string>
+    <string name="please_select_precription"> Selecteer afbeelding op recept </string>
+    <string name="english"> Engels </string>
+    <string name="supplier_service_charge">%s servicekosten </string>
+    <string name="support_email"> Ondersteunings-e-mail </string>
+
+    <string name="support_email_text"> Query hebben met order-ID: %s </string>
+    <string name="service"> Service </string>
+    <string name="selected_question"> Geselecteerde vragen </string>
+    <string name="addon_charges"> Extra kosten </string>
+    <string name="featured"> Aanbevolen %s </string>
+    <string name="top_deals"> Topdeals in %s </string>
+    <string name="feature_provider"> Aanbevolen serviceproviders </string>
+    <string name="create_your_account"> Maak uw account </string>
+    <string name="create_new_account"> Maak een nieuw account </string>
+    <string name="continue_with_google"> Ga verder met Google </string>
+    <string name="provacy_policy_text"> Door verder te gaan, gaat u akkoord met de algemene voorwaarden van CARE en bevestigt u dat u het privacybeleid van CARE hebt gelezen. </string>
+    <string name="al_have_an_account_login"> Heb je al een account? Inloggen </string>
+    <string name="sign_up_new"> Aanmelden </string>
+    <string name="hint_first_name"> Voornaam * </string>
+    <string name="hint_last_name"> Achternaam * </string>
+    <string name="hint_phone_no"> Telefoonnummer * </string>
+    <string name="hint_email_new"> E-mail * </string>
+    <string name="hint_password_new"> Wachtwoord * </string>
+    <string name="hint_confirm_password"> Bevestig wachtwoord * </string>
+    <string name="signup_screen_text"> Heeft u geen account? Aanmelden </string>
+    <string name="otp_msg_text"> Voer de OTP in die naar uw geregistreerde e-mailadres en telefoonnummer is verzonden </string>
+    <string name="hint_enter_otp"> Voer OTP in </string>
+    <string name="verify"> Verifieer </string>
+    <string name="plese_accept_terms_and_conditions"> Accepteer de algemene voorwaarden </string>
+    <string name="continue_with_facebook"> Ga verder met Facebook </string>
+    <string name="aanbevolen_supplier"> Aanbevolen %s </string>
+    <string name="more"> Meer </string>
+
+    <string name="save_card"> SAVE CARD </string>
+    <string name="saved_cards"> OPGESLAGEN KAARTEN </string>
+    <string name="card_no_xxxxxxxxxxxx"> kaartnummer: XXXXXXXXXXXX </string>
+    <string name="expiry_month"> Vervalmaand </string>
+    <string name="expiry_year"> Vervaljaar </string>
+    <string name="add_card_d"> Kaart toevoegen </string>
+    <string name="no_card_found"> ​​Geen kaart gevonden </string>
+    <string name="un_service_able"> UnServiceAble </string>
+
+    <string name="card_tag"> XXXXXXXXXXXX %s </string>
+    <string name="card_add_login_error"> Log in om kaart toe te voegen </string>
+    <string name="square_pay"> Square Pay </string>
+    <string name="select_time_slot"> Selecteer tijdvak </string>
+
+    <string name="area_to_focus_on"> Gebied om op te focussen </string>
+    <string name="areas_to_focus"> Gebieden om te focussen </string>
+    <string name="have_pets"> Huisdieren hebben </string>
+    <string name="parking_instructions"> Parkeerinstructies </string>
+    <string name="enter_parking_instruction"> Voer parkeerinstructie in </string>
+    <string name="will_someone_be_there_to_let_the_cleaner_in"> Zal er iemand zijn om de schoonmaker binnen te laten? </string>
+
+    <string name="shimmer_categories"> Categorieën </string>
+
+    <string name="things_to_remember"> Dingen om te onthouden </string>
+
+
+    <string name="faq"> FAQ </string>
+
+
+    <string name="word_care_giver"> Word een patiënt of verzorger </string>
+    <string name="enter_instructionc"> Voer je MC ID # in </string>
+    <string name="rating"> Beoordeling </string>
+    <string name="delivery_in"> Levering in </string>
+    <string name="for_delivery"> Voor bezorging </string>
+    <string name="open"> Open </string>
+    <string name="mins"> min. </string>
+    <string name="nationality"> Nationaliteit: </string>
+    <string name="brand"> Merk: </string>
+    <string name="specialty"> Specialiteit </string>
+    <string name="search"> Zoeken </string>
+    <string name="shipping_status"> Verzendstatus </string>
+    <string name="receipe"> Recept </string>
+    <string name="return_product"> Product retourneren </string>
+    <string name="awaiting_payment"> In afwachting van verzending </string>
+    <string name="geannuleerd"> Geannuleerd </string>
+    <string name="onhold"> In de wacht </string>
+    <string name="reason_to_return"> Retourreden </string>
+    <string name="enter_reason_to_return_product"> Geef de reden op om het product te retourneren </string>
+    <string name="return_requested"> Retour aangevraagd </string>
+    <!--<string name = "return"> Geretourneerd </string>-->
+    <string name="product_picked_up"> Product opgehaald </string>
+    <string name="agent_is_on_the_way"> Agent is onderweg </string>
+    <string name="write_reason_here"> Schrijf hier de reden ... </string>
+    <string name="login_first"> Log eerst in </string>
+    <string name="requests">%s verzoeken </string>
+    <string name="supplierName"> Naam leverancier </string>
+    <string name="upload_presc"> Upload recept </string>
+
+    <string name="are_you_sure_cancel_request"> Weet u zeker dat u dit verzoek wilt annuleren? </string>
+    <string name="net_total_greater_than" formatted="false"> Subtotaal moet groter zijn dan %1$s %2$s </string>
+    <string name="request_id"> Verzoek-ID: </string>
+    <string name="request_on"> Aangevraagd op: </string>
+    <string name="pay_now" formatted="false"> Betaal nu %1$s %2$s </string>
+    <string name="resterende_amount"> Resterend bedrag </string>
+
+    <string name="maximum_limit_addon"> Maximale add-on limiet bereikt %d </string>
+    <string name="refund_amount"> Terugbetalingsbedrag </string>
+    <string name="token_expire"> Sorry, je account is ingelogd op een ander apparaat! Log opnieuw in om door te gaan. </string>
+    <string name="service_detail"> Servicedetail </string>
+    <string name="paypal"> Paypal </string>
+    <string name="donate_to_someone"> Doneer aan iemand </string>
+    <string name="adrs_donate_subtext"> Voeg hieronder het adres toe waar je wilt doneren </string>
+    <string name="delivery_address"> Afleveradres </string>
+    <string name="return_request_msg"> Uw retouraanvraag is succesvol gegenereerd. </string>
+
+    <string name="product_removed_wishlist"> Product verwijderd van verlanglijst </string>
+    <string name="remove_wishlist" formatted="false">%s verwijderd uit %s </string>
+    <string name="more_details"> Meer details </string>
+    <string name="rate_food_item"> Beoordeel %s </string>
+    <string name="rate_product_msg"> Beoordeel %s met succes </string>
+
+    <string name="rate_user_tag"> Beoordeel %s </string>
+    <string name="paystack"> PayStack </string>
+    <string name="online_pay_tag"> Online (%s) </string>
+    <string name="saded"> Opgezadeld </string>
+    <string name="myFatoora"> Mijn Fatoorah </string>
+    <string name="leveranciers"> Leveranciers </string>
+    <string name="products"> Producten </string>
+    <string name="wishlist"> wishlist </string>
+    <string name="supplier"> leverancier </string>
+    <string name="product"> product </string>
+    <string name="payment_unsuccessful"> Betaling mislukt </string>
+    <string name="payment_done_successful"> Betaling succesvol voltooid </string>
+    <string name="payment_failed"> Betaling mislukt </string>
+    <string name="mumybene"> Mumybene </string>
+    <string name="enter_your_mmy_bean_phone"> Voer je Mumybene telefoonnummer in </string>
+    <string name="phone_number"> Telefoonnummer </string>
+    <string name="enter_phone"> Voer telefoonnummer in </string>
+    <string name="sort_by_new"> Sorteren op nieuw </string>
+    <string name="sort_by_distance"> Sorteer op afstand </string>
+    <string name="sort_by_rating"> Sorteren op beoordeling </string>
+    <string name="windcave"> Online betalen met Windcave </string>
+
+    <string name="stripe_pay"> Stripe Pay </string>
+    <string name="max"> Max </string>
+    <string name="minm"> Min </string>
+    <string name="pls_select_atleast"> Selecteer tenminste </string>
+    <string name="items_in"> items in </string>
+    <string name="description"> Beschrijving </string>
+    <string name="customer_support"> Klantenservice </string>
+    <string name="verwachte_delivered_time"> Verwachte levertijd </string>
+    <string name="min_tag"> min </string>
+    <string name="view_branches"> Bekijk Branches </string>
+    <string name="tap"> Tik op </string>
+    <string name="elavon"> Elavon </string>
+    <string name="food_item_detail"> Detail van voedselitems </string>
+    <string name="brand_name"> Merknaam: \ t </string>
+    <string name="mpaisa"> mPaisa </string>
+    <string name="schedule_order"> Bestelling plannen </string>
+    <string name="edit_schedule_order"> Bewerk Schedule Order </string>
+    <string name="confirm"> Bevestig </string>
+    <string name="choose_date_time"> Kies datum &amp; tijd </string>
+    <string name="pay_pal"> Pay Pal </string>
+
+    <string name="facebook"> Facebook </string>
+    <string name="twitter"> Twitter </string>
+    <string name="linkein"> Gekoppeld in </string>
+    <string name="google_plus"> Google+ </string>
+    <string name="hint_email_phone"> E-mail / telefoonnummer </string>
+
+    <string name="restaurant"> Restaurant </string>
+    <string name="restaurants"> Restaurants </string>
+    <string name="payhere"> Payhere </string>
+    <string name="type_building_suite"> Type gebouw / suite nr. </string>
+    <string name="please_add"> Voeg toe </string>
+    <string name="previous_cart_items_removed"> uw winkelwagentje is leeg als u een andere serviceprovider selecteert. Weet u zeker dat u wilt doorgaan? </string>
+    <string name="request_cancelled"> Verzoek geannuleerd </string>
+    <string name="wallet"> Portemonnee </string>
+    <string name="current_balance"> Huidig ​​saldo </string>
+    <string name="add_amount"> Bedrag toevoegen </string>
+    <string name="send_money_to_someone"> Stuur geld naar iemand </string>
+    <string name="histroy"> Geschiedenis </string>
+    <string name="send_money"> Geld verzenden </string>
+    <string name="entre_amount_you_want_send"> Voer het bedrag in dat u wilt verzenden </string>
+    <string name="entre_amount_you_want_add"> Voer het bedrag in dat u wilt toevoegen </string>
+    <string name="send_by"> Verzenden door </string>
+    <string name="email_address"> E-mailadres </string>
+    <string name="enter_phone_number"> Voer hier het telefoonnummer in </string>
+    <string name="add_payment"> Betaling toevoegen </string>
+    <string name="continue_to_add_amount"> Ga door met het toevoegen van bedrag </string>
+    <string name="enter_amount"> Voer bedrag in </string>
+    <string name="money_sent_success"> Geld succesvol verzonden </string>
+    <string name="amount_added"> Bedrag toegevoegd op %s </string>
+    <string name="amount_deducted"> Bedrag afgetrokken op %s </string>
+    <string name="amount_added_success">Bedrag succesvol toegevoegd</string>
+    <string name="amount_received"> Bedrag ontvangen op %s </string>
+    <string name="amount_sent"> Bedrag verzonden op %s </string>
+    <string name="refund_added"> Terugbetaling toegevoegd op %s </string>
+    <string name="order_placed"> Bestelling geplaatst op %s </string>
+    <string name="pay_by_wallet"> Betaal met een portemonnee en je krijgt %s\%% korting! </string>
+    <string name="wallet_with_amt" formatted="false"> Portemonnee (%1$s %2$s) </string>
+    <string name="onvoldoende_balans"> Onvoldoende saldo </string>
+    <string name="add_money"> Geld toevoegen </string>
+    <string name="wallet_discount"> Wallet-korting </string>
+    <string name="initial_payment_source"> Oorspronkelijke betalingsbron </string>
+    <string name="enter_amount_you_want_to_add"> Voer het bedrag in dat u wilt toevoegen </string>
+    <string name="select_payment_method"> Selecteer betaalmethode </string>
+    <string name="choose_where_you_want_refund"> ​​Kies waar je de terugbetaling wilt </string>
+    <string name="comment"> Commentaar </string>
+    <string name="enter_comment"> Voer commentaar in </string>
+    <string name="edit_order"> Bewerk order </string>
+    <string name="add_items"> Artikelen toevoegen </string>
+    <string name="select_atleast_one"> Selecteer minimaal één product </string>
+    <string name="order_edited_success">Order succesvol bewerkt</string>
+    <string name="save_items"> Klaar </string>
+    <string name="new_added_items">%d nieuwe items toegevoegd </string>
+    <string name="please_choose_atlease_one_service"> Kies alstublieft ten minste één service </string>
+    <string name="pay_tabs"> "Paytabs" </string>
+    <string name="billing_address"> Factuuradres </string>
+    <string name="city"> Stad </string>
+    <string name="state"> Staat </string>
+    <string name="country"> Land </string>
+    <string name="pincode"> Pincode </string>
+    <string name="shipping_address"> Verzendadres </string>
+    <string name="same_as_billing"> Zelfde als factuuradres </string>
+    <string name="enter_address"> Adres invoeren </string>
+    <string name="enter_city"> Stad invoeren </string>
+    <string name="enter_state"> Staat binnen </string>
+    <string name="enter_country"> Land invoeren </string>
+    <string name="enter_pincode"> Voer pincode in </string>
+    <string name="enter_shipping_address"> Voer het verzendadres in </string>
+    <string name="enter_shipping_city"> Voer de verzendplaats in </string>
+    <string name="enter_shipping_country"> Voer het land van verzending in </string>
+    <string name="enter_shipping_state"> Voer de verzendstatus in </string>
+    <string name="enter_shipping_pincode"> Voer de verzendpincode in </string>
+    <string name="country_code"> Landcode </string>
+    <string name="defaultPaymentMethod"> Standaard betaalmethode </string>
+    <string name="email"> E-mail </string>
+    <string name="full_name"> Volledige naam </string>
+    <string name="card_number"> Kaartnummer * </string>
+    <string name="personaldetails"> Persoonlijke gegevens </string>
+    <string name="expires"> Verloopt </string>
+    <string name="addDebCreCard"> Creditcard / betaalpas toevoegen </string>
+    <string name="youWillText"> Er worden pas kosten in rekening gebracht als je een aankoop doet </string>
+    <string name="add_new_card"> Nieuwe kaart toevoegen </string>
+    <string name="error_enter_cardNumber"> Voer uw kaartnummer in. </string>
+    <string name="error_invalid_card"> Voer een geldig kaartnummer in. </string>
+    <string name="error_empty_cardExpires"> Voer een geldige vervaldatum van de kaart in. </string>
+    <string name="error_empty_cvv"> Voer je cvv in. </string>
+    <string name="error_empty_firstName"> Voer een naam in op uw kaart. </string>
+    <string name="error_validYear"> Voer een geldig jaar in. </string>
+    <string name="error_validMonth"> Voer een geldige maand in. </string>
+    <string name="cvv"> CVV * </string>
+    <string name="card_cvv_incorrect"> Uw kaart-cvv is onjuist. </string>
+    <string name="error_valid_cvv"> Voer een geldige cvv in. </string>
+    <string name="specialCharactersnot_first"> Voornaam mag geen speciaal teken bevatten. </string>
+    <string name="specialCharactersnot_last"> Achternaam mag geen speciaal teken bevatten. </string>
+    <string name="edit_order_detail"> Bewerk %s </string>
+    <string name="edit_booking"> Boeking bewerken </string>
+    <string name="peach"> Perzik </string>
+    <string name="verwachte_delivery_time"> Verwachte levertijd </string>
+    <string name="end_time"> Eindtijd </string>
+    <string name="payment_pending"> Betaling in behandeling </string>
+    <string name="text_braintree"> BrainTree </string>
+    <string name="category"> Categorie </string>
+    <string name="ecom_my_cart"> Mijn winkelwagen </string>
+    <string name="braintree_token_error"> Token niet ontvangen </string>
+    <string name="admin_block_msg"> Sorry, je bent geblokkeerd door admin. neem contact op met de admin om de blokkering van </string>
+<!--    op te heffen-->
+    <string name="valid_to"> Geldig tot </string>
+    <string name="valid_from"> Geldig vanaf </string>
+    <string name="renew_subscription"> Abonnement verlengen </string>
+    <string name="cancel_subscription"> Abonnement annuleren </string>
+    <string name="subscriptions"> Abonnementen </string>
+    <string name="subcription_plan_tag">%s toegang </string>
+    <string name="jaarlijks"> jaarlijks </string>
+    <string name="Monthly"> maandelijks </string>
+    <string name="wekelijks"> wekelijks </string>
+    <string name="show_branch"> Show Branch </string>
+    <string name="buy_subcrip"> Abonnement kopen </string>
+    <string name="my_subscrip_plan_text"> Controleer uw huidige abonnementen </string>
+    <string name="my_subscriptions"> Mijn-abonnementen </string>
+    <string name="upload_documents"> Upload ID-bewijzen </string>
+    <string name="please_upload_id_proof"> Upload een identiteitsbewijs </string>
+    <string name="table_booking"> Tafelreservering </string>
+    <string name="schedule_booking_charges"> Bestellingskosten inplannen </string>
+    <string name="no_slots_available"> Geen slots gevonden </string>
+    <string name="schedule_start_date"> Startdatum plannen </string>
+    <string name="schedule_end_date"> Einddatum plannen </string>
+    <string name="scheduling_charges"> Kosten inplannen </string>
+    <string name="referral_applied"> Verwijzing toegepast </string>
+    <string name="login_with_google"> Log in met google </string>
+
+</resources>
+

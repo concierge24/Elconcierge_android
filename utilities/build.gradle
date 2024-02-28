@@ -1,0 +1,86 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    androidExtensions {
+        experimental = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //api 'androidx.appcompat:appcompat:1.1.0'
+    api 'com.google.android.material:material:1.4.0'
+  //  api 'androidx.constraintlayout:constraintlayout:1.1.3'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+   // api 'com.google.android.gms:play-services-maps:17.0.0'
+    api 'com.google.maps.android:android-maps-utils:2.2.5'
+
+    api 'com.hbb20:ccp:2.5.4'
+  //  api 'androidx.cardview:cardview:1.0.0'
+    api 'com.chaos.view:pinview:1.4.2'
+    api 'com.yarolegovich:discrete-scrollview:1.4.9'
+
+
+
+    //ohttp
+    api 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
+    api 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation 'androidx.slice:slice-core:1.0.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    api 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.30'
+    api 'com.google.android.gms:play-services-location:18.0.0'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.8.1'
+//    api 'com.google.android.gms:play-services-places:17.0.0'
+    api 'androidx.recyclerview:recyclerview:1.2.1'
+    api 'pub.devrel:easypermissions:3.0.0'
+    api 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    api 'jp.wasabeef:glide-transformations:4.3.0'
+    api('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+        transitive = true
+    }
+    api ('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    api 'com.github.bumptech.glide:glide:4.12.0'
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    api 'com.google.maps.android:android-maps-utils:2.2.5'
+    api 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.fragment:fragment-ktx:1.3.6'
+
+    /* Google Places New Sdk */
+    api 'com.google.android.libraries.places:places:2.4.0'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}

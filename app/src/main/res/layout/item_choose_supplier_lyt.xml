@@ -1,0 +1,120 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.codebrew.clikat.modal.other.ProductDataBean" />
+
+        <variable
+            name="color"
+            type="com.codebrew.clikat.utils.configurations.ColorConfig" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_supplier_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:padding="@dimen/value_1"
+            android:scaleType="centerCrop"
+            app:customSrc="@{model.image_path.toString()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/placeholder_product"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/dp_04"
+            android:fontFamily="@font/proximanovasemibold"
+            android:gravity="start"
+            android:textSize="@dimen/text_medium"
+            android:text="@{model.name}"
+            app:layout_constraintBottom_toTopOf="@+id/tv_supplier_name"
+            app:layout_constraintEnd_toStartOf="@+id/tv_rating"
+            app:layout_constraintStart_toEndOf="@+id/iv_supplier_image"
+            app:layout_constraintTop_toTopOf="@+id/iv_supplier_image"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:textcolor="@{color.textHead}"
+            tools:text="Chris Martin" />
+
+
+        <TextView
+            android:id="@+id/tv_supplier_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:fontFamily="@font/proximanovasemibold"
+            android:gravity="start"
+            android:textSize="@dimen/text_medium"
+            android:text="@{model.supplier_name}"
+            app:layout_constraintBottom_toTopOf="@+id/tv_supplier_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_supplier_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_name"
+            app:textcolor="@{color.textHead}"
+            tools:text="Supplier Name" />
+
+        <TextView
+            android:id="@+id/tv_supplier_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:layout_marginBottom="@dimen/dp_04"
+            android:fontFamily="@font/proximanovasemibold"
+            android:gravity="start"
+            android:textSize="@dimen/text_medium"
+            android:text="@{model.supplier_address}"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_supplier_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_supplier_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_supplier_name"
+            app:textcolor="@{color.textHead}"
+            tools:text="Supplier Location" />
+
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:drawablePadding="@dimen/dp_04"
+            android:fontFamily="@font/proximanovasemibold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_medium"
+            android:visibility="visible"
+            android:text="@{String.valueOf(model.avg_rating)}"
+            app:drawableStartCompat="@drawable/ic_rate"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_product_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_product_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_product_name"
+            app:textcolor="@{color.textHead}"
+            tools:text="5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

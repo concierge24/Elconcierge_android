@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.trava.user.ui.signup.moby.landing.LandingScreen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/close_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_action_cross" />
+
+
+            <ImageView
+                android:id="@+id/help_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/dots_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="16dp"
+                    app:dotsColor="@color/dots_gray"
+                    app:dotsCornerRadius="8dp"
+                    app:dotsSize="8dp"
+                    app:dotsSpacing="4dp"
+                    app:dotsWidthFactor="2"
+                    app:progressMode="true"
+                    app:selectedDotColor="@color/purple" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/sf_pro_text_bold"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="@string/login_to_moby"
+                            android:textSize="12sp"
+                            app:textcolor="@{color.black_color}" />
+
+                        <RelativeLayout
+                            android:id="@+id/phone_email_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/new_button_border_bg_drawable">
+
+                            <TextView
+                                android:id="@+id/phone_email_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:drawableLeft="@drawable/ic_login"
+                                android:fontFamily="@font/sf_pro_display_semibold"
+                                android:text="@string/login_with_phone_or_email"
+                                android:textAlignment="center"
+                                app:textcolor="@{color.black_color}" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/fb_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/new_button_border_bg_drawable">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:drawablePadding="@dimen/_4sdp"
+                                android:drawableLeft="@drawable/ic_facebbok"
+                                android:fontFamily="@font/sf_pro_display_semibold"
+                                android:text="@string/continue_with_facebook"
+                                android:textAlignment="center"
+                                app:textcolor="@{color.black_color}" />
+
+                            <com.facebook.login.widget.LoginButton
+                                android:id="@+id/login_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="15dp"
+                                android:paddingBottom="15dp"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/google_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/new_button_border_bg_drawable">
+
+                            <com.google.android.gms.common.SignInButton
+                                android:id="@+id/sign_in_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/continue_with_google"
+                                android:visibility="gone" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_centerVertical="true"
+                                android:drawableLeft="@drawable/ic_google"
+                                android:fontFamily="@font/sf_pro_display_semibold"
+                                android:text="@string/continue_with_google"
+                                android:textAlignment="center"
+                                app:textcolor="@{color.black_color}" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/cooprateLoginButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/new_button_border_bg_drawable">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/view_3"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:drawableLeft="@drawable/ic_login"
+                                android:fontFamily="@font/sf_pro_display_semibold"
+                                android:text="@string/login_with_cooprate_acc"
+                                android:textAlignment="center"
+                                app:textcolor="@{color.black_color}" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/inst_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/new_button_border_bg_drawable"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/icon_4"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="10dp" />
+
+                            <View
+                                android:id="@+id/view_4"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_toRightOf="@+id/icon_4"
+                                android:background="@color/divider" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/view_4"
+                                android:fontFamily="@font/sf_pro_display_semibold"
+                                android:text="@string/inst_account"
+                                android:textAlignment="center"
+                                app:textcolor="@{color.black_color}" />
+
+                        </RelativeLayout>
+
+
+                        <ImageView
+                            android:id="@+id/drop_down_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="25dp"
+                            android:src="@drawable/ic_arrow_down"
+                            android:visibility="gone" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/terms_rl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/textt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_pro_text_medium"
+                                android:gravity="center_horizontal"
+                                android:text="@string/by_continue_you_agree_to_our"
+                                android:textColor="@color/grey_5e" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textt"
+                                android:gravity="center_horizontal">
+
+                                <TextView
+                                    android:id="@+id/terms_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sf_pro_text_medium"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/terms_and_conditions"
+                                    android:textColor="#0491FF" />
+
+                                <TextView
+                                    android:id="@+id/and_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@+id/terms_tv"
+                                    android:fontFamily="@font/sf_pro_text_medium"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/and"
+                                    android:textColor="@color/grey_5e" />
+
+                                <TextView
+                                    android:id="@+id/privacy_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@+id/and_tv"
+                                    android:fontFamily="@font/sf_pro_text_medium"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/privacy_policy"
+                                    android:textColor="#0491FF" />
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.core.widget.NestedScrollView>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:background="@color/mat_grey"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="@string/don_t_have_an_account"
+                    app:textcolor="@{color.white_color}" />
+
+                <TextView
+                    android:id="@+id/tv_login_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/text"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/sign_up"
+                    app:textcolor="@{color.primary_color}" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

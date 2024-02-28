@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.confirm_pickup.ConfirmPickupActivity">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.6"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivMarker"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_pickup"
+            app:tint="@{color.primary_color}" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tvSetPickupSpot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/setPickupSpot"
+                android:textSize="16sp"
+                app:fontFamily="@font/sf_pro_text_bold"
+                app:textcolor="@{color.black_color}" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSetPickupSpot"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/exactPickup"
+                android:textColor="@color/black_8c"
+                android:textSize="13sp"
+                app:fontFamily="@font/sf_pro_text_regular" />
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvDesc"
+                android:layout_marginTop="16dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tvPickupLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/ic_recent_locations_loc"
+                android:drawablePadding="8dp"
+                android:text=""
+                android:textColor="@color/black_8c"
+                android:textSize="13sp"
+                app:fontFamily="@font/sf_pro_text_regular" />
+
+            <TextView
+                android:id="@+id/tvConfirmPickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPickupLocation"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/confirm_pickup"
+                android:textSize="16sp"
+                app:background="@{color.btn_Colour}"
+                app:fontFamily="@font/sf_pro_text_semibold"
+                app:textcolor="@{color.btn_Text_Colour}" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:src="@drawable/ic_back_arrow_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@{color.black_color}" />
+
+        <RelativeLayout
+            android:id="@+id/cvToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:visibility="gone"
+            app:background="@{color.headerColor}"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBack_snd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:src="@drawable/ic_back_white_snd"
+                app:tint="@{color.header_txt_colour}" />
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:text="@string/pickup_point"
+                app:textcolor="@{color.header_txt_colour}"
+                android:textSize="16sp"
+                app:fontFamily="@font/sf_pro_text_bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?actionBarSize"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/tv_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_pick_location"
+                app:tint="@{color.primary_color}" />
+
+            <TextView
+                android:id="@+id/acPickupAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@+id/llIcons"
+                android:background="@drawable/shape_divider_bottom"
+                android:ems="10"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/update_pickup_address"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_location"
+                android:textSize="14sp"
+                app:textcolor="@{color.black_color}" />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvToolbar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="143dp"
+            android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            app:backgroundTint="@color/white"
+            app:fabSize="mini"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_my_location" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:paddingBottom="24dp"
+    android:background="@drawable/shape_border_gray">
+
+    <TextView
+        android:id="@+id/tvPromoCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_dash_primary_border"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:text="ABCDEF"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvApply"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:textSize="12sp"
+        android:textColor="@color/thin_light_purple"
+        android:text="@string/apply"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPromoName"
+        android:layout_below="@+id/tvPromoCode"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/black_3e"
+        tools:text="Get 50% Off on first 3 rides."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvExpires"
+        android:layout_below="@+id/tvPromoName"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:textSize="10sp"
+        android:textColor="@color/black_1e_op_55"
+        tools:text="Expires in 31 Dec 2019"/>
+
+
+
+</RelativeLayout>

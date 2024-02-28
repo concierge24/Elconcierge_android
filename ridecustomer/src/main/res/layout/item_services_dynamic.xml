@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:id="@+id/imageView"
+        android:layout_width="78dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="78dp"
+        android:src="@drawable/ic_tow_truck_0" />
+
+
+    <TextView
+        android:id="@+id/tvSelectedServicee"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/viewSelected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:maxLines="3"
+        android:textAlignment="center"
+        android:fontFamily="@font/mont_bold"
+        android:text="Drinking Water"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/text_dark"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

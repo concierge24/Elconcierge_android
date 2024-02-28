@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.signup.entername.EnterNameFragment">
+
+        <ImageView
+            android:id="@+id/top_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            app:background="@{color.primary_color}" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_back_arrow_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@{color.white_color}" />
+
+        <TextView
+            android:id="@+id/tvCompleteProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivBack"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/completeProfile"
+            android:textSize="18sp"
+            app:fontFamily="@font/sf_pro_text_bold"
+            app:textcolor="@{color.white_color}" />
+
+        <TextView
+            android:id="@+id/tvJustSomeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCompleteProfile"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/justSomeMore"
+            android:textSize="13sp"
+            app:fontFamily="@font/sf_pro_text_regular"
+            app:textcolor="@{color.white_color}" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvSubmit"
+            android:layout_below="@+id/tvJustSomeMore"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/shape_add_comments"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/const_user"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitXY"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape_upload_image"
+                        android:src="@drawable/ic_placeholder"/>
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="-17dp"
+                        android:layout_toRightOf="@+id/imgUser"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/ic_edit"
+                        android:tint="@color/black"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtUploadDriverPicture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mont_bold"
+                        android:text="@string/upload_profile_picture"
+                        android:textAllCaps="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/imgUser"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/full_name"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="E.g Jane Yane"
+                    android:inputType="textPersonName"
+                    android:maxLength="16"
+                    android:padding="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColorHint="@color/black_op55"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/"
+                    app:textcolor="@{color.black_color}" />
+
+
+                <TextView
+                    android:id="@+id/tv_fName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/firstname"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/e_g_jane"
+                    android:inputType="textPersonName"
+                    android:maxLength="16"
+                    android:padding="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColorHint="@color/black_op55"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/"
+                    app:textcolor="@{color.black_color}" />
+
+                <TextView
+                    android:id="@+id/tv_lName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/lastName"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/e_g_yane"
+                    android:inputType="textPersonName"
+                    android:maxLength="16"
+                    android:padding="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColorHint="@color/black_op55"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/"
+                    app:textcolor="@{color.black_color}" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/email"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/e_g_abc123_gmail_com"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textColorHint="@color/black_op55"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/"
+                    app:textcolor="@{color.black_color}" />
+
+                <LinearLayout
+                    android:id="@+id/ll_family"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/family_member_name_for_emergency"
+                        android:textAllCaps="true"
+                        android:textSize="11sp"
+                        app:fontFamily="@font/sf_pro_text_bold"
+                        app:textcolor="@{color.black_color}"
+                        tools:ignore="SmallSp" />
+
+                    <EditText
+                        android:id="@+id/etFamilyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="E.g Jack"
+                        android:inputType="text"
+                        android:padding="16dp"
+                        android:textColorHint="@color/black_op55"
+                        android:textSize="14sp"
+                        app:fontFamily="@font/"
+                        app:textcolor="@{color.black_color}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/family_phone_number_for_emergency"
+                        android:textAllCaps="true"
+                        android:textSize="11sp"
+                        app:fontFamily="@font/sf_pro_text_bold"
+                        app:textcolor="@{color.black_color}"
+                        tools:ignore="SmallSp" />
+
+                    <EditText
+                        android:id="@+id/etFamilyNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="E.g 1234567890"
+                        android:inputType="number"
+                        android:padding="16dp"
+                        android:textColorHint="@color/black_op55"
+                        android:textSize="14sp"
+                        app:fontFamily="@font/"
+                        app:textcolor="@{color.black_color}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_neibhour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/name_of_neighbour_for_emergency"
+                        android:textAllCaps="true"
+                        android:textSize="11sp"
+                        app:fontFamily="@font/sf_pro_text_bold"
+                        app:textcolor="@{color.black_color}"
+                        tools:ignore="SmallSp" />
+
+                    <EditText
+                        android:id="@+id/etNeighbourName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="E.g Jack"
+                        android:inputType="text"
+                        android:padding="16dp"
+                        android:textColorHint="@color/black_op55"
+                        android:textSize="14sp"
+                        app:fontFamily="@font/"
+                        app:textcolor="@{color.black_color}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/number_of_neighbour_for_emergency"
+                        android:textAllCaps="true"
+                        android:textSize="11sp"
+                        app:fontFamily="@font/sf_pro_text_bold"
+                        app:textcolor="@{color.black_color}"
+                        tools:ignore="SmallSp" />
+
+                    <EditText
+                        android:id="@+id/etNeighbourNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="E.g 1234567890"
+                        android:inputType="number"
+                        android:padding="16dp"
+                        android:textColorHint="@color/black_op55"
+                        android:textSize="14sp"
+                        app:fontFamily="@font/"
+                        app:textcolor="@{color.black_color}" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_nationalId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="National Id"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <EditText
+                    android:id="@+id/etNationalIdNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="E.g 968676"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textColorHint="@color/black_op55"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/"
+                    app:textcolor="@{color.black_color}" />
+
+                <TextView
+                    android:id="@+id/tv_school_work_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/identification_from_school_or_work"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <FrameLayout
+                    android:id="@+id/frame_school_id"
+                    style="?attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
+                    android:focusable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_school_work_id">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_school_id"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_school_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:scaleType="center"/>
+
+                        <ImageView
+                            android:id="@+id/iv_one"
+                            app:tint="@{color.primary_color}"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_add_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgCloseSchool_id"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|top"
+                        android:layout_marginEnd="-8dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_cross_s_copy" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_address_proof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/address_proof"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <FrameLayout
+                    android:id="@+id/frame_address_proof"
+                    style="?attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
+                    android:focusable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_address_proof">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_address_proof"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgAddressProof"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:scaleType="center"/>
+
+                        <ImageView
+                            android:id="@+id/iv_two"
+                            app:tint="@{color.primary_color}"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_add_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgCloseAddressProof"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|top"
+                        android:layout_marginEnd="-8dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_cross_s_copy" />
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_id_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/official_id_front"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <FrameLayout
+                    android:id="@+id/frame_id_front"
+                    style="?attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
+                    android:focusable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_address_proof">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_id_front"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgIdFront"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:scaleType="center"/>
+
+                        <ImageView
+                            android:id="@+id/iv_three"
+                            app:tint="@{color.primary_color}"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_add_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgFrontClose"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|top"
+                        android:layout_marginEnd="-8dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_cross_s_copy" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_id_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/official_id_back_pic"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <FrameLayout
+                    android:id="@+id/frame_id_back"
+                    style="?attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
+                    android:focusable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_address_proof">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_id_back"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgIdBack"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:scaleType="center"/>
+
+                        <ImageView
+                            android:id="@+id/iv_four"
+                            app:tint="@{color.primary_color}"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_add_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgBackClose"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|top"
+                        android:layout_marginEnd="-8dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_cross_s_copy" />
+                </FrameLayout>
+
+                <!--*******************************************-->
+                <TextView
+                    android:id="@+id/tv_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/iam"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+
+
+                <RadioGroup
+                    android:id="@+id/rbGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male"
+                        android:layout_gravity="center_vertical"
+                        app:checkColor="@{color.secondary_color}"
+                        app:textcolor="@{color.black_color}"
+                        app:uncheckColor="@{color.secondary_color}" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/rbMale"
+                        app:checkColor="@{color.secondary_color}"
+                        app:textcolor="@{color.black_color}"
+                        app:uncheckColor="@{color.secondary_color}" />
+
+                    <RadioButton
+                        android:id="@+id/rbOthers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="No Preference"
+                        android:layout_below="@+id/rbMale"
+                        app:checkColor="@{color.secondary_color}"
+                        app:textcolor="@{color.black_color}"
+                        app:uncheckColor="@{color.secondary_color}" />
+
+
+                    <!--                    <RadioButton-->
+                    <!--                        android:id="@+id/rbOthers"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="32dp"-->
+                    <!--                        android:text="@string/others"-->
+                    <!--                        app:checkColor="@{color.secondary_color}"-->
+                    <!--                        app:textcolor="@{color.secondary_color}"-->
+                    <!--                        app:uncheckColor="@{color.secondary_color}" />-->
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/address"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="start"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/address_hint"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:padding="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColorHint="@color/black_op55"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/"
+                    app:textcolor="@{color.black_color}" />
+
+
+                <TextView
+                    android:id="@+id/tv_refcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Referral Code"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <EditText
+                    android:id="@+id/etRefrral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Referral Code (Optional)"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColorHint="@color/black_op55"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/"
+                    app:textcolor="@{color.black_color}" />
+
+                <TextView
+                    android:id="@+id/tvBuildingImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/building_and_appartment_images"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.black_color}"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:id="@+id/tvBuildingDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="@string/upload_your_building_and_appartment_images"
+                    android:textAllCaps="false"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/sf_pro_text_bold"
+                    app:textcolor="@{color.gray_color}"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/llBuildingApprtmentImages"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/frame_building_id"
+                        style="?attr/actionButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:clipToPadding="false"
+                        android:focusable="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_school_work_id">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_building_id"
+                            android:layout_width="112dp"
+                            android:layout_height="112dp"
+                            android:layout_marginTop="10dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/img_building_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:scaleType="center" />
+
+                            <ImageView
+                                android:id="@+id/iv_building_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_add_bg"
+                                app:tint="@{color.primary_color}" />
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgCloseBuilding_id"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="end|top"
+                            android:layout_marginEnd="-8dp"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_cross_s_copy" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frame_building_id1"
+                        style="?attr/actionButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:clipToPadding="false"
+                        android:focusable="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_school_work_id">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_building_id1"
+                            android:layout_width="112dp"
+                            android:layout_height="112dp"
+                            android:layout_marginTop="10dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/img_building_id1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:scaleType="center" />
+
+                            <ImageView
+                                android:id="@+id/iv_building_one1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_add_bg"
+                                app:tint="@{color.primary_color}" />
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgCloseBuilding_id1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="end|top"
+                            android:layout_marginEnd="-8dp"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_cross_s_copy" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:background="@{color.btn_Colour}"
+            app:fontFamily="@font/mont_semibold"
+            app:textcolor="@{color.btn_Text_Colour}" />
+
+
+    </RelativeLayout>
+
+</layout>

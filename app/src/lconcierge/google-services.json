@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "938815958935",
+    "firebase_url": "https://elconcierge-9b766.firebaseio.com",
+    "project_id": "elconcierge-9b766",
+    "storage_bucket": "elconcierge-9b766.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938815958935:android:cab7ae533177c6cb535ed2",
+        "android_client_info": {
+          "package_name": "com.Elconcierge.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938815958935-363qhm25kin08i5sh2he9pr6qghrjkoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmYhEt0mIaUImKv1FAwDk9blcXqGhOY8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938815958935-363qhm25kin08i5sh2he9pr6qghrjkoo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "938815958935-lgkik7gpubjfskukb0o3haf3glmkej0r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Elconcierge.agent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938815958935:android:65158547abc2928c535ed2",
+        "android_client_info": {
+          "package_name": "com.Elconcierge.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938815958935-363qhm25kin08i5sh2he9pr6qghrjkoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmYhEt0mIaUImKv1FAwDk9blcXqGhOY8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938815958935-363qhm25kin08i5sh2he9pr6qghrjkoo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "938815958935-lgkik7gpubjfskukb0o3haf3glmkej0r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Elconcierge.agent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

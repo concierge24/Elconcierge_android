@@ -1,0 +1,6 @@
+{
+  "merchantKey":"a9c4fe56a331d590ca84cb1de28cfd1a2e880e5e588b85ee658df51e1c1ffaab",
+  "terminalId":  "rushdelive",
+  "terminalPass": "rushdelivery@123",
+  "requestUrl":"https://payments-dev.urway-tech.com/URWAYPGService/transaction/jsonProcess/JSONrequest"
+}

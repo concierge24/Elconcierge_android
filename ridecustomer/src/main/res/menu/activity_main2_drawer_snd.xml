@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grp1"
+        android:visible="false">
+        <item
+            android:id="@+id/bookTaxi"
+            android:title="@string/bookATaxi" />
+        <item
+            android:id="@+id/packageDelivery"
+            android:title="@string/new_services"
+            android:visible="false" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_bookings"
+            android:icon="@drawable/ic_delivery"
+            android:title="@string/my_bookings" />
+
+        <item
+            android:id="@+id/nav_myearnings"
+            android:title="@string/my_earnings" />
+
+
+        <item
+            android:id="@+id/nav_watch_earn"
+            android:title="@string/watch_amp_earn" />
+
+        <item
+            android:id="@+id/nav_payment_type"
+            android:icon="@drawable/ic_paymenthistory"
+            android:title="@string/payment_methods" />
+
+        <item
+            android:id="@+id/nav_wallet"
+            android:title="@string/my_wallet"
+             />
+        <item
+            android:id="@+id/nav_refer"
+            android:title="@string/refer_earn"
+             />
+
+        <item
+            android:id="@+id/nav_emergency_contact"
+            android:title="@string/emergency_contacts"
+            />
+
+        <item
+            android:id="@+id/nav_noticeBoard"
+            android:title="@string/notification"
+            />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/payment_history"
+            android:icon="@drawable/ic_paymenthistory"
+            android:title="@string/payment_history" />
+
+        <item
+            android:id="@+id/saved_cards"
+            android:icon="@drawable/ic_sayedcards"
+            android:title="@string/saved_cards" />
+
+
+        <item
+            android:id="@+id/nav_promotions"
+            android:icon="@drawable/ic_promotions"
+            android:title="@string/promotions" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_contactus"
+            android:title="@string/contact_us" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_signout"
+            android:title="@string/logout" />
+
+        <item
+            android:id="@+id/nav_etokens"
+            android:title="@string/e_tokens"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_deleiver"
+            android:visible="false"
+            android:title="@string/deliver_with_us" />
+
+        <item
+            android:id="@+id/nav_packages"
+            android:title="@string/travelPkg"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/blank"
+            android:title=""
+            android:visible="false" />
+        <item
+            android:id="@+id/blank2"
+            android:title=""
+            android:visible="false" />
+    </group>
+
+
+</menu>

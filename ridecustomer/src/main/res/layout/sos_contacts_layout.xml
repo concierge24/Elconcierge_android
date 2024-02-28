@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rr_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/shape_border_purple"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivContactImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_placeholder" />
+
+            <TextView
+                android:id="@+id/tvContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:visibility="visible"
+                android:layout_toStartOf="@+id/ivCallButton"
+                android:layout_toEndOf="@+id/ivContactImage"
+                android:fontFamily="@font/sf_pro_text_medium"
+                android:textColor="@color/black_1e"
+                android:textSize="14sp"
+                tools:text="" />
+
+            <TextView
+                android:id="@+id/tvContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvContactName"
+                android:layout_alignStart="@+id/tvContactName"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:textSize="18sp"
+                app:textcolor="@{color.black_color}"
+                tools:text="123456789" />
+
+            <ImageView
+                android:id="@+id/ivCallButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_call_driver"
+                android:padding="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/ivDeleteButton"
+                app:tint="@{color.primary_color}" />
+
+            <ImageView
+                android:id="@+id/ivDeleteButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_delete"
+                app:tint="@{color.primary_color}" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
+

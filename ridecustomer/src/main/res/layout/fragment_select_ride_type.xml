@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+<RelativeLayout
+    android:id="@+id/rootView"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        app:tint="@{color.black_color}"
+        android:src="@drawable/ic_back_arrow_black" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/cvToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:background="@{color.headerColor}">
+
+        <ImageView
+            android:id="@+id/ivBack_snd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:tint="@color/white"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_back_white_snd"
+            app:tint="@{color.header_txt_colour}"/>
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:text="@string/ride_select"
+            app:textcolor="@{color.header_txt_colour}"
+            android:textSize="16sp"
+            app:fontFamily="@font/sf_pro_text_bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvScheduleDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:background="@drawable/shape_schedule_primary"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:padding="8dp"
+            android:text="@string/select_ride"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardView.Ride"
+            android:layout_below="@+id/tvScheduleDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/select_service"
+                    app:textcolor="@{color.black_color}"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/rvCompanies"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvSubTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/choose_ride"
+                    android:textColor="@color/black_8c"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@+id/rvCompanies"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                <com.trava.user.utils.MaxHeightRecyclerView
+                    android:id="@+id/rvCompanies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_bg_menu"
+                    app:layout_constraintBottom_toTopOf="@+id/llBottom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSubTitle"
+                    app:max_height="300dp" />
+
+                <TextView
+                    android:id="@+id/tvNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/mont_regular"
+                    android:gravity="center"
+                    android:src="@drawable/ic_bg_menu"
+                    android:text="@string/no_vehicles_available"
+                    android:textColor="@color/text_dark"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/llBottom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                <LinearLayout
+                    android:id="@+id/llBottom"
+                    android:layout_width="0dp"
+                    android:paddingHorizontal="15sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/tvSchedule"
+                        android:layout_weight="0.8"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shape_add_comments"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_schedule"
+                            app:tint="@{color.secondary_color}" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/sf_pro_text_medium"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/schedule"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:textcolor="@{color.secondary_color}" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:id="@+id/view_1"
+                        android:layout_weight=".1"
+                        android:layout_height="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvBookNow"
+                        style="@style/SubmitButtons"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:textSize="14sp"
+                        app:textcolor="@{color.btn_Text_Colour}"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight=".8"
+                        android:text="@string/continuee" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+
+</layout>

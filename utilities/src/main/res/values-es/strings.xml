@@ -1,0 +1,19 @@
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDNjbIaiPB41uhvhD0mb9Xdi2tA7n0AFlo</string>
+    <!--    <string name="google_maps_key_new" templateMergeStrategy="preserve" translatable="false">AIzaSyDNjbIaiPB41uhvhD0mb9Xdi2tA7n0AFlo</string>-->
+
+    <string name="permission_denied_explanation">Permiso denegado. Ve a la configuración para permitir el permiso de ubicación</string>
+    <string name="settings">Configuraciones</string>
+    <string name="location_permisssion">La aplicación requiere acceder a su ubicación.</string>
+    <string name="ok">Bueno</string>
+    <string name="location_updated">Ubicación actualizada</string>
+    <string name="sww_error">Algo salió mal. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="okay">Bueno</string>
+    <string name="network_error">Error de red. Por favor revise su conexion a internet.</string>
+    <string name="dialog_titlte_select_time">Seleccionar hora</string>
+    <string name="update_alert">Alerta de actualización</string>
+    <string name="update">Actualizar</string>
+
+    <string name="you_have_to_update_app">Debe tener que actualizar a la última versión de la aplicación.</string>
+    <string name="helpRequired">Ayuda requerida</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+<RelativeLayout
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.promocodes.PromoCodesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:textcolor="@{color.black_color}"
+            android:text="@string/applyPromoCode" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivCross"
+            android:layout_alignParentEnd="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_action_cross"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/toolbar"
+        app:cardElevation="6dp"
+        android:id="@+id/cvPromo">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etPromoCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters"
+                android:background="@null"
+                android:ems="10"
+                android:layout_toStartOf="@+id/tvApply"
+                android:hint="@string/enterPromo"
+                android:textSize="14sp"
+                android:maxLength="20"
+                android:padding="16dp"
+                app:textcolor="@{color.black_color}"
+                android:textColorHint="@color/black_op55"
+                app:fontFamily="@font/" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvApply"
+                android:enabled="false"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/mont_regular"
+                android:textSize="14sp"
+                android:padding="16dp"
+                app:textcolor="@{color.primary_color}"
+                android:text="@string/apply" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvPromo"
+        android:id="@+id/tvAvailablePromos"
+        android:enabled="false"
+        android:fontFamily="@font/mont_regular"
+        android:textSize="14sp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        app:textcolor="@{color.black_color}"
+        android:text="@string/availablePromos" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperPromos"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvAvailablePromos"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPromos"
+            android:paddingBottom="12dp"
+            android:layout_margin="8dp"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/mont_regular"
+            android:textSize="16sp"
+            android:textColor="@color/text_dark_1"
+            android:text="@string/no_bookings" />
+    </ViewFlipper>
+
+
+</RelativeLayout>
+
+</layout>

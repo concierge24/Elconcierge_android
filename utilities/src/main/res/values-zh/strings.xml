@@ -1,0 +1,15 @@
+<resources>
+    <string name="permission_denied_explanation">没有权限。转到设置以允许位置权限</string>
+    <string name="settings">设置</string>
+    <string name="location_permisssion">应用程序需要访问您的位置。</string>
+    <string name="ok">好</string>
+    <string name="location_updated">位置已更新</string>
+    <string name="sww_error">出了些问题。请稍后再试。</string>
+    <string name="okay">好的</string>
+    <string name="network_error">网络错误。请检查您的互联网连接。</string>
+    <string name="dialog_titlte_select_time">选择时间</string>
+    <string name="update_alert">更新提醒</string>
+    <string name="update">更新</string>
+
+    <string name="you_have_to_update_app">您必须更新应用程序的最新版本。</string>
+</resources>

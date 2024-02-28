@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.signup.login.LoginFragment">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_back"
+            app:tint="@{color.primary_color}" />
+
+        <RelativeLayout
+            android:id="@+id/rl_language"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/shape_full_name_bg">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:minWidth="120dp"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvEnterYourNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivBack"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/login_to_name"
+            android:textSize="20sp"
+            app:fontFamily="@font/sf_pro_text_bold"
+            app:textcolor="@{color.black_color}" />
+
+        <TextView
+            android:id="@+id/tvOtpSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEnterYourNumber"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/enter_otp_on"
+            android:textColor="@color/black_8c"
+            android:textSize="13sp"
+            android:visibility="gone"
+            app:fontFamily="@font/sf_pro_text_regular" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlPhoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOtpSend"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/cvCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCodePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/black_1c"
+                    app:ccpDialog_allowSearch="true"
+                    app:ccpDialog_fastScroller_bubbleColor="@color/colorGreen"
+                    app:ccpDialog_fastScroller_handleColor="@color/colorGreen"
+                    app:ccpDialog_searchEditTextTint="@color/black_8c"
+                    app:ccpDialog_showCloseIcon="true"
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_autoFormatNumber="false"
+                    app:ccp_clickable="true"
+                    app:ccp_contentColor="@color/black_1c"
+                    app:ccp_rememberLastSelection="true"
+                    app:ccp_selectionMemoryTag="signupCCP"
+                    app:ccp_showArrow="false"
+                    app:ccp_showFlag="false"
+                    app:ccp_showNameCode="true"
+                    app:ccp_textSize="16dp"
+                    app:fontFamily="@font/sf_pro_text_bold" />
+
+                <ImageView
+                    android:id="@+id/iv_coutry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="visible"
+                    android:tint="@color/deliversome_base_color"
+                    app:srcCompat="@drawable/ic_arrow_down" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/cvCountry"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/enter_phone_number_login"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColorHint="@color/divider_color"
+                android:textSize="16sp"
+                app:fontFamily="@font/sf_pro_text_bold"
+                app:textcolor="@{color.black_color}" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/rlPhoneLayout"
+            android:layout_marginHorizontal="22dp"
+            android:background="@color/divider_color" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/tvProceed_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_check_term"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_chevron_right_white" />
+
+        <TextView
+            android:id="@+id/tvProceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_proceed_btn_no_radius"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/proceed"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:fontFamily="@font/sf_pro_text_semibold" />
+
+        <LinearLayout
+            android:id="@+id/ll_check_term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="invisible">
+
+            <CheckBox
+                android:id="@+id/cb_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:checkColor="@{color.secondary_color}"
+                app:uncheckColor="@{color.secondary_color}" />
+
+            <TextView
+                android:id="@+id/tvTermss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="7dp"
+                android:text="@string/terms_and_conditions"
+                android:textSize="12sp"
+                app:fontFamily="@font/sf_pro_text_regular"
+                app:textcolor="@{color.black_color}" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>

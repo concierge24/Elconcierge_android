@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/indicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            app:ci_animator="@animator/indicator_animator"
+            app:ci_animator_reverse="@animator/indicator_animator_reverse"
+            app:ci_drawable="@drawable/shape_app_color"
+            app:ci_drawable_unselected="@drawable/shape_grey_color"
+            app:ci_height="4dp"
+            app:ci_margin="6dp"
+            app:ci_width="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvSkipIntro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value_16"
+            android:background="@drawable/back_rec_theme_color_light_4"
+            android:paddingStart="@dimen/value_16"
+            android:paddingTop="@dimen/value_4"
+            android:paddingEnd="@dimen/value_16"
+            android:paddingBottom="@dimen/value_4"
+            android:text="@string/prev"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/indicator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/indicator" />
+
+        <TextView
+            android:id="@+id/tvNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/value_16"
+            android:background="@drawable/back_rec_theme_color_light_4"
+            android:paddingStart="@dimen/value_16"
+            android:paddingTop="@dimen/value_4"
+            android:paddingEnd="@dimen/value_16"
+            android:paddingBottom="@dimen/value_4"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/indicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/indicator" />
+
+        <TextView
+            android:id="@+id/tvSkipIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/value_16"
+            android:paddingTop="32dp"
+            android:paddingEnd="@dimen/value_16"
+            android:paddingBottom="@dimen/value_16"
+            android:text="@string/skip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

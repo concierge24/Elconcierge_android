@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBookingDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/ivReload"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="end"
+            android:padding="12dp"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_reload_24dp" />
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_back_auto_mirrored"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/mont_bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/back"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/mont_bold"
+            android:text="@string/booking_details"
+            android:textColor="@color/text_dark_1"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/Base.Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_next_btn"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTrackOrder"
+            style="@style/Base.Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_next_btn"
+            android:gravity="center"
+            android:text="@string/track_order"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llFooter"
+        android:layout_below="@+id/toolbarBookingDetails"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/ivMap"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivMap"
+                android:layout_margin="12dp"
+                android:layout_toStartOf="@+id/tvPaymentTypeAmount"
+                android:fontFamily="@font/mont_bold"
+                android:textColor="@color/text_dark"
+                tools:text="July 28 · 01:52 PM" />
+
+            <TextView
+                android:id="@+id/tvPaymentTypeAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivMap"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="12dp"
+                android:fontFamily="@font/mont_bold"
+                android:textColor="@color/text_dark"
+                tools:text=" يوجد · 340 OMR" />
+
+            <TextView
+                android:id="@+id/tvBookingId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDateTime"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toStartOf="@+id/tvBookingStatus"
+                android:fontFamily="@font/mont_bold"
+                android:textColor="@color/text_dark"
+                android:textDirection="locale"
+                tools:text="Id:252572457" />
+
+            <TextView
+                android:id="@+id/tvBookingStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDateTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/mont_bold"
+                android:textColor="@color/colorGreen"
+                tools:text="Completed" />
+
+            <TextView
+                android:id="@+id/tvDropOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBookingId"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/mont_bold"
+                android:text="@string/drop_off_location"
+                android:textColor="@color/text_dark" />
+
+            <TextView
+                android:id="@+id/tvDropOffLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDropOff"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/mont_regular"
+                android:textColor="@color/text_dark"
+                tools:text="552 Chanelle Turnpike Suite 523" />
+
+            <TextView
+                android:id="@+id/tvBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDropOffLocation"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/tvProduct"
+                android:fontFamily="@font/mont_bold"
+                android:textColor="@color/text_dark"
+                android:textDirection="locale"
+                android:visibility="gone"
+                tools:text="Aquafina" />
+
+            <TextView
+                android:id="@+id/tvProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDropOffLocation"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/mont_bold"
+                android:maxEms="12"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:text="5 Gallon x 2" />
+
+            <ImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/tvBrand"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/profile_pic_placeholder"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivCall"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignTop="@+id/ivProfilePic"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_call_driver_dark"
+                android:tint="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDriverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivProfilePic"
+                android:layout_alignBottom="@+id/ivProfilePic"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/ivCall"
+                android:layout_toEndOf="@+id/ivProfilePic"
+                android:fontFamily="@font/mont_regular"
+                android:gravity="center_vertical"
+                android:text="name asdf lu sdfj "
+                android:textColor="@color/text_dark"
+                android:textDirection="locale"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

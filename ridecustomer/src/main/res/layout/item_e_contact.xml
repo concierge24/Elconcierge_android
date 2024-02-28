@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rr_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shape_border_purple"
+        android:padding="16dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivContactImage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_placeholder" />
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@+id/ivCallButton"
+            android:layout_toEndOf="@+id/ivContactImage"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:textColor="@color/black_1e"
+            android:textSize="14sp"
+            tools:text="Reach fgd" />
+
+        <TextView
+            android:id="@+id/tvContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvContactName"
+            android:layout_alignStart="@+id/tvContactName"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toStartOf="@+id/ivCallButton"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:textSize="14sp"
+            app:textcolor="@{color.primary_color}"
+            tools:text="9999999" />
+
+        <ImageView
+            android:id="@+id/ivCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_call_driver"
+            app:tint="@{color.primary_color}" />
+    </RelativeLayout>
+
+</layout>
+

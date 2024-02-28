@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_denied_explanation">اجازت نہیں دی گئ  ، لوکیشن کی خدمات کی اجازت دینے کیلئے فون کےSettings پر جائیں-          </string>
+    <string name="settings">سٹینگس</string>
+    <string name="location_permisssion">ایپ آپ کے لوکیشن تک رسائی حاصل کرنا چاہتا ہے</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="location_updated">لوکیشن اپ ڈیٹ کیا گیا</string>
+    <string name="sww_error">کُچھ مسلئہ ہوگیا ہے. براہ مہربانی کچھ دیر بعد کوشش کریں.</string>
+    <string name="okay">ٹھیک ہے</string>
+    <string name="network_error">انٹرنٹ میں کمی. اپنا انٹرنیٹ کنکشن چیک کریں.</string>
+    <string name="dialog_titlte_select_time">براہ مہربانی وقت منتخب کریں</string>
+    <string name="update_alert">Update alert</string>
+    <string name="update">Update</string>
+
+    <string name="you_have_to_update_app">You must have to update to latest version of the app .</string>
+</resources>

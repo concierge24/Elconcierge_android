@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/cvToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAllCaps="true"
+                android:text="@string/enter_details_of_order"
+                app:textcolor="@{color.black_color}"
+                android:textSize="16sp"
+                app:fontFamily="@font/sf_pro_text_bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                app:tint="@{color.black_color}"/>
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/cvToolbar"
+            android:elevation="7dp"
+            android:background="@color/white"
+            app:cardCornerRadius="4dp"
+            app:contentPaddingBottom="0dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/rl_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_divider_bottom"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/order_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/mont_bold"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:padding="15dp"
+                            android:text="@string/order" />
+
+
+                        <TextView
+                            android:id="@+id/check_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/mont_bold"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:padding="15dp"
+                            android:text="@string/checklist" />
+
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/order_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                        <EditText
+                            android:id="@+id/etWeight"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:ems="10"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Item weight"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:maxLines="2"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etTypeOfMaterial" />
+
+                        <EditText
+                            android:id="@+id/etAdditionalInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Special instructions"
+                            android:inputType="textMultiLine|textCapSentences"
+                            android:maxLines="2"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:singleLine="false"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etWeight" />
+
+
+                        <EditText
+                            android:id="@+id/etDeliverpersonName"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Name of contact at drop off location"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:singleLine="false"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etAdditionalInfo" />
+
+                        <EditText
+                            android:id="@+id/etDeliveryPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Reciever Phone Number"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etDeliverpersonName" />
+
+
+
+                        <EditText
+                            android:id="@+id/etPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Sander's phone number"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etDeliveryPhone" />
+
+                        <EditText
+                            android:id="@+id/etDeliverPerson"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Name of Contact at Pickup location"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:singleLine="false"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+                        <EditText
+                            android:id="@+id/etPickupLocation"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Pickup Location"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:singleLine="false"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etDeliverPerson" />
+
+
+                        <EditText
+                            android:id="@+id/etDropLocation"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Drop Location"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:singleLine="false"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etPickupLocation" />
+
+
+                        <TextView
+                            android:id="@+id/tvSubModels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/mont_bold"
+                            android:text="@string/select_sub_model"
+                            android:textColor="@color/text_dark"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                        <Spinner
+                            android:id="@+id/spinnerSubModel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:background="@null"
+                            android:drawableEnd="@drawable/ic_dd_s_blue_copy"
+                            android:fontFamily="@font/mont_bold"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toTopOf="@+id/view5"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                        <View
+                            android:id="@+id/view5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/divider"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvSubModels" />
+
+                        <TextView
+                            android:id="@+id/tvSelectBrand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/mont_bold"
+                            android:text="@string/select_brand"
+                            android:textColor="@color/text_dark"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvBrands"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:clipToPadding="false"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="16dp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvSelectBrand" />
+
+                        <TextView
+                            android:id="@+id/tvVehicleType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/mont_bold"
+                            android:text="@string/select_vehicle_type"
+                            android:textColor="@color/text_dark"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/rvBrands" />
+
+                        <Spinner
+                            android:id="@+id/spinnerVehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:background="@null"
+                            android:fontFamily="@font/mont_bold"
+                            android:gravity="center_vertical"
+                            android:text="5 Gallons"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toTopOf="@+id/view4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/rvBrands" />
+
+                        <View
+                            android:id="@+id/view4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/divider"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvVehicleType" />
+
+                        <TextView
+                            android:id="@+id/tvNext"
+                            style="@style/Base.Widget.AppCompat.Button"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/mont_bold"
+                            android:gravity="center"
+                            android:text="@string/book_now"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/tvSchedule"
+                            app:layout_constraintTop_toBottomOf="@+id/barrier2"
+                            app:textcolor="@{color.white_color}" />
+
+                        <LinearLayout
+                            android:id="@+id/tvSchedule"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/shape_add_comments"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/tvNext"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/barrier2">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="12dp"
+                                android:src="@drawable/ic_schedule"
+                                app:tint="@{color.secondary_color}" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/sf_pro_text_medium"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="@string/schedule"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                app:textcolor="@{color.secondary_color}" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/etTypeOfMaterial"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:ems="10"
+                            android:fontFamily="@font/mont_bold"
+                            android:hint="Item to be picked"
+                            android:inputType="textCapSentences"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_dark"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/mont_regular"
+                            android:text="@string/upload_images"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etDropLocation"
+                            app:textcolor="@{color.black_color}" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvCompanies"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:clipToPadding="false"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="never"
+                            android:paddingStart="6dp"
+                            android:paddingEnd="8dp"
+                            app:layout_constraintBottom_toTopOf="@+id/barrier2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3"
+                            tools:targetApi="lollipop" />
+
+                        <androidx.constraintlayout.widget.Barrier
+                            android:id="@+id/barrier2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:barrierDirection="bottom"
+                            app:constraint_referenced_ids="rvCompanies"
+                            tools:layout_editor_absoluteY="331dp" />
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_ch_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:fontFamily="@font/mont_bold"
+                            android:padding="16dp"
+                            android:text="@string/enter_checklist_items"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/text_dark"
+                            android:textSize="16sp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/checklist_rv"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginVertical="10dp"
+                            android:id="@+id/tv_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_bold"
+                            android:padding="10dp"
+                            android:background="@drawable/shape_divider_bottom"
+                            android:layout_gravity="right"
+                            android:text="Total : 0"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp"
+                            tools:ignore="RtlCompat" />
+
+                        <LinearLayout
+                            android:padding="4dp"
+                            android:id="@+id/check_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <EditText
+                                android:layout_weight="1"
+                                android:id="@+id/ed_product_name"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/shape_border"
+                                android:fontFamily="@font/sf_pro_text_regular"
+                                android:hint="Enter Product name"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textAlignment="center"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp" />
+
+                            <EditText
+                                android:id="@+id/ed_price"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="4dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/shape_border"
+                                android:maxLength="9"
+                                android:layout_below="@+id/ed_product_name"
+                                android:fontFamily="@font/sf_pro_text_regular"
+                                android:hint="Price"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:layout_marginRight="10dp"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_weight="1.2"
+                                android:id="@+id/add_ivv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                app:fontFamily="@font/sf_pro_text_semibold"
+                                android:text="@string/add"
+                                android:textSize="14sp"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvChecklistNextt"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="30dp"
+                            app:background="@{color.primary_color}"
+                            android:ems="10"
+                            android:gravity="center"
+                            app:fontFamily="@font/sf_pro_text_semibold"
+                            android:text="@string/continuee"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:paddingBottom="2dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</layout>

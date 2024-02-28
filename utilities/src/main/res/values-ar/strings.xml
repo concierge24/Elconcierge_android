@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_denied_explanation">طلب الاذن مرفوض. انتقل إلى الإعدادات للسماح بإذن الموقع</string>
+    <string name="settings">الضبط</string>
+    <string name="location_permisssion">يتطلب التطبيق للوصول إلى موقعك.</string>
+    <string name="ok">تم</string>
+    <string name="location_updated">تم تحديث الموقع</string>
+    <string name="sww_error">هناك خطأ ما. الرجاء معاودة المحاولة في وقت لاحق.</string>
+    <string name="okay">حسنا</string>
+    <string name="network_error">خطأ في الشبكة. الرجاء التحقق من اتصال الانترنت الخاص بك.</string>
+    <string name="dialog_titlte_select_time">إختر الوقت</string>
+    <string name="update_alert">تحديث التنبيه</string>
+    <string name="update">تحديث</string>
+
+    <string name="you_have_to_update_app">يجب عليك التحديث إلى أحدث إصدار من التطبيق.</string>
+    <string name="helpRequired">Help المطلوبة</string>
+</resources>

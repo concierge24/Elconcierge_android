@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/content_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:theme="@style/NavigationView"
+        app:headerLayout="@layout/nav_header_main2_snd"
+        app:itemTextAppearance="@style/NavigationDrawerStyle"
+        app:menu="@menu/activity_main2_drawer_snd">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <View
+                android:id="@+id/bottomView"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/black_8c" />
+
+            <TextView
+                android:id="@+id/tvLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bottomView"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:padding="16dp"
+                android:visibility="invisible"
+                android:text="@string/sign_out"
+                android:textColor="@color/black_1c" />
+
+            <TextView
+                android:id="@+id/tvVersionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bottomView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:padding="16dp"
+                android:text="Version 1.1"
+                android:textColor="@color/black_8c"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+
+    <!--    <com.google.android.material.navigation.NavigationView-->
+    <!--        android:id="@+id/nav_view_right"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:layout_gravity="end"-->
+    <!--        app:headerLayout="@layout/support_header_layout">-->
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/rvSupportServices"-->
+    <!--            android:layout_marginTop="@dimen/nav_header_height"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent" />-->
+
+    <!--    </com.google.android.material.navigation.NavigationView>-->
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

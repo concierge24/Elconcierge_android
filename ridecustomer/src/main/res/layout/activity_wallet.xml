@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srlWallet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:background="@{color.headerColor}"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:background="@{color.headerColor}"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/backbtn"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    app:tint="@{color.header_txt_colour}"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back_arrow_black"
+                    android:backgroundTint="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wallet"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/mont_semibold"
+                    app:textcolor="@{color.header_txt_colour}"/>
+
+
+            </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="24dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="24dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/balanceLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/shape_white"
+                app:layout_constraintEnd_toEndOf="@+id/right"
+                app:layout_constraintStart_toStartOf="@+id/left"
+                app:layout_constraintTop_toBottomOf="@+id/rl_header">
+
+                <TextView
+                    android:id="@+id/tvWalletDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mont_regular"
+                    android:gravity="start"
+                    android:padding="16dp"
+                    android:text="@string/wallet_text"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.14999998"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/tvWalletAmtText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mont_regular"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="@string/your_wallet_amt"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvWalletAmt"
+                    app:layout_constraintEnd_toStartOf="@+id/tvWalletAmt"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWalletDesc"
+                    app:layout_constraintVertical_bias="0.14999998"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/tvWalletAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mont_bold"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="000 INR"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvWalletAmtText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWalletDesc"
+                    app:layout_constraintVertical_bias="0.14999998"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tvRecentRecharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/mont_bold"
+                android:gravity="center"
+                android:text="@string/recent_recharges"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/right"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/left"
+                app:layout_constraintTop_toBottomOf="@+id/balanceLayout"
+                app:layout_constraintVertical_bias="0.14999998"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <ViewFlipper
+                android:id="@+id/vfRechargeHistory"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvAddMoney"
+                app:layout_constraintEnd_toEndOf="@id/right"
+                app:layout_constraintStart_toStartOf="@id/left"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecentRecharge">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvRecentRecharges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/mont_regular"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_dark_1"
+                    android:text="@string/no_history_found" />
+
+            </ViewFlipper>
+
+
+
+            <TextView
+                android:id="@+id/tvAddMoney"
+                style="@style/Base.Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_next_btn"
+                android:fontFamily="@font/mont_bold"
+                android:gravity="center"
+                android:text="@string/add_money"
+                app:textcolor="@{color.btn_Text_Colour}"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/right"
+                app:layout_constraintStart_toStartOf="@+id/left" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

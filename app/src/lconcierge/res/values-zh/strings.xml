@@ -1,0 +1,912 @@
+<resources>
+
+    <string name ="default_notification_channel_id"> clickat_notification </string>
+
+<string name ="packages">包裹</string>
+<string name ="welcome">欢迎</string>
+<string name ="recomended">推荐</string>
+<string name ="offers">优惠</string>
+
+
+<string name ="home">首页</string>
+<string name ="live_support">实时支持</string>
+<string name ="cart">购物车</string>
+<string name ="promotions">促销</string>
+<string name ="notifications">通知</string>
+<string name ="my_account">我的帐户</string>
+<string name ="my_favorites">我的最爱</string>
+
+
+<string name ="done">完成</string>
+<string name ="choose_from_gallery">画廊</string>
+<string name ="choose_image_selection">选择图像选择</string>
+<string name ="choose_from_camera">相机</string>
+
+<string name ="order_history">％s历史记录</string>
+<string name ="track_my_order">跟踪我的％s </string>
+<string name ="rate_my_order">给我的％s评分</string>
+<string name ="upcoming_order">当前％s </string>
+<string name ="loyality_points">忠诚度积分</string>
+
+<string name ="settings">设置</string>
+<string name ="login">登录</string>
+<string name ="forgot_password">忘记密码了？</string>
+<!--<string name ="continue">继续</string>-->
+<string name ="sign_up">注册</string>
+<string name ="signup_otp_msg">我们将通过您的手机号码向您发送OTP（一次性密码）。正确输入您的电话号码后，点击下面的按钮。</string>
+<string name ="send_otp">发送OTP </string>
+<string name ="recieve_otp">还没有收到您的密码吗？</string>
+<string name ="resend_otp">重新发送OTP </string>
+<string name ="submit">提交</string>
+<string name ="tap_to_add_profile_pic">点击以添加个人资料图片</string>
+<string name ="finish">完成</string>
+<string name ="oreder_scheduler">％s计划程序</string>
+<string name ="order_details">％s详细信息</string>
+<string name ="schedule_your_order">安排您的％s </string>
+<string name ="delivered">已交付</string>
+<string name ="reorder">重新排序</string>
+<string name ="cancel_order">取消％s </string>
+<string name ="track">跟踪</string>
+<string name ="hint_email">电子邮件</string>
+<string name ="hint_password">密码</string>
+<string name ="hint_digit_phone_number">电话号码</string>
+<string name ="enter_otp">输入OTP </string>
+<string name ="hint_full_name">全名</string>
+<string name ="action_okay">确定</string>
+<string name ="empty_email">请输入电子邮件ID </string>
+<string name ="empty_email_phone">请输入电子邮件或电话号码</string>
+<string name ="invalid_email">请输入有效的电子邮件ID </string>
+<string name ="empty_pwd">请输入密码</string>
+<string name ="empty_phone_number">请输入电话号码</string>
+<string name ="empty_otp">请输入OTP </string>
+<string name ="empty_fn">请输入全名</string>
+<string name ="payment_method">付款方式</string>
+<string name ="set_schedule">设置时间表</string>
+<string name ="select_category">选择类别</string>
+<string name ="select_dates">选择日期</string>
+<string name ="internet_connection">请检查您的互联网连接。</string>
+<string name ="login_expired">对不起，您的帐户已登录其他设备！请再次登录以继续。</string>
+<string name ="ok">确定</string>
+<string name ="guest">客人</string>
+<string name ="edit">编辑</string>
+<string name ="qunatity">数量</string>
+<string name ="net_total">净总计</string>
+<string name ="delivery">％s至</string>
+<string name ="delivery_speed">投放速度</string>
+<string name ="delivery_charges">送货费用</string>
+<string name ="handling_charges">手续费</string>
+<string name ="empty">字段不能为空</string>
+<string name ="txtOrderDone">％s到目前为止完成</string>
+<string name ="txtPaymentOptions">付款方式</string>
+<string name ="txtInbusiness">从事商务活动</string>
+<string name ="reviews">评论</string>
+<string name ="go">开始</string>
+<string name ="multi_serach">多重搜索</string>
+<string name ="what_are_you_looking_for">您在寻找什么？</string>
+<string name ="max_limit_reached">最高 达到限制</string>
+<string name ="multisercah">多重搜索</string>
+<string name ="NoCart">未找到任何项目</string>
+<string name ="favorites">收藏夹</string>
+<string name ="share_sub">％s用户移动应用</string>
+<string name ="share_body"> https://play.google.com/store/apps/details?id=%s </string>
+<string name ="save">保存</string>
+<string name ="cashOnDeli">货到付款</string>
+<string name ="debitCreditCard">借记卡/信用卡</string>
+<string name ="choosePaymentOption">选择付款方式</string>
+<string name ="selectAdress">请添加地址。</string>
+<string name ="order_summary">％s摘要</string>
+<string name ="pickkup">提取</string>
+<string name ="items">项目</string>
+<string name ="net_payable">应付帐款净额</string>
+<string name ="additional_remarks">其他说明</string>
+<string name ="place_order">放置％s </string>
+<string name ="successFavourite">已成功添加到收藏夹。</string>
+<string name ="successUnFavourite">已成功从收藏夹中删除。</string>
+
+<string name ="success_wishlist">％s已成功添加到％s。</string>
+
+<string name ="update">更新！</string>
+<string name ="cancel">取消</string>
+<string name ="pointsEarnedSoFar">到目前为止获得的积分</string>
+<string name ="change_password">更改密码</string>
+<string name ="notification_lang">通知语言</string>
+<string name ="enterReview">撰写您的评论</string>
+<string name ="open">立即打开</string>
+<string name ="filter">过滤器</string>
+<string name ="old_password">旧密码</string>
+<string name ="new_password">新密码</string>
+<string name ="confirm_password">确认密码</string>
+<string name ="password_match_error">密码不匹配</string>
+<string name ="clearCart">如果您选择其他％s，您的购物车将会被清除。您确定要继续吗？</string>
+<string name ="Ok">确定</string>
+<string name ="apply">应用</string>
+<string name ="clear">清除</string>
+<string name ="close">关闭</string>
+<string name ="cash">现金</string>
+<string name ="busy">忙</string>
+<string name ="logout">注销</string>
+<string name ="please_login">请登录</string>
+<string name ="order_no">％s号</string>
+<string name ="placed_on">放置在</string>
+<string name ="delivered_on">交付日期</string>
+<string name ="expected_delivered_on">预计％s启用</string>
+<string name ="points">积分</string>
+<string name ="passwrd_lenght">密码长度必须至少为6个字符。</string>
+<string name ="no_internet_connection_found">未找到互联网连接</string>
+<string name ="retry">重试</string>
+<string name ="pending">待处理</string>
+<string name ="confirmed">已确认</string>
+<string name ="reject">拒绝</string>
+<string name ="reached">达到</string>
+<string name ="doYouCancel">您真的要取消此％s吗？</string>
+<string name ="date_time_msg">请选择接送日期和时间</string>
+<string name ="rate">费率</string>
+<string name ="add_to_cart">添加到购物车</string>
+<string name ="nothing_found">未找到任何内容！</string>
+<string name ="results_for">结果</string>
+<string name ="skip">跳过</string>
+<string name ="success">成功</string>
+<string name ="succesfully_scheduled">您的订单已成功安排。</string>
+<string name ="succesfully_order">您的％s已成功放置。</string>
+<string name ="no_order_found">找不到％s！</string>
+<string name ="no_fav_found">未找到收藏夹！</string>
+<string name ="success_logout">您已成功注销。</string>
+<string name ="status">状态</string>
+<string name ="payment">付款</string>
+<string name ="total_amount">总金额</string>
+<string name ="placed">已放置</string>
+<string name ="near_you">靠近您</string>
+<string name ="minimum_order">最低％s </string>
+<string name ="delivery_time">交货时间</string>
+<string name ="payment_options">付款方式</string>
+<string name ="desc">关于％s </string>
+<string name ="review">评论</string>
+<string name ="about">唯一性</string>
+<string name ="total">总计</string>
+<string name ="sub_total">总计</string>
+<string name ="type_here">在此处输入</string>
+<string name ="new_tag">新</string>
+<string name ="action_send">发送</string>
+<string name ="others">其他</string>
+<string name ="just_now">就在</string>
+<string name ="a_min_ago">一分钟前</string>
+<string name ="min_ago">分钟前</string>
+<string name ="a_hour_ago">小时前</string>
+<string name ="hour_ago">小时前</string>
+<string name ="yest">昨天</string>
+<string name ="days_afo">几天前</string>
+<string name ="days">天</string>
+<string name ="forgot_password1">忘记密码</string>
+<string name ="log_out_msg">您确定要注销吗？</string>
+<string name ="view_all">查看全部</string>
+<string name ="select_country">选择国家/地区</string>
+<string name ="pick_uptime">选择日期和时间</string>
+<string name ="supplier_name">％s：</string>
+
+<string name ="isMonthlyErrorMsg">请选择安排每月日期。</string>
+<string name ="min_order_time">分钟。交货时间</string>
+<string name ="hour">小时</string>
+<string name ="hours">小时</string>
+<string name ="min">分钟</string>
+<string name ="day">天</string>
+<string name ="compareProduct">比较％s </string>
+<string name ="results">结果</string>
+<string name ="supplierClosed">当前已关闭，您的订单将在下一个供应商工作时间/天得到确认。</string>
+
+
+<string name ="supplierBusy1">当前正在处理今天的订单。您的订单可能延迟。</string>
+<string name ="wrong_date_selection">请推迟以后的日期和时间</string>
+<string name ="per_hour">每小时</string>
+<string name ="Alert">警告！</string>
+
+
+<string name ="clearCart_lang">如果您选择其他语言，您的购物车将会被清除。您确定要继续吗？</string>
+<string name ="sort_by">排序依据</string>
+<string name ="clear_cart_back">如果从此屏幕返回，您的购物车将被清除。</string>
+<string name ="add">添加</string>
+<string name ="alert">警告！</string>
+<string name ="scheduled_order">计划的％s </string>
+<string name ="expected_delivery_on">预期的交货时间</string>
+<string name ="yes">是</string>
+<string name ="text_single">单</string>
+<string name ="text_multiple">多个</string>
+<string name ="loyality_products">会员产品</string>
+<string name ="loyality_orders">忠诚度％s </string>
+<string name ="track_noti">您只能在预期的交货时间之后跟踪订单</string>
+<string name ="no_notification">未找到通知。</string>
+<string name ="share_supplier">我想推荐通过JUST cbd使用ankiy </string>
+
+<string name ="sup">共享％s！</string>
+<string name ="basket_message">您忘了填写上一个购物车吗？</string>
+
+<string name ="order_pending">％s当前</string>
+<string name ="no_date_selected">未选择日期</string>
+<string name ="ankiy"> ankiy </string>
+
+<string name ="cancel_msg">您的％s已成功取消。</string>
+
+<string name ="search">搜索％s </string>
+<string name ="discount">折扣</string>
+
+<string name ="reddem">兑换</string>
+
+<string name ="location">位置</string>
+
+<string name ="banner">横幅</string>
+<string name ="reviews_text">％.0f评论</string>
+<!--<string name ="reviews_text">％d条评论</string>-->
+<string name ="hour_tag">％d hr </string>
+
+
+<string name ="day_tag">％d天</string>
+
+<string name ="minute_tag">％d分钟</string>
+
+<string name ="currency_tag">％1 $ s％2 $ s </string>
+
+<string name ="min_max_time">％1 $ d-％2 $ d分钟</string>
+
+<string name ="discountprice_tag">％1 $ s％2 $ s </string>
+
+<string name ="percentage_tag">最高可享受％s %%的折扣</string>
+
+<string name ="supplier_tag">按％s </string>
+
+<string name ="discountprice_search_multiple">％1 $ s％2 $ s /％3 $ s </string>
+
+<string name ="filter_price_tag">％1 $ s％2 $ d-％1 $ s％3 $ d </string>
+
+<string name ="result_tag">％d个结果</string>
+
+<string name ="resturant_count_tag">％1 $ d％2 $ s </string>
+
+<string name ="clearCart_multiprod_quant">如果您选择多个产品数量，您的购物车将被清除。您确定要继续吗？</string>
+
+<string name ="clearCart_product">如果您选择其他产品，您的购物车将被清除。您确定要继续吗？</string>
+
+<string name ="title_activity_filter_screen"> FilterScreenActivity </string>
+<string name ="search_hint">您在寻找什么？</string>
+<string name ="no">否</string>
+
+<string name ="valid_email">请输入电子邮件</string>
+<string name ="cart_added">已添加到购物车</string>
+
+<string name ="title_for_your_review">标题供您审核</string>
+<string name ="write_review_here">在此处写评论…</string>
+<string name ="rating_review">评分＆amp; 评论</string>
+<string name ="rate_product">费率％s </string>
+<string name ="rate_supplier">费率％s </string>
+<string name ="product_description">％s描述</string>
+<string name ="select_agent">选择％s </string>
+<string name ="select_supplier">选择％s </string>
+<string name ="book_an_appointment">预订约会</string>
+<string name ="agent_available">％s可用</string>
+<string name ="agent_not_available">％s不可用</string>
+<string name ="experience_tag">％d年的经验</string>
+
+<string name ="agent_detail">％s详细信息</string>
+<string name ="view_menu">查看菜单</string>
+<string name ="change">更改</string>
+<string name ="schedule_delivery">计划交付</string>
+<string name ="qty">数量</string>
+<string name ="view_products_as">将"％s"查看为</string>
+<string name ="total_item_tag">％d个项目</string>
+
+
+<string name ="restaurant_order_type">从％1 $ s中选择％2 $ s在家中享受服务</string>
+<string name ="supplier_lookup_tag">要查找％s吗？</string>
+
+<string name ="order_tag">％1 $ s＃％2 $ d </string>
+
+
+<string name ="long_desc">长描述是一种为非文本元素（例如图像）提供长​​替代文本的方法。通常，超过250个字符的替代文本必须经过详尽的描述，如果不能使描述性或有意义性降低，则不能使其更加简洁。适当使用长描述的示例是图表，图形，地图，信息图形和其他复杂图像。
+
+    像替代文本一样，长描述应具有描述性和意义。它还应包括合并到图像中的所有文本。简短的描述应该为视障用户提供与视力用户从图像中理解的信息一样多的信息。</string>
+
+
+<string name ="book_slot">确认</string>
+<string name ="phone_tag">输入发送到％s的OTP </string>
+<string name ="in_kitchen">在厨房里</string>
+
+<string name ="instruction">说明</string>
+<string name ="explanation_multiple_request">我们正在请求权限，因为该应用必须执行该功能。请选择授予权限以重试，然后选择取消退出。</string>
+<string name ="when_would_you_like_your_service">您什么时候想要您的服务？</string>
+
+<string name ="disc_yes_text">是的\ n显示特价商品</string>
+<string name ="disc_no_text">否\ n不显示折扣商品</string>
+
+<string name ="avail_yes_text">是\ n显示有现货的产品</string>
+<string name ="avail_no_text">否\ n不显示没有现货的产品</string>
+
+<string name ="price_low_to_high">价格：从低到高</string>
+<string name ="price_high_to_low">价格：从高到低</string>
+<string name ="popularity">人气</string>
+<string name ="price_range">价格范围</string>
+<string name ="availability">可用性</string>
+<string name ="remove_cart">删除</string>
+<string name ="add_cart_tag">添加</string>
+<string name ="login_using_facebook">使用Facebook登录</string>
+<string name ="login_signup_text">没有帐户？注册</string>
+
+<string name ="proceed">继续</string>
+<string name ="reset">重置</string>
+<string name ="brands">品牌</string>
+<string name ="next">下一个</string>
+<string name ="view_more">查看更多</string>
+<string name ="view_detail">查看详细信息</string>
+<string name ="get_started">入门</string>
+<string name ="track_order">跟踪％s </string>
+<string name ="shop_by_type">按类型购物</string>
+<string name ="special_offers">特价商品</string>
+<!--<！-<string name ="special_offers">促销</string>->-->
+<!--<！-<string name ="special_offers">特价商品</string>->-->
+<string name ="awesome_deals">每天都会解锁很棒的交易</string>
+<string name ="awesome_product">很棒的产品</string>
+<string name ="recent_orders">最近的订单</string>
+<string name ="we_hand_picked_some_great_services_for_you">我们为您精心挑选了一些很棒的％s。</string>
+<string name ="categories">类别</string>
+<string name ="product_price">产品价格：</string>
+<string name ="view_slot">查看广告位</string>
+<string name ="book_now">立即预订</string>
+<string name ="occupation_here">在这里职业</string>
+<string name ="order_recieved">已收到％s </string>
+<string name ="otp_verification"> OTP验证</string>
+<string name ="enter_mobile">输入手机</string>
+<string name ="signup">注册</string>
+<string name ="signup_using_facebook">使用Facebook注册</string>
+<string name ="don_t_have_an_account_login">已拥有帐户？登录</string>
+<string name ="menu">菜单</string>
+<string name ="buy_now">立即购买</string>
+<string name ="delivery_location">地址位置</string>
+<string name ="rating_amp_reviews">评分＆amp; 评论</string>
+<string name ="no_rating_found">未找到评分</string>
+<string name ="no_promocode_cart">未找到有关购物车的促销代码</string>
+<string name ="enter_valid_number">输入有效的电话号码</string>
+<string name ="artist_not_available">％s在特定日期和时间不可用 时间</string>
+<string name ="selected_time_alert">所选时间不能小于当前日期时间</string>
+<string name ="select_maximum_price_alert">请选择最高价格</string>
+<string name ="select_category_alert">请选择类别</string>
+<string name ="title_activity_home">家庭活动</string>
+<string name ="title_home">首页</string>
+
+<string name ="complete_address">完整地址</string>
+<string name ="your_location">您的位置</string>
+<string name ="add_address">添加地址</string>
+<string name ="delete">删除</string>
+<string name ="pending_orders">待定％s </string>
+<string name ="completed_orders">已完成的％s </string>
+<string name ="customer_code">客户代码</string>
+<string name ="enter_customer_code">输入客户代码</string>
+
+<string name ="login_sinup_text">登录或注册</string>
+
+<string name ="addon_tag">％s的选择</string>
+
+<string name ="addon_selction">请选择％s选项</string>
+
+<string name ="addon_name_tag">附件：％s </string>
+<!--<string name ="orders _">订单</string>-->
+<string name ="orders">订单</string>
+<string name ="view_category">查看类别</string>
+<string name ="tax">税收</string>
+<string name ="pickup_from">领取自</string>
+<string name ="delivery_to">递送至</string>
+<string name ="approved">已批准</string>
+<string name ="on_the_way">在途中</string>
+<string name ="started">已开始</string>
+<string name ="ended">已结束</string>
+<string name ="rating_given">给予的评价</string>
+<string name ="customer_cancelled">客户已取消</string>
+<string name ="shipped">已发货</string>
+<string name ="packed">打包</string>
+
+<string name ="returned_from_app_settings_to_activity">"以下权限：相机：％s"</string>
+<string name ="ready_to_pick">准备被挑选</string>
+
+<string name ="share_app">共享应用程序</string>
+
+<string name ="about_us">关于我们</string>
+<string name ="change_language">更改语言</string>
+<string name ="terms">条款和条件；条件</string>
+<string name ="my_wishlist">我的愿望清单</string>
+<string name ="popular_tag">受欢迎的 ％s </string>
+
+<!--<！-<string name ="self_pickup">自助取货</string>->-->
+<string name ="self_pickup">路边捡拾</string>
+
+<string name ="delivery_txt">递送</string>
+
+<string name ="current_adrs">当前地址</string>
+<string name ="maximum_limit_cart">达到最大限制</string>
+<string name ="search_food_hint">搜索食品</string>
+<string name ="special_offer">特价商品</string>
+<!--<！-<string name ="special_offer">促销</string>->-->
+<string name ="discount_product">折扣产品</string>
+<string name ="popular_brand">热门品牌</string>
+<string name ="royo_recommend">％s用户推荐</string>
+<string name ="order_now">立即订购</string>
+<string name ="picked_up">拾起</string>
+<string name ="both_delivery_msg_option">这％s提供了取件和交货，您想做什么？</string>
+<string name ="status_on">％s on </string>
+<string name ="out_delivery">外寄商品</string>
+
+<string name ="privacy_policy">隐私政策</string>
+<string name ="place_booking">地方预订</string>
+<string name ="razor_pay">剃须刀支付</string>
+<string name ="conekta"> ConeKta </string>
+<string name ="zelle"> Zelle </string>
+<string name ="cashapp">现金应用</string>
+<string name ="cash_on">货到付款</string>
+<string name ="make_payment">付款</string>
+<string name ="name_on_card">卡上的名称</string>
+<string name ="total_payable_amount">应付款项总额％1 $ s％2 $ s </string>
+<string name ="no_chat_found">未找到聊天记录</string>
+<string name ="write_a_message">写一条消息</string>
+
+<string name ="no_quetion_found">找不到问题</string>
+<string name ="select_answer">从列表中选择至少一个答案</string>
+<string name ="back">返回</string>
+
+<string name ="set_your_location_manually">手动设置您的位置</string>
+<string name ="btn_add_address">添加地址</string>
+
+
+
+<string name ="add_a_tip_to_rider">"向驱动程序添加提示"</string>
+<string name ="tip_charges">提示费用</string>
+<string name ="eta"> ETA </string>
+
+<string-array name ="more_array">
+<item>共享应用</item>
+<item>条款及细则 条件</item>
+<item>关于我们</item>
+<item>隐私权政策</item>
+    </string-array>
+
+<string-array name ="app_language">
+<item>英语</item >>
+<item>西班牙语</item >>
+<item>阿拉伯语</item >>
+    </string-array>
+
+<string-array name ="food_instruct_header">
+<item>搜索</item>
+<item>在线订单</item>
+<item>交付</item>
+    </string-array>
+<!--<！-<string-array name ="food_instruct_header">
+<item>搜索</item>
+<item>在线订单</item>
+<item>交付</item>
+<item>地图</item>
+    </string-array>->-->
+
+<string-array name ="food_instruct_title">
+<item>探索世界顶级餐厅和餐厅 食物</item>
+<item>选择首选的付款方式</item>
+<item>以最优惠的价格获得优质的食物</item>
+    </string-array>
+
+<!--<！-<string-array name ="food_instruct_title">
+<item>探索世界顶级餐厅和餐厅 食物</item>
+<item>选择首选的付款方式</item>
+<item>以最优惠的价格获得优质的食物</item>
+<item>地图</item>
+    </string-array>->-->
+
+<string-array name ="ecom_instruct_header">
+<item>搜索</item>
+<item>选择</item>
+<item>享受</item>
+    </string-array>
+
+<string-array name ="ecom_instruct_header_v2">
+<item>发现</item>
+<item>付款</item>
+<item>享受购物</item>
+    </string-array>
+
+
+<string-array name ="ecom_instruct_title">
+<item>探索世界顶级服务</item>
+<item>选择服务的首选选项</item>
+<item>以最优惠的价格获得优质的服务</item>
+    </string-array>
+
+<string-array name ="ecom_instruct_title_v2">
+<item>探索世界顶级品牌\ n和精品店。</item>
+<item>选择首选付款方式\ n。</item>
+<item>以最优惠的价格获得高质量的产品\ n。</item>
+    </string-array>
+
+<string-array name ="app_search">
+<item>产品</item>
+<item>餐厅</item>
+    </string-array>
+
+<string-array name ="filter_array">
+<item>类别</item>
+<item>排序</item>
+<item>价格范围</item>
+<item>折扣</item>
+<item>可用性</item>
+    </string-array>
+
+<string name ="select_language">选择语言</string>
+
+<string name ="share_referral">在此处使用代码％1 $ s获得％2 $ s作为推荐奖金：％3 $ s </string>
+<string name ="referral_text_tag">推荐一个朋友并获得％1 $ s，而您的朋友在成功完成他的第一个订单后得到％2 $ s。</string>
+
+<string name ="referral">引荐</string>
+<string name ="refer_a_friend">推荐朋友</string>
+<string name ="my_referal">我的推荐人</string>
+<string name ="invite_your_friend_and_earn_money">邀请您的朋友并赚钱</string>
+<string name ="hint_referral_code">参考代码</string>
+<string name ="referral_code">推荐金额</string>
+<string name ="pay_using">使用支付方式</string>
+<string name ="choose_payment">选择付款</string>
+<string name ="add_customization"> +添加自定义</string>
+<string name ="morning">早上</string>
+<string name ="aftenoon">下午</string>
+<string name ="evening">晚上</string>
+<string name ="night">晚上</string>
+<string name ="out_of_stock">缺货</string>
+<string name ="customizable">可定制</string>
+<string name ="remove">删除</string>
+<string name ="promo_remove">促销已成功删除</string>
+<string name ="service_at">服务于</string>
+<string name ="cod"> COD </string>
+<string name ="please_select_slot">请选择预订时间</string>
+
+<string name ="sorry_cart_value">对不起！最小购物车价值应为％s </string>
+
+<string name ="referral_amt_tag">可用的引荐点％s </string>
+<string name ="price_detail">价格明细</string>
+<string name ="promo_applied">已应用促销</string>
+<string name ="service_date">服务日期：-</string>
+<string name ="service_time">服务时间：-</string>
+<string name ="agent_to_be_book">要预订的代理：-</string>
+<string name ="change_date_amp_time">更改日期＆amp; 时间</string>
+<string name ="choose_booking_time_slot">选择预订时间段</string>
+<string name ="wait">等待！</string>
+<string name ="pickup">自助取货</string>
+<string name ="delivery_tag">交付</string>
+<string name ="select_location">选择位置</string>
+<string name ="search_for_your_location">搜索您的位置... </string>
+<string name ="edit_address">编辑地址</string>
+<string name ="update_address">更新地址</string>
+<string name ="please_complete_address">请添加完整地址</string>
+<string name ="house_building_tag">房子号/公寓号 /楼层/建筑物</string>
+<string name ="enter_complete_address">输入完整地址</string>
+<string name ="search_for_resturant">搜索餐厅，堂兄……。</string>
+<string name ="start_time">开始时间</string>
+<string name ="pick_up">领取自</string>
+<string name ="address_detail">地址详细信息</string>
+<string name ="pickup_on">拾起</string>
+<string name ="provide_prod_rating">请提供产品评分</string>
+<string name ="provide_rate_title">请提供费率标题</string>
+<string name ="provide_rate_comment">请提供房价评论</string>
+<string name ="enter_name">请输入名称</string>
+<string name ="enter_valid_card">请输入有效卡</string>
+<string name ="enter_valid_cvc">请输入有效的Cvc </string>
+<string name ="enter_valid_expiry_month">请输入有效到期月</string>
+<string name ="enter_valid_date">请输入有效截止日期</string>
+<string name ="no_detail_found">未找到详细信息</string>
+<string name ="product_detail">％s详细信息</string>
+<string name ="duration">持续时间</string>
+
+<string name ="pick_up_tag">提货</string>
+
+<string name ="offline_supplier_tag">％s不接受在线订单</string>
+<string name ="enter_email">输入电子邮件</string>
+<string name ="enter_supplier_code">输入供应商代码</string>
+<string name ="payment_card">卡</string>
+<string name ="payment_cash">货到付款</string>
+<string name ="payment_both">卡/货到付款</string>
+<string name ="today">今天</string>
+<string name ="yesterday">昨天</string>
+<string name ="live_tracking">实时跟踪</string>
+<string name ="use_current_location">使用当前位置</string>
+<string name ="subtotal">小计</string>
+<string name ="referral_amount">推荐金额</string>
+<string name ="promo_code">促销代码</string>
+<string name ="tap_to_copy">点击复制</string>
+<string name ="refer_now">立即参考</string>
+<string name ="sort_amp_filter">排序＆amp; 过滤器</string>
+<string name ="choose_payment_receipt_to_upload">选择要上传的付款收据</string>
+<string name ="payment_details">付款明细：</string>
+<string name ="email_tag">电子邮件：％s </string>
+<string name ="phoneno_tag">电话号码：％s </string>
+<string name ="online_payment">借记卡</string>
+<string name ="payment_receipt_uploaded">付款收据已上传</string>
+<string name ="enter_instruction">在此处输入说明</string>
+
+<string name ="select_preciption">选择要上传的处方</string>
+<string name ="uploaded_pescription">上传的处方文件</string>
+<string name ="please_select_precription">请选择沉淀图像</string>
+<string name ="english">英语</string>
+<string name ="supplier_service_charge">％s服务费</string>
+<string name ="support_email">支持电子邮件</string>
+
+<string name ="support_email_text">具有带有订单ID的查询：％s </string>
+<string name ="service">服务</string>
+<string name ="selected_question">所选问题</string>
+<string name ="addon_charges">附加费用</string>
+<string name ="featured">特色的％s </string>
+<string name ="top_deals">％s中的热门交易</string>
+<string name ="feature_provider">特色服务提供商</string>
+<string name ="create_your_account">创建您的帐户</string>
+<string name ="create_new_account">创建新帐户</string>
+<string name ="continue_with_google">继续使用Google </string>
+<string name ="provacy_policy_text">继续，您同意接受CARE的条款和条件，并确认您已阅读CARE的隐私政策。</string>
+<string name ="already_have_an_account_login">已拥有帐户？登录</string>
+<string name ="sign_up_new">注册</string>
+<string name ="hint_first_name">名字* </string>
+<string name ="hint_last_name">姓氏* </string>
+<string name ="hint_phone_no">电话号码* </string>
+<string name ="hint_email_new">电子邮件* </string>
+<string name ="hint_password_new">密码* </string>
+<string name ="hint_confirm_password">确认密码* </string>
+<string name ="signup_screen_text">没有帐户？注册</string>
+<string name ="otp_msg_text">输入发送到您注册的电子邮件和电话号码的OTP </string>
+<string name ="hint_enter_otp">输入OTP </string>
+<string name ="verify">验证</string>
+<string name ="plese_accept_terms_and_conditions">请接受条款和条件</string>
+<string name ="continue_with_facebook">继续使用Facebook </string>
+<string name ="recommed_supplier">推荐的％s </string>
+<string name ="more">更多</string>
+
+<string name ="save_card">保存卡</string>
+<string name ="saved_cards">已保存的卡</string>
+<string name ="card_no_xxxxxxxxxxxx">卡号：XXXXXXXXXXXX </string>
+<string name ="expiry_month">到期月份</string>
+<string name ="expiry_year">有效期</string>
+<string name ="add_card_d">添加卡</string>
+<string name ="no_card_found">未找到卡</string>
+<string name ="un_service_able"> UnServiceAble </string>
+
+<string name ="card_tag"> XXXXXXXXXXXX％s </string>
+<string name ="card_add_login_error">请登录以添加卡</string>
+<string name ="square_pay">方形工资</string>
+<string name ="select_time_slot">选择时间段</string>
+
+<string name ="area_to_focus_on">要关注的区域</string>
+<string name ="areas_to_focus">要聚焦的区域</string>
+<string name ="have_pets">养宠物</string>
+<string name ="parking_instructions">停车说明</string>
+<string name ="enter_parking_instruction">输入停车说明</string>
+<string name ="will_someone_be_there_to_let_the_cleaner_in">会有人在那里让清洁工进来吗？</string>
+
+<string name ="shimmer_categories">类别</string>
+
+<string name ="things_to_remember">要记住的事情</string>
+
+
+<string name ="faq">常见问题解答</string>
+
+
+<string name ="become_care_giver">成为患者或照料者</string>
+<string name ="enter_instructionc">输入您的MC ID＃</string>
+<string name ="rating">评分</string>
+<string name ="delivery_in">交付方式</string>
+<string name ="for_delivery">用于交付</string>
+<!--<string name ="open">打开</string>-->
+<string name ="mins">分钟。</string>
+<string name ="nationality">国籍：</string>
+<string name ="brand">品牌：</string>
+<string name ="speciality">特色</string>
+<!--<string name ="search">搜索</string>-->
+<string name ="shipping_status">运输状态</string>
+<string name ="receipe">食谱</string>
+<string name ="return_product">退货</string>
+<string name ="awaiting_payment">待发货</string>
+<string name ="cancelled">已取消</string>
+<string name ="onhold">处于保留状态</string>
+<string name ="reason_to_return">退货原因</string>
+<string name ="enter_reason_to_return_product">请输入退货原因</string>
+<string name ="return_requested">请求返回</string>
+<string name ="returned">返回</string>
+<string name ="product_picked_up">产品已领取</string>
+<string name ="agent_is_on_the_way">代理商在路上</string>
+<string name ="write_reason_here">在此处写原因…</string>
+<string name ="login_first">请先登录</string>
+<string name ="requests">％s请求</string>
+<string name ="supplierName">供应商名称</string>
+<string name ="upload_presc">上传处方</string>
+
+<string name ="are_you_sure_cancel_request">您确定要取消此请求吗？</string>
+<string name ="net_total_greater_than">小计必须大于％1 $ s％2 $ s </string>
+<string name ="request_id">请求ID：</string>
+<string name ="requested_on">请求日期：</string>
+<string name ="pay_now">立即付款％1 $ s％2 $ s </string>
+<string name ="remaining_amount">剩余金额</string>
+
+<string name ="maximum_limit_addon">达到附加组件的最大限制％d </string>
+<string name ="refund_amount">退款金额</string>
+<string name ="token_expire">对不起，您的帐户已登录其他设备！请再次登录以继续。</string>
+<string name ="service_detail">服务详细信息</string>
+<string name ="paypal"> Paypal </string>
+<string name ="donate_to_someone">捐赠给某人</string>
+<string name ="adrs_donate_subtext">请在您要捐赠的下方添加地址</string>
+<string name ="delivery_address">送货地址</string>
+<string name ="return_request_msg">您的退货请求已成功生成。</string>
+
+<string name ="product_removed_wishlist">产品已从愿望清单中删除</string>
+<string name ="removed_wishlist">已将％s从％s中删除</string>
+<string name ="more_details">更多详细信息</string>
+<string name ="rate_food_item">费率％s </string>
+<string name ="rate_product_msg">成功为％s评分</string>
+
+<string name ="rate_user_tag">费率％s </string>
+<string name ="paystack"> PayStack </string>
+<string name ="online_pay_tag">在线（％s）</string>
+<string name ="saded">已添加</string>
+<string name ="myFatoora">我的法塔赫拉</string>
+<string name ="suppliers">供应商</string>
+<string name ="products">产品</string>
+<string name ="wishlist">愿望清单</string>
+<string name ="supplier">供应商</string>
+<string name ="product">产品</string>
+<string name ="payment_unsuccessful">付款失败</string>
+<string name ="payment_done_successful">付款成功完成</string>
+<string name ="payment_failed">付款失败</string>
+<string name ="mumybene"> Mumybene </string>
+<string name ="enter_your_mmy_bean_phone">输入您的Mumybene电话号码</string>
+<string name ="phone_number">电话号码</string>
+<string name ="enter_phone">输入电话号码</string>
+<string name ="sort_by_new">按新排序</string>
+<string name ="sort_by_distance">按距离排序</string>
+<string name ="sort_by_rating">按评分排序</string>
+<string name ="windcave">使用Windcave进行在线支付</string>
+
+<string name ="stripe_pay">条纹支付</string>
+<string name ="max">最大值</string>
+<string name ="minm">最小</string>
+<string name ="pls_select_atleast">请选择至少</string>
+<string name ="items_in">项目在</string>
+<string name ="description">说明</string>
+<string name ="customer_support">客户支持</string>
+<string name ="expected_delivered_time">预计的交付时间</string>
+<string name ="min_tag">分钟</string>
+<string name ="view_branches">查看分支</string>
+<string name ="tap">点击</string>
+<string name ="elavon"> Elavon </string>
+<string name ="food_item_detail">食品详情</string>
+<string name ="brand_name">品牌名称：\ t </string>
+<string name ="mpaisa"> mPaisa </string>
+<string name ="schedule_order">日程安排</string>
+<string name ="edit_schedule_order">编辑计划顺序</string>
+<string name ="confirm">确认</string>
+<string name ="choose_date_time">选择日期和时间；时间</string>
+<string name ="pay_pal">付费朋友</string>
+
+<string name ="facebook"> Facebook </string>
+<string name ="twitter"> Twitter </string>
+<string name ="linkein">链接到</string>
+<string name ="google_plus"> Google + </string>
+<string name ="hint_email_phone">电子邮件/电话号码</string>
+
+<string name ="restaurant">餐厅</string>
+<string name ="restaurants">餐馆</string>
+<string name ="payhere">在此处付款</string>
+<string name ="type_building_suite">建筑物/套房编号</string>
+<string name ="please_add">请添加</string>
+<string name ="previous_cart_items_removed">如果您选择其他服务提供商，您的购物车将被清除。确定要继续吗？</string>
+<string name ="request_cancelled">请求已取消</string>
+<string name ="wallet">钱包</string>
+<string name ="current_balance">当前余额</string>
+<string name ="add_amount">添加金额</string>
+<string name ="send_money_to_someone">汇钱给某人</string>
+<string name ="histroy">历史</string>
+<string name ="send_money">汇钱</string>
+<string name ="entre_amount_you_want_send">输入您要发送的金额</string>
+<string name ="entre_amount_you_want_add">输入您要添加的金额</string>
+<string name ="send_by">发送方式</string>
+<string name ="email_address">电子邮件地址</string>
+<string name ="enter_phone_number">在此处输入电话号码</string>
+<string name ="add_payment">添加付款</string>
+<string name ="continue_to_add_amount">继续添加金额</string>
+<string name ="enter_amount">输入金额</string>
+<string name ="money_sent_success">款项已成功发送</string>
+<string name ="amount_added">在％s添加的金额</string>
+<string name ="amount_deducted">在％s扣除的金额</string>
+<string name ="amount_added_success">"已成功添加金额"</string>
+<string name ="amount_received">在％s收到的金额</string>
+<string name ="amount_sent">在％s发送的金额</string>
+<string name ="refund_added">退款已添加到％s </string>
+<string name ="order_placed">订单位于％s </string>
+<string name ="pay_by_wallet">通过钱包付款，您将获得％s \ %%的折扣！</string>
+<string name ="wallet_with_amt">钱包（％1 $ s％2 $ s）</string>
+<string name ="insufficient_balance">余额不足</string>
+<string name ="add_money">加钱</string>
+<string name ="wallet_discount">钱包折扣</string>
+<string name ="initial_payment_source">初始付款来源</string>
+<string name ="enter_amount_you_want_to_add">输入您要添加的金额</string>
+<string name ="select_payment_method">选择付款方式</string>
+<string name ="choose_where_you_want_refund">选择要退款的地方</string>
+<string name ="comment">评论</string>
+<string name ="enter_comment">输入评论</string>
+<string name ="edit_order">修改订单</string>
+<string name ="add_items">添加项目</string>
+<string name ="select_atleast_one">选择至少一种产品</string>
+<string name ="order_edited_success">"订单编辑成功"</string>
+<string name ="save_items">完成</string>
+<string name ="new_added_items">已添加％d个新项目</string>
+<string name ="please_choose_atlease_one_service">请至少选择一项服务</string>
+<string name ="pay_tabs">"Paytabs"</string>
+<string name ="billing_address">帐单地址</string>
+<string name ="city">城市</string>
+<string name ="state">状态</string>
+<string name ="country">国家</string>
+<string name ="pincode"> PIN码</string>
+<string name ="shipping_address">送货地址</string>
+<string name ="same_as_billing">与帐单地址相同</string>
+<string name ="enter_address">输入地址</string>
+<string name ="enter_city">输入城市</string>
+<string name ="enter_state">输入状态</string>
+<string name ="enter_country">输入国家/地区</string>
+<string name ="enter_pincode">输入密码</string>
+<string name ="enter_shipping_address">输入送货地址</string>
+<string name ="enter_shipping_city">输入运送城市</string>
+<string name ="enter_shipping_country">输入运送国家/地区</string>
+<string name ="enter_shipping_state">输入运送状态</string>
+<string name ="enter_shipping_pincode">输入送货密码</string>
+<string name ="country_code">国家/地区代码</string>
+<string name ="defaultPaymentMethod">默认付款方式</string>
+<string name ="email">电子邮件</string>
+<string name ="full_name">全名</string>
+<string name ="card_number">卡号* </string>
+<string name ="personaldetails">个人详细信息</string>
+<string name ="expires">到期</string>
+<string name ="addDebCreCard">添加信用卡/借记卡</string>
+<string name ="youWillText">在购买之前不会向您收费</string>
+<string name ="add_new_card">添加新卡</string>
+<string name ="error_enter_cardNumber">请输入您的卡号。</string>
+<string name ="error_invalid_card">请输入有效的卡号。</string>
+<string name ="error_empty_cardExpires">请输入有效的卡到期日期。</string>
+<string name ="error_empty_cvv">请输入您的简历。</string>
+<string name ="error_empty_firstName">请在卡上输入姓名。</string>
+<string name ="error_validYear">请输入有效年份。</string>
+<string name ="error_validMonth">请输入有效月份。</string>
+<string name ="cvv"> CVV * </string>
+<string name ="card_cvv_incorrect">您的信用卡cvv错误。</string>
+<string name ="error_valid_cvv">请输入有效的简历。</string>
+<string name ="specialCharactersnot_first">名字不能包含特殊字符。</string>
+<string name ="specialCharactersnot_last">姓氏不得包含特殊字符。</string>
+<string name ="edit_order_detail">编辑％s </string>
+<string name ="edit_booking">编辑预订</string>
+<string name ="peach">桃子</string>
+<string name ="expected_delivery_time">预计的交付时间</string>
+<string name ="end_time">结束时间</string>
+<string name ="payment_pending">付款待处理</string>
+<string name ="text_braintree">脑树</string>
+<string name ="category">类别</string>
+<string name ="ecom_my_cart">我的购物车</string>
+<string name ="braintree_token_error">未收到令牌</string>
+<string name ="admin_block_msg">抱歉，您被管理员屏蔽。请与管理员联系以解除阻止</string>
+<string name ="valid_to">有效期</string>
+<string name ="valid_from">有效期自</string>
+<string name ="renew_subscription">续订</string>
+<string name ="cancel_subscription">取消订阅</string>
+<string name ="subscriptions">订阅</string>
+<string name ="subcription_plan_tag">％s访问权限</string>
+<string name ="yearly">每年</string>
+<string name ="monthly">每月</string>
+<string name ="weekly">每周</string>
+<string name ="show_branch">显示分支</string>
+<string name ="buy_subcrip">购买订阅</string>
+<string name ="my_subscrip_plan_text">检查您当前的订阅计划</string>
+<string name ="my_subscriptions">我的订阅</string>
+<string name ="upload_documents">上传ID证明</string>
+<string name ="please_upload_id_proof">请上传ID证明</string>
+<string name ="table_booking">餐桌预订</string>
+<string name ="schedule_booking_charges">计划订单费用</string>
+<string name ="no_slots_available">未找到插槽</string>
+<string name ="schedule_start_date">计划开始日期</string>
+<string name ="schedule_end_date">计划结束日期</string>
+<string name ="scheduling_charges">计划费用</string>
+<string name ="referral_applied">已应用推荐</string>
+<string name ="login_with_google">使用google登录</string>
+
+    </resources>
+

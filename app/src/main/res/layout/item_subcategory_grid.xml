@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="color"
+            type="com.codebrew.clikat.utils.configurations.ColorConfig" />
+
+        <variable
+            name="drawables"
+            type="com.codebrew.clikat.utils.configurations.DrawablesConfig" />
+
+        <variable
+            name="strings"
+            type="com.codebrew.clikat.utils.configurations.TextConfig" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemSubCatContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_margin"
+        android:background="?android:attr/selectableItemBackground"
+        app:background="@{color.listItemBackground}">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/sdvProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_100"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            android:layout_margin="@dimen/dp_04"
+            app:riv_corner_radius="15dip"
+            app:layout_constraintBottom_toTopOf="@+id/tvCategoryName"
+            app:layout_constraintDimensionRatio="H,4:3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription"
+            tools:src="@tools:sample/backgrounds/scenic"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginTop="@dimen/dp_04"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/dp_04"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16"
+            tools:text="@string/accept"
+            android:fontFamily="@font/proximanovasemibold"
+            app:textcolor="@{color.textBody}"
+            app:layout_constraintTop_toBottomOf="@+id/sdvProductImage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

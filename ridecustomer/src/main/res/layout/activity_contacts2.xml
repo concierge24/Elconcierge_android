@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/animContainer"
+    tools:context=".ui.menu.emergencyContacts.contacts.ContactsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_back_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivBack"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="@string/selectContacts"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="@string/done"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:fontFamily="@font/sf_pro_text_medium"
+        android:theme="@style/MyActionBarWidgetTheme"
+        app:queryHint="@string/search_contact"
+        android:focusable="true"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@null"
+        app:searchHintIcon="@drawable/quantum_ic_search_grey600_24" />
+    <com.trava.user.utils.FlowLayout
+        android:id="@+id/flSelectedContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView"
+        android:background="@color/black_8c"
+        android:paddingTop="24dp"
+        android:paddingStart="24dp"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:layout_below="@+id/flSelectedContact"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:reverseLayout="true"
+        app:stackFromEnd="true" />
+
+
+</RelativeLayout>

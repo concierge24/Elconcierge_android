@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+<RelativeLayout
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.deliverystarts.DeliveryStartsFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="center"
+        android:visibility="gone"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_my_location" />
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_nav_drawer" />
+
+        <TextView
+            android:id="@+id/tv_watch_earn"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_add_comments"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:drawableTint="@color/white"
+            android:visibility="gone"
+            android:drawablePadding="@dimen/_4sdp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:gravity="center"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/ic_car_icon_new"
+            android:text="@string/watch_amp_earn"
+            android:textSize="@dimen/_12ssp"
+            app:textcolor="@{color.white_color}" />
+
+        <TextView
+            android:id="@+id/tvPanic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_button_primary"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:text="@string/panic"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvMapNormal"
+            android:layout_width="78dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/rlHeader"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_map"
+            android:fontFamily="@font/mont_regular"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/normal"
+            android:textColor="@color/selector_map_type"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvSatellite"
+            android:layout_width="78dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/rlHeader"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tvMapNormal"
+            android:background="@drawable/selector_satellite"
+            android:fontFamily="@font/mont_regular"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/satellite"
+            android:textColor="@color/selector_map_type"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/cvToolbar_header"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:background="@{color.primary_color}">
+
+        <ImageView
+            android:id="@+id/ivBack_snd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:tint="@color/white"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_menu" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_open_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view_fullview"
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/black_8c" />
+
+                <TextView
+                    android:id="@+id/tvDriverStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@+id/tvTime"
+                    android:gravity="start"
+                    android:text=""
+                    app:textcolor="@{color.primary_color}"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/sf_pro_text_bold" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:text=""
+                    app:textcolor="@{color.black_color}"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/sf_pro_text_bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvShareOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_dark"
+                android:paddingTop="4dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/back_comment"
+                android:fontFamily="@font/mont_bold"
+                android:paddingBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/rl_open_view" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rlTopHelper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvShareOtp"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/ivHelperImage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/ic_placeholder" />
+
+                <TextView
+                    android:layout_toStartOf="@+id/ivCallHelper"
+                    android:id="@+id/tvHelperName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toEndOf="@+id/ivHelperImage"
+                    android:textColor="@color/black_1c"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/sf_pro_text_bold" />
+
+                <ImageView
+                    android:id="@+id/ivCallHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="16dp"
+                    app:tint="@{color.secondary_color}"
+                    android:src="@drawable/ic_call" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlTopHelper"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/ivDriverImage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/ic_placeholder" />
+
+                <TextView
+                    android:layout_toStartOf="@+id/ivChat"
+                    android:id="@+id/tvDriverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toEndOf="@+id/ivDriverImage"
+                    android:textColor="@color/black_1c"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/sf_pro_text_bold" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDriverName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@+id/ivDriverImage"
+                    android:theme="@style/RatingBar" />
+
+                <TextView
+                    android:id="@+id/tvRatingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDriverName"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/ratingBar"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:textColor="@color/black_8c"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/ivCallDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="16dp"
+                    app:tint="@{color.secondary_color}"
+                    android:src="@drawable/ic_call" />
+
+                <ImageView
+                    android:id="@+id/ivChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/ivCallDriver"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_chat"
+                    app:tint="@{color.secondary_color}"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvFullOrderDetailss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_dark"
+                android:paddingTop="4dp"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_comment"
+                android:fontFamily="@font/mont_bold"
+                android:paddingBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:text="@string/full_order_details"
+                android:layout_below="@+id/rlTop" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvFullOrderDetailss"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/ivVehicleImage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/dots_gray" />
+
+                <TextView
+                    android:id="@+id/tv_vehicleType"
+                    android:layout_toStartOf="@+id/tvCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@+id/ivVehicleImage"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:textColor="@color/black_8c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvVehicleNumber"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vehicleType"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toEndOf="@+id/ivVehicleImage"
+                    android:textColor="@color/black_05"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/sf_pro_text_semibold" />
+
+                <TextView
+                    android:id="@+id/tvCancel"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:drawableStart="@drawable/ic_cancel_ride_big"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/cancelRide"
+                    android:textAllCaps="true"
+                    app:textcolor="@{color.primary_color}"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/sf_pro_text_semibold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/ivVehicleImage" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+</layout>

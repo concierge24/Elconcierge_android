@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="color"
+            type="com.trava.user.utils.ConfigPOJO.Companion" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:id="@+id/ivVehicleImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:padding="4dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/llPrice"
+            android:layout_toEndOf="@+id/ivVehicleImage"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+            android:id="@+id/tvVehicleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="Truck"
+            android:textSize="13sp"
+            app:textcolor="@{color.black_color}" />
+
+            <ImageView
+                android:padding="@dimen/_2sdp"
+                android:id="@+id/iv_info"
+                android:layout_width="wrap_content"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_info"
+                app:tint="@{color.secondary_color}" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvVehicleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_below="@+id/ll_lay"
+            android:layout_toEndOf="@+id/ivVehicleImage"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="Truck"
+            android:visibility="gone"
+            android:textSize="13sp"
+            android:textColor="@color/dialog_background_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_seating_cap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_lay"
+            android:layout_toEndOf="@+id/ivVehicleImage"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/iv_seating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="Truck"
+                android:textColor="@color/black_8c"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_seating_image"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_person"
+                app:tint="@{color.secondary_color}" />
+
+            <TextView
+                android:id="@+id/tvSeatingCapcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEstimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/ll_seating_cap"
+            android:layout_toEndOf="@+id/ivVehicleImage"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEstPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="@string/est"
+                android:textColor="@color/black_8c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvEstTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:visibility="gone"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="@string/time"
+                android:textColor="@color/black_8c"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPriceRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:gravity="end"
+                android:maxLines="2"
+                android:text="100-140"
+                android:textSize="12sp"
+                app:textcolor="@{color.black_color}" />
+
+            <TextView
+                android:id="@+id/tvCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:maxLines="2"
+                android:text="@string/inr_rs"
+                android:textColor="@color/black_8c"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pool"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/ll_seating_cap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="@string/total_amount"
+                android:textSize="14sp"
+                app:textcolor="@{color.black_color}" />
+
+            <LinearLayout
+                android:layout_below="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_total_pool_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="$200"
+                    android:textSize="12sp"
+                    app:textcolor="@{color.black_color}" />
+
+                <TextView
+                    android:id="@+id/tv_total_passenger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="(for 3 passengers)"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_54" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_gray_drawable"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:tint="@color/black"
+                    android:id="@+id/iv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_back_white_snd"
+                    app:tint="@{color.secondary_color}" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_person"
+                        app:tint="@{color.secondary_color}" />
+
+                    <TextView
+                        android:id="@+id/tvSeatingcounts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:tint="@color/black"
+                    android:id="@+id/iv_right"
+                    android:rotation="180"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_back_white_snd"
+                    app:tint="@{color.secondary_color}" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>
